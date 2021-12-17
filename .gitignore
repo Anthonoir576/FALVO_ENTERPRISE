@@ -3,3 +3,9 @@
 /falvoEnterprise.code-workspace
 
 # ------------------------
+
+# ---- NODE MODULE ----
+
+/node_modules
+
+# ---------------------
