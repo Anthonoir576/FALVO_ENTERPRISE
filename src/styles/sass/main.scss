@@ -1,40 +1,33 @@
+
+// ######################
 @import
   'utils/variables',
-  'utils/functions',
-  'utils/mixins',
-  'utils/placeholders';
+  'utils/mixins';
+
+// #####################
 
 @import
-  'vendors/bootstrap',
-  'vendors/jquery-ui';
+  'vendors/bootstrap';
+
 
 @import
   'base/reset',
   'base/typography';
 
-@import
-  'layout/navigation',
-  'layout/grid',
-  'layout/header',
-  'layout/footer',
-  'layout/sidebar',
-  'layout/forms';
 
 @import
-  'components/buttons',
+  'layout/navigation';
+
+
+@import
   'components/carousel',
-  'components/cover',
-  'components/dropdown';
+  'components/media';
+
 
 @import
-  'pages/home',
-  'pages/contact';
+  'pages/accueil';
+
 
 @import
-  'themes/theme',
-  'themes/admin';
+  'themes/darkThemes';
 
-
-  // LIEN UTILE 
-
-//          https://sass-guidelin.es/fr/#architecture
