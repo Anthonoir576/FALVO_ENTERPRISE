@@ -1,3 +1,5 @@
+
+// --- PAGE D'ACCUEIL DU SITE ---
 .accueil {
   background: linear-gradient(
     60deg,
@@ -46,12 +48,17 @@
         display: inline-block;
         padding: 10px 0;
         width: 50%;
+        max-width: 400px;
         text-decoration: none;
         color: $bluesky;
 
         border: 1px solid $bluesky;
         border-radius: 4px;
         background: white;
+
+        &:hover {
+          @include mouvementBTN;
+        }
       }
     }
   }
