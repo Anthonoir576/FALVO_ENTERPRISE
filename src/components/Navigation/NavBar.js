@@ -5,13 +5,25 @@ const NavBar = () => {
     return (
         <ul className='navigation'>
             <li>
-                <NavLink exact to='/accueil' aria-label='En savoir plus sur le développeur web'>
+                <NavLink exact to='/A_propos' aria-label='En savoir plus sur le développeur web'>
                     En savoir plus...
                 </NavLink>
             </li>
-            <li>Compétence</li>
-            <li>Projet</li>
-            <li>Contact</li>
+            <li>
+                <NavLink exact to='/Competence' aria-label='Compétence du développeur web'>
+                    Compétence
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to='/Projets' aria-label='Les projets du développeur web'>
+                    Projets web
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to='/Contact' aria-label='Contact avec le développeur web'>
+                    Contact
+                </NavLink>
+            </li>
         </ul>
     );
 };
