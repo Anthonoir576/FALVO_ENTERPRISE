@@ -1,10 +1,60 @@
-
 .accueil {
-    background: linear-gradient(60deg, #ffdc80, #fcaf45, #f77737, #f56040, #FD1D1D, #E1306C, #c13584 60%, #833AB4, #5851db , #405DE6 120%);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: linear-gradient(
+    60deg,
+    #ffdc80,
+    #fcaf45,
+    #f77737,
+    #f56040,
+    #fd1d1d,
+    #e1306c,
+    #c13584 60%,
+    #833ab4,
+    #5851db,
+    #405de6 120%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    height: 100vh;
-    width: 100vw;
-    
+  height: 100vh;
+  width: 100vw;
+
+  &-information {
+    margin: 2rem auto;
+    text-align: center;
+
+    & .information-dev {
+      color: white;
+
+      & h1 {
+        margin: 20px 0 0px 0;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+      }
+      & h2 {
+        margin: 15px 0 30px 0;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+      }
+    }
+
+    & .information-contact {
+      & a {
+        display: inline-block;
+        padding: 10px 0;
+        width: 50%;
+        text-decoration: none;
+        color: $bluesky;
+
+        border: 1px solid $bluesky;
+        border-radius: 4px;
+        background: white;
+
+      }
+    }
+
+  }
 }
