@@ -2,9 +2,12 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <div>
-            salut
-        </div>
+        <ul className='navigationWeb'>
+            <li>En savoir plus...</li>
+            <li>Compétence</li>
+            <li>Projet</li>
+            <li>Contact</li>
+        </ul>
     );
 };
 

@@ -1,11 +1,11 @@
-import Home from "./pages/Home";
+import Accueil from "./pages/Accueil";
 
 
 
 function App() {
   return (
     <>
-      <Home />
+      <Accueil />
     </>
   );
 }

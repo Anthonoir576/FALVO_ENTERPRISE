@@ -1,0 +1,17 @@
+
+.navigationWeb {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    padding: 10px 5px 0 5px;
+
+    list-style-type: none;
+
+    & li {
+        color: white;
+        font-weight: 300;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+}
