@@ -7,7 +7,7 @@ const Accueil = () => {
         <div className='accueil'>
             <NavBar />
             <div className='accueil-information'>
-                <div>
+                <div className='information-image'>
                     <img src="./image/photoHEADd.png" alt="le developpeur web" />
                 </div>
                 <div className='information-dev'>
