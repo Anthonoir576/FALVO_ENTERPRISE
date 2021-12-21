@@ -1,0 +1,125 @@
+// ############   ACCUEIL   ##############
+@media only screen and (min-width: 1200px) {
+  .accueil {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      
+    & .navigation {
+      justify-content: flex-end;
+      & li {
+        margin: 0 2rem;
+      }
+    }
+    & .accueil-information {
+      display: flex;
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+
+      & .information-dev {
+        width: 400px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 645px) {
+  .accueil {
+    & .navigation li {
+      font-size: 1rem;
+    }
+    & .accueil-information {
+      & .information-image img {
+        margin: 0 auto;
+        max-width: 90%;
+        height: auto;
+      }
+      & .information-contact a {
+        width: 80%;
+
+        &:hover {
+          transition: 0.3s all ease-in-out;
+          animation-duration: 0s;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .accueil {
+    & .navigation li {
+      font-size: 0.8rem;
+    }
+    & .accueil-information {
+      & .information-image img {
+        max-width: 95%;
+      }
+      & .information-contact a {
+        width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  .accueil {
+    & .accueil-information {
+      & .information-dev {
+        & h2 {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .accueil {
+    & .navigation {
+      padding: 15px 8px 0 8px;
+
+      & li {
+        font-size: 0.7rem;
+      }
+    }
+    & .accueil-information {
+      & .information-dev {
+        & h1 {
+          margin: 50px 0 0 0;
+          font-size: 2rem;
+        }
+        & h2 {
+          font-size: 0.9rem;
+        }
+      }
+      & .information-contact a {
+        width: 95%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .accueil {
+    & .navigation {
+      padding: 15px 8px 0 8px;
+
+      & li {
+        font-size: 0.6rem;
+      }
+    }
+    & .accueil-information {
+      & .information-dev {
+        & h1 {
+          margin: 50px 0 0 0;
+          font-size: 1.6rem;
+        }
+        & h2 {
+          font-size: 0.75rem;
+        }
+      }
+      & .information-contact a {
+        width: 95%;
+      }
+    }
+  }
+}
+// #######################################
