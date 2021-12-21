@@ -202,7 +202,58 @@
 // #######################################
 
 // ############  A PROPOS   ##############
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1600px) {
+  div.about {
+    margin: 0rem 1rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 2.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 2.8rem;
+    }
+  }
+}
+@media only screen and (max-width: 1225px) {
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 1.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 1180px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 2.2rem;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 1.5rem;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 1110px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 1.3rem;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: .7rem;
+    }
+  }
+}
+@media only screen and (max-width: 1070px) {
   div.about {
     flex-direction: column;
     margin: 1rem 10rem;
@@ -267,10 +318,11 @@
     & article {
       .aboutMe {
         h2 {
-          font-size: 30px;
+          font-size: 40px;
         }
         h3 {
-          font-size: 16px;
+          font-size: 17px;
+          letter-spacing: 7px;
         }
         & > p {
           height: 100%;
@@ -303,6 +355,22 @@
         }
       }
     }
+    & article {
+      .aboutMe {
+        h3 {
+          letter-spacing: 5px;
+        }
+        & .skill-bars {
+          & .bar {
+            & .info {
+              & .nameskill {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 460px) {
@@ -317,17 +385,27 @@
         }
       }
     }
+    & article {
+      .aboutMe {
+        h2 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 420px) {
   div.about {
     flex-direction: column;
-    margin: 1rem .8rem;
+    margin: 1rem 0.8rem;
 
     & aside {
       & .about-text_networks {
         & .about-text {
-          font-size: .6rem;
+          font-size: 0.6rem;
           padding-left: 15px;
         }
       }
@@ -335,10 +413,10 @@
     & article {
       .aboutMe {
         h2 {
-          font-size: 20px;
+          font-size: 29px;
         }
         h3 {
-          font-size: 14px;
+          font-size: 15px;
           letter-spacing: 5px;
         }
         & > p {
@@ -354,7 +432,34 @@
       & ul {
         padding: 10px 1rem;
         & li {
-          font-size: .7rem;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  div.about {
+    & article {
+      .aboutMe {
+        h3 {
+          letter-spacing: 5px;
+        }
+        & .skill-bars {
+          & .bar {
+            & .info {
+              & .nameskill {
+                font-size: 9.5px;
+              }
+            }
+            & .progress-line {
+              & span {
+                &::after {
+                  padding: 3px 5px;
+                  top: -25px;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -363,12 +468,12 @@
 @media only screen and (max-width: 370px) {
   div.about {
     flex-direction: column;
-    margin: 1rem .6rem;
+    margin: 1rem 0.6rem;
 
     & aside {
       & .about-text_networks {
         & .about-text {
-          font-size: .5rem;
+          font-size: 0.5rem;
           padding-left: 0px;
         }
       }
@@ -376,11 +481,11 @@
     & article {
       .aboutMe {
         h2 {
-          font-size: 20px;
+          font-size: 25px;
         }
         h3 {
           font-size: 14px;
-          letter-spacing: 5px;
+          letter-spacing: 4px;
         }
         & > p {
           height: 100%;
@@ -392,7 +497,7 @@
     & .navigation {
       & ul {
         & li {
-          font-size: .6rem;
+          font-size: 0.6rem;
         }
       }
     }
@@ -401,7 +506,7 @@
 @media only screen and (max-width: 330px) {
   div.about {
     flex-direction: column;
-    margin: 1rem .6rem;
+    margin: 1rem 0.6rem;
 
     & aside {
       & .about-text_networks {
@@ -419,11 +524,30 @@
           font-size: 20px;
         }
         h3 {
-          font-size: 14px;
-          letter-spacing: 5px;
+          font-size: 13px;
+          letter-spacing: 3px;
         }
         & > p {
           height: 100%;
+        }
+        & .skill-bars {
+          & .bar {
+            & .info {
+              & .nameskill {
+                font-size: 12px;
+              }
+            }
+            & .progress-line {
+              & span {
+                &::after {
+                  display: none;
+                }
+                &::before {
+                  display: none;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -432,7 +556,7 @@
     & .navigation {
       & ul {
         & li {
-          font-size: .6rem;
+          font-size: 0.6rem;
         }
       }
     }
