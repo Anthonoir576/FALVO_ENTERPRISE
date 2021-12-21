@@ -85,6 +85,11 @@
         color: $gray;
         max-height: 19px;
         letter-spacing: 10px;
+
+        & em {
+            color: $bluesky;
+            font-weight: 400;
+        }
       }
 
       & h4 {

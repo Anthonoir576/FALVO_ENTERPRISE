@@ -99,7 +99,7 @@ const APropos = () => {
         <article>
           <div class="aboutMe">
             <h2>FALVO Anthony</h2>
-            <h3>Développeur Front-end</h3>
+            <h3>Développeur React <em>&amp;</em> Node</h3>
             <p>
               Étudiant en développement front-end, basé sur les éléments : HTML
               5, CSS 3, JavaScript ainsi que les connaissances basique sur la
