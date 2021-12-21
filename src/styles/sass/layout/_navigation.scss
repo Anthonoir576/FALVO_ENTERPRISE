@@ -1,4 +1,3 @@
-
 // --- NAVIGATION DU SITE ---
 
 .navigation {
@@ -28,7 +27,7 @@
       &::first-letter {
         color: $bluesky;
       }
-
+      filter: saturate(200%);
       // - Animation du scale -
       animation: hoverNav1 0.2s forwards;
       @keyframes hoverNav1 {

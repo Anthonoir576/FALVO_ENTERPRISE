@@ -1,8 +1,16 @@
-import React       from 'react';
-import { NavLink } from 'react-router-dom';
-import NavBar      from '../components/Navigation/NavBar';
+import React, { useEffect } from 'react';
+import { NavLink }          from 'react-router-dom';
+import { txtEffect }        from '../components/Utils/EffectTxt';
+import NavBar               from '../components/Navigation/NavBar';
+
 
 const Accueil = () => {
+
+    // -- Effet animation texte --
+    useEffect(() => {
+        txtEffect();
+    }, []);
+
     return (
         <div className='accueil'>
             <NavBar />
@@ -11,7 +19,7 @@ const Accueil = () => {
                     <img src="./image/photoHEADd.png" alt="le developpeur web" />
                 </div>
                 <div className='information-dev'>
-                    <h1>FALVO Anthony</h1>
+                    <h1 className='text-effect'>FALVO Anthony</h1>
                     <h2>Développeur React / Node</h2>
                 </div>
                 <div className='information-contact'>
