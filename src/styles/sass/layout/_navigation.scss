@@ -1,16 +1,16 @@
 // --- NAVIGATION DU SITE ---
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 0 0;
-  padding: 10px 15px 0 15px;
-
-  list-style-type: none;
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 10px 15px 0 15px;
+  }
 
   & li {
     height: 20px;
-
     color: white;
     font-weight: 300;
     font-size: 1.2rem;
@@ -29,13 +29,13 @@
       }
       filter: saturate(200%);
       // - Animation du scale -
-      animation: hoverNav1 0.2s forwards;
+      animation: hoverNav1 0.15s forwards;
       @keyframes hoverNav1 {
         0% {
           transform: scale(1);
         }
         100% {
-          transform: scale(1.1);
+          transform: scale(1.04);
         }
       }
 

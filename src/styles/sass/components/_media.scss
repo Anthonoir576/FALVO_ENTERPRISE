@@ -1,25 +1,58 @@
 // ############   ACCUEIL   ##############
 @media only screen and (min-width: 1200px) {
   .accueil {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
     & .navigation {
-      justify-content: flex-end;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+
+      & ul {
+        justify-content: right;
+        width: 830px;
+      }
+
       & li {
+        text-align: right;
         margin: 0 2rem;
+      }
+      .navigation--modifier {
+        width: 400px;
+        height: 1px;
       }
     }
     & .accueil-information {
       display: flex;
-      width: 100%;
       flex-direction: row-reverse;
       justify-content: space-around;
       align-items: center;
+      margin: 0;
 
       & .information-dev {
         width: 400px;
+
+        & h1 {
+          height: 45px;
+        }
+      }
+
+      & .information-contact a {
+        width: 60%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .accueil {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    & .accueil-information {
+      & .information-image img {
+        width: 460px;
       }
     }
   }
@@ -66,7 +99,8 @@
     & .accueil-information {
       & .information-dev {
         & h2 {
-          margin-bottom: 5rem;
+          margin-bottom: 1rem;
+          margin-top: 0rem;
         }
       }
     }
@@ -74,7 +108,7 @@
 }
 @media only screen and (max-width: 380px) {
   .accueil {
-    & .navigation {
+    & .navigation ul {
       padding: 15px 8px 0 8px;
 
       & li {
@@ -84,7 +118,7 @@
     & .accueil-information {
       & .information-dev {
         & h1 {
-          margin: 50px 0 0 0;
+          margin: 40px 0 0 0;
           font-size: 2rem;
         }
         & h2 {
@@ -99,7 +133,7 @@
 }
 @media only screen and (max-width: 320px) {
   .accueil {
-    & .navigation {
+    & .navigation ul {
       padding: 15px 8px 0 8px;
 
       & li {
@@ -109,7 +143,8 @@
     & .accueil-information {
       & .information-dev {
         & h1 {
-          margin: 50px 0 0 0;
+          margin: 20px 0 0 0;
+          height: 40px;
           font-size: 1.6rem;
         }
         & h2 {
