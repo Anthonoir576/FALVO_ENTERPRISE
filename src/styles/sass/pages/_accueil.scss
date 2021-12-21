@@ -1,5 +1,12 @@
 // --- PAGE D'ACCUEIL DU SITE ---
 
+// a retirer une fois fonctionnalité mise en place
+.accueil-switch {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+}
+
 .accueil {
   background: linear-gradient(
     60deg,
@@ -46,6 +53,12 @@
         font-weight: 300;
         font-size: 1.1rem;
         letter-spacing: 2px;
+
+        & span {
+          color: $bluesky;
+          font-weight: 600;
+          filter: saturate(100%);
+        }
       }
     }
 
