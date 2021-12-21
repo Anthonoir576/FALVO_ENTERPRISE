@@ -70,11 +70,14 @@
 .aPropos {
   & .navigation {
     & ul {
-      padding: 10px 15px;
+      border-bottom: 1px solid #6cb1f67c;
+      padding: 10px 4rem;
       box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.082);
 
-      & li a {
-        color: black;
+      & li {
+        & a {
+          color: black;
+        }
       }
     }
 

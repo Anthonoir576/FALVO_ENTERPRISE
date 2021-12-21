@@ -32,7 +32,7 @@ const APropos = () => {
                   &bull; <strong>Adresse</strong>
                 </td>
                 <td>
-                  : 269 rue du capitaine wazny
+                  : xxx rue du capitaine wazny
                   <br /> Montigny-en-ostrevent,
                   <br /> 59182, France
                 </td>
@@ -41,7 +41,7 @@ const APropos = () => {
                 <td>
                   &bull; <strong>Téléphone</strong>
                 </td>
-                <td>: 07.27.76.52.92</td>
+                <td>: 06.xx.xx.52.92</td>
               </tr>
               <tr>
                 <td>
@@ -158,7 +158,7 @@ const APropos = () => {
                 href="/accueil"
                 onclick="return confirm ('En cours de maintenance')"
               >
-                <p>Télécharger C.V</p>
+                Voir le profil du développeur
               </a>
             </div>
           </div>

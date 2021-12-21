@@ -1,8 +1,7 @@
-
 .about {
   display: flex;
   justify-content: center;
-  margin: 6.5em 10em 10em 10em;
+  margin: 0em 10em;
 
   font-family: "Josefin Sans", "Lato", sans-serif;
 }
@@ -11,17 +10,16 @@ aside {
   margin-right: 100px;
 
   & figure {
-    margin: 0;
+      margin: 0;
   }
 
   & .about-text_networks {
+    margin-top: -5px;
     width: 470px;
 
     border: 1px solid white;
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 5px 20px 0px rgb(11, 50, 94, 0.2);
-
-    margin-top: -5px;
 
     & .about-text {
       width: 470px;
@@ -42,14 +40,14 @@ aside {
     & hr {
       width: 90%;
       opacity: 0.2;
-      margin: 45px 20px 0 23px;
+      margin: 55px 20px 0 23px;
       text-align: center;
     }
 
     & .about-networks {
       display: flex;
       justify-content: space-around;
-      margin: 20px 0 15px 0;
+      margin: 7px 0 7px 0;
 
       & a img:hover {
         transform: scale(1.1);
@@ -67,21 +65,16 @@ aside {
   }
 }
 
-// Container --> RIGHT
 article {
   padding: 94px 0 0 0;
-
   width: 700px;
-  height: 900px;
 
   & .aboutMe {
     & h2 {
       font-size: 48px;
       font-weight: 700;
       margin: 0;
-
       max-height: 48px;
-
       letter-spacing: 10px;
       white-space: nowrap;
     }
@@ -91,9 +84,7 @@ article {
       font-weight: 300;
       margin: 35px 0 60px 0;
       color: $gray;
-
       max-height: 19px;
-
       letter-spacing: 10px;
     }
 
@@ -102,9 +93,7 @@ article {
       font-weight: 300;
       margin: 30px 0 50px 0;
       color: $gray;
-
       max-height: 19px;
-
       letter-spacing: 5px;
     }
 
@@ -118,7 +107,6 @@ article {
   }
 }
 
-// SKILL BAR ANIMATION <-- Container RIGHT
 .skill-bars {
   padding: 0px 30px 15px 30px;
   width: 100%;
@@ -264,65 +252,30 @@ article {
   }
 }
 
-// download CV button <-- Container RIGHT
 .aboutMe-downloadcv {
+    text-align: center;
   & a {
     display: block;
-
-    margin: 1.8em 0 0 0;
-    max-width: 170px;
-    max-height: 80px;
+    padding: 10px 0;
+    margin-top: 1.6em;
 
     font-size: 17px;
     font-weight: 400;
     border: 1.5px solid white;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: $bluesky;
     color: white;
-    text-align: center;
     text-decoration: none;
 
-    & p {
-      text-align: center;
-      margin: 0;
-      padding: 16px 15px;
-      color: white;
-      font-weight: 600;
-    }
+    transition: all .22s ease-out;
 
     &:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 0px 30px 0px $bluesky;
-      filter: saturate(900%);
-      -webkit-filter: saturate(300%);
 
-      // EFFECT ROTATION BUTTON
-      -webkit-transform-origin: top center;
-      -ms-transform-origin: top center;
-      transform-origin: top center;
-      -webkit-animation-name: swing;
-      animation-name: swing;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
+      transition: all .3s ease-in;  
+      transform: translateX(3px);
+      box-shadow: 0px 0px 20px 0px $bluesky;
+      filter: saturate(100%);
 
-      @keyframes swing {
-        20% {
-          -webkit-transform: rotate3d(0, 0, 1, 5deg);
-          transform: rotate3d(0, 0, 1, 5deg);
-        }
-
-        40% {
-          -webkit-transform: rotate3d(0, 0, 1, -5deg);
-          transform: rotate3d(0, 0, 1, -5deg);
-        }
-
-        60% {
-          -webkit-transform: rotate3d(0, 0, 1, 2.5deg);
-          transform: rotate3d(0, 0, 1, 2.5deg);
-        }
-      }
     }
   }
 }
