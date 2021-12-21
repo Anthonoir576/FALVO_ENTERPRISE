@@ -1,10 +1,9 @@
-
 // --- Mouvement bouton au hover ---
 
 @mixin mouvementBTN {
   transform: scale(1.05);
-  box-shadow: 0px 0px 30px 0px $bluesky;
   filter: saturate(110%);
+  box-shadow: 0px 0px 30px 0px $bluesky;
 
   animation-name: mooveNow;
   animation-duration: 1s;
