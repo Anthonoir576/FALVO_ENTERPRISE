@@ -202,7 +202,58 @@
 // #######################################
 
 // ############  A PROPOS   ##############
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1600px) {
+  div.about {
+    margin: 0rem 1rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 2.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 2.8rem;
+    }
+  }
+}
+@media only screen and (max-width: 1225px) {
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 1.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 1180px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 2.2rem;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 1.5rem;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 1110px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 1.3rem;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: .7rem;
+    }
+  }
+}
+@media only screen and (max-width: 1070px) {
   div.about {
     flex-direction: column;
     margin: 1rem 10rem;
@@ -309,6 +360,15 @@
         h3 {
           letter-spacing: 5px;
         }
+        & .skill-bars {
+          & .bar {
+            & .info {
+              & .nameskill {
+                font-size: 12px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -373,6 +433,33 @@
         padding: 10px 1rem;
         & li {
           font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  div.about {
+    & article {
+      .aboutMe {
+        h3 {
+          letter-spacing: 5px;
+        }
+        & .skill-bars {
+          & .bar {
+            & .info {
+              & .nameskill {
+                font-size: 9.5px;
+              }
+            }
+            & .progress-line {
+              & span {
+                &::after {
+                  padding: 3px 5px;
+                  top: -25px;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -442,6 +529,25 @@
         }
         & > p {
           height: 100%;
+        }
+        & .skill-bars {
+          & .bar {
+            & .info {
+              & .nameskill {
+                font-size: 12px;
+              }
+            }
+            & .progress-line {
+              & span {
+                &::after {
+                  display: none;
+                }
+                &::before {
+                  display: none;
+                }
+              }
+            }
+          }
         }
       }
     }

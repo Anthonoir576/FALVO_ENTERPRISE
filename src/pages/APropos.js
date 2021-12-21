@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from '../components/Navigation/NavBar'
+import NavBar from "../components/Navigation/NavBar";
 
 const APropos = () => {
   return (
     <div className="aPropos">
-    <NavBar />
+      <NavBar />
       <div class="about">
         <aside>
           <figure>
@@ -99,27 +99,32 @@ const APropos = () => {
         <article>
           <div class="aboutMe">
             <h2>FALVO Anthony</h2>
-            <h3>Développeur React <em>&amp;</em> Node</h3>
+            <h3>
+              Développeur React <em>&amp;</em> Node
+            </h3>
             <p>
-              Étudiant en développement front-end, basé sur les éléments : HTML
-              5, CSS 3, JavaScript ainsi que les connaissances basique sur la
-              partie back -end, avec PHP, MySQL. Le programme comporte
-              l’apprentissage et l’utilisation de GIT / GitHub dans les projets.
-              La mise en place de l’environnement de travail, découpez et
-              interprétez une maquette. Les langages essentiels cité ci-dessus,
-              l’optimisation SEO, le responsive avec Bootstrap, Node.js,
-              Express, MongoDB et Vue.js. Petit plus ! Je possède d’une
-              expérience d’une quinzaine d’années dans l’audio, traitement,
-              mixage, mastering. Concernant Photoshop, je l’utilise depuis 2008
-              environs, et quelque notion en traitement vidéo sous after effect
-              depuis 2014.
+              Développeur React et Node.js, basé sur les éléments : HTML 5, CSS
+              3, Sass et JavaScript, React, et Redux ainsi que les connaissances
+              basique sur la partie back-end, avec node.js , Express, Mongoose,
+              MongoDB, MySql et Sequelize. Le programme comporte l’apprentissage
+              et l’utilisation de GIT / GitHub dans les projets comme vous
+              pouvez le voir sur mon Github. La mise en place de l’environnement
+              de travail, découpez et interprétez une maquette. Les langages
+              essentiels cité ci-dessus, l’optimisation SEO, l'accessibilité
+              web, et un peu de responsive avec Bootstrap. Petit plus ! Je
+              possède d’une expérience d’une quinzaine d’années dans l’audio,
+              traitement, mixage, mastering sous Fl Studio. Concernant Photoshop
+              / Gimp, je l’utilise depuis 2008 environs, et quelque notion en
+              traitement vidéo sous after effect / shotcut depuis 2014.
+              Autodidacte pendant 1 an dans le développement, j'ai suivi, et réussi ma
+              formation développeur web chez OpenClassRooms en 2 mois et demi. 
             </p>
             <h4>Mes compétences</h4>
 
             <div class="skill-bars invalide">
               <div class="bar">
                 <div class="info">
-                  <span class="nameskill">HTML 5 / CSS 3 / Animation CSS</span>
+                  <span class="nameskill">HTML 5 / CSS 3 / SASS</span>
                 </div>
                 <div class="progress-line htmlcss">
                   <span></span>
@@ -127,7 +132,7 @@ const APropos = () => {
               </div>
               <div class="bar">
                 <div class="info">
-                  <span class="nameskill">JavaScript</span>
+                  <span class="nameskill">REACT / REDUX</span>
                 </div>
                 <div class="progress-line js">
                   <span></span>
@@ -135,7 +140,7 @@ const APropos = () => {
               </div>
               <div class="bar">
                 <div class="info">
-                  <span class="nameskill">SQL / PHP</span>
+                  <span class="nameskill">BACK-END</span>
                 </div>
                 <div class="progress-line sql">
                   <span></span>
@@ -144,7 +149,7 @@ const APropos = () => {
               <div class="bar">
                 <div class="info">
                   <span class="nameskill">
-                    Adobe P.S / Adobe A.E / FL studio
+                    AUDIO / TRAITEMENT IMAGE &amp; VIDEO
                   </span>
                 </div>
                 <div class="progress-line design">

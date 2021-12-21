@@ -103,7 +103,6 @@
 
       & > p {
         margin: 0 0 0 0;
-        height: 190px;
         text-align: justify;
         color: $gray;
         font-weight: 300;
@@ -181,15 +180,15 @@
     }
 
     .bar .progress-line.htmlcss span {
-      width: 90%;
+      width: 100%;
     }
 
     .bar .progress-line.js span {
-      width: 40%;
+      width: 45%;
     }
 
     .bar .progress-line.sql span {
-      width: 25%;
+      width: 70%;
     }
 
     .bar .progress-line.design span {
@@ -233,15 +232,15 @@
     }
 
     .progress-line.htmlcss span::after {
-      content: "90 %";
+      content: "100 %";
     }
 
     .progress-line.js span::after {
-      content: "40 %";
+      content: "45 %";
     }
 
     .progress-line.sql span::after {
-      content: "25 %";
+      content: "70 %";
     }
 
     .progress-line.design span::after {
@@ -259,7 +258,7 @@
     & a {
       display: block;
       padding: 10px 0;
-      margin-top: 1.6em;
+      margin-top: 3.3em;
 
       font-size: 17px;
       font-weight: 400;
