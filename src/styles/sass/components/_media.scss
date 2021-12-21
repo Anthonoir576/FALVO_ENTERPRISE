@@ -45,6 +45,48 @@
     }
   }
 }
+@media only screen and (min-width: 880px) and (max-width: 1199px) {
+  .accueil {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    & .navigation {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      & ul {
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      & li {
+        text-align: right;
+        margin: 0 2rem;
+      }
+    }
+    & .accueil-information {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+
+      & .information-dev {
+        width: 400px;
+
+        & h1 {
+          height: 45px;
+        }
+      }
+
+      & .information-contact a {
+        width: 60%;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1200px) {
   .accueil {
     display: flex;
@@ -153,6 +195,245 @@
       }
       & .information-contact a {
         width: 95%;
+      }
+    }
+  }
+}
+// #######################################
+
+// ############  A PROPOS   ##############
+@media only screen and (max-width: 1080px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem 10rem;
+
+    & aside {
+      margin: 0 auto;
+      width: 100%;
+      & figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        text-align: center;
+      }
+      & .about-text_networks {
+        width: 100%;
+      }
+      & .about-text {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    & article {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 815px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem 6rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem 3rem;
+  }
+  .aPropos {
+    & .navigation {
+      & ul {
+        & li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 590px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem 1.8rem;
+
+    & aside {
+      & .about-text_networks {
+        font-size: 0.8rem;
+        & .about-text {
+          padding-left: 50px;
+        }
+      }
+    }
+    & article {
+      .aboutMe {
+        h2 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        & > p {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .aPropos {
+    & .navigation {
+      & ul {
+        padding: 10px 2rem;
+        & li {
+          font-size: 0.7rem;
+          height: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 530px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem 1.5rem;
+
+    & aside {
+      & .about-text_networks {
+        & .about-text {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem 1rem;
+
+    & aside {
+      & .about-text_networks {
+        & .about-text {
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem .8rem;
+
+    & aside {
+      & .about-text_networks {
+        & .about-text {
+          font-size: .6rem;
+          padding-left: 15px;
+        }
+      }
+    }
+    & article {
+      .aboutMe {
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 14px;
+          letter-spacing: 5px;
+        }
+        & > p {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .aPropos {
+    & .navigation {
+      & ul {
+        padding: 10px 1rem;
+        & li {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 370px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem .6rem;
+
+    & aside {
+      & .about-text_networks {
+        & .about-text {
+          font-size: .5rem;
+          padding-left: 0px;
+        }
+      }
+    }
+    & article {
+      .aboutMe {
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 14px;
+          letter-spacing: 5px;
+        }
+        & > p {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .aPropos {
+    & .navigation {
+      & ul {
+        & li {
+          font-size: .6rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 330px) {
+  div.about {
+    flex-direction: column;
+    margin: 1rem .6rem;
+
+    & aside {
+      & .about-text_networks {
+        & hr {
+          margin-top: 20px;
+        }
+        & .about-text {
+          display: none;
+        }
+      }
+    }
+    & article {
+      .aboutMe {
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 14px;
+          letter-spacing: 5px;
+        }
+        & > p {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .aPropos {
+    & .navigation {
+      & ul {
+        & li {
+          font-size: .6rem;
+        }
       }
     }
   }
