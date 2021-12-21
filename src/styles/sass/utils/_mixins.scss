@@ -1,7 +1,7 @@
 
-// Mouvement bouton au hover
-@mixin mouvementBTN {
+// --- Mouvement bouton au hover ---
 
+@mixin mouvementBTN {
   transform: scale(1.05);
   box-shadow: 0px 0px 30px 0px $bluesky;
   filter: saturate(110%);
@@ -9,7 +9,7 @@
   animation-name: mooveNow;
   animation-duration: 1s;
   animation-fill-mode: both;
-  transform-origin: top center;  
+  transform-origin: top center;
 
   @keyframes mooveNow {
     20% {
@@ -21,7 +21,7 @@
     }
 
     60% {
-      transform: rotate3d(0, 0, 1, .8deg);
+      transform: rotate3d(0, 0, 1, 0.8deg);
     }
   }
 }
