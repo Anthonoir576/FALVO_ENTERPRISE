@@ -21,7 +21,7 @@ const Accueil = () => {
                 <div className="text-container">
                     <div className='information-dev'>
                         <h1 className='text-effect'>FALVO Anthony</h1>
-                        <h2>Développeur React / Node</h2>
+                        <h2>Développeur React <span>&amp;</span> Node</h2>
                     </div>
                     <div className='information-contact'>
                         <NavLink exact to='/Contact' aria-label='Contact developpeur web'>
@@ -31,7 +31,7 @@ const Accueil = () => {
                 </div>
             </div>
             <div className="accueil-switch">
-                arrow
+                Fonctionnalité à venir ici
             </div>
         </div>
     );
