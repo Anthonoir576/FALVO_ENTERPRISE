@@ -112,7 +112,7 @@ const APropos = () => {
               de travail, découpez et interprétez une maquette. Les langages
               essentiels cité ci-dessus, l’optimisation SEO, l'accessibilité
               web, et un peu de responsive avec Bootstrap. Petit plus ! Je
-              possède d’une expérience d’une quinzaine d’années dans l’audio,
+              possède une expérience d’une quinzaine d’années dans l’audio,
               traitement, mixage, mastering sous Fl Studio. Concernant Photoshop
               / Gimp, je l’utilise depuis 2008 environs, et quelque notion en
               traitement vidéo sous after effect / shotcut depuis 2014.
