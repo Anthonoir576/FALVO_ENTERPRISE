@@ -67,7 +67,8 @@
 }
 
 // A propos
-.aPropos {
+.aPropos,
+.competence {
   & .navigation {
     & ul {
       justify-content: space-around;
