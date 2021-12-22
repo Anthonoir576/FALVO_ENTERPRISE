@@ -1,93 +1,92 @@
 // --- NAVIGATION DU SITE ---
 
-// ACCUEIL
-.navigation {
-  & ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0 0 0 0;
-    padding: 10px 15px 0 15px;
-  }
+.accueil,
+.aPropos,
+.competence {
+  & .navigation {
+    background: linear-gradient(
+      60deg,
+      #ffdc80,
+      #fcaf45,
+      #f77737,
+      #f56040,
+      #fd1d1d,
+      #e1306c,
+      #c13584 60%,
+      #833ab4,
+      #5851db,
+      #405de6 120%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.3);
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 0 0 0 0;
+      padding: 10px 15px 0 15px;
 
-  & li {
-    height: 20px;
-    color: white;
-    font-weight: 300;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    transform: scale(1);
+      padding: 10px 1rem;
+      & li {
+        height: 20px;
+        color: white;
+        font-weight: 300;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        transform: scale(1);
 
-    & a {
-      display: block;
-      text-decoration: none;
-      color: white;
-    }
-
-    &:hover {
-      &::first-letter {
-        color: $bluesky;
-      }
-      filter: saturate(200%);
-      // - Animation du scale -
-      animation: hoverNav1 0.15s forwards;
-      @keyframes hoverNav1 {
-        0% {
-          transform: scale(1);
+        & a {
+          display: block;
+          text-decoration: none;
+          color: white;
         }
-        100% {
-          transform: scale(1.04);
-        }
-      }
 
-      &::after {
-        display: block;
-        content: "";
-        width: 0%;
-        height: 1px;
-
-        background: white;
-        box-shadow: 1px -5px 10px 1px rgba(0, 0, 0, 0.226);
-
-        // - Animation du after en pourcentage -
-        animation: hoverNav2 0.65s forwards;
-        @keyframes hoverNav2 {
-          0% {
+        &:hover {
+          &::first-letter {
+            color: $bluesky;
+          }
+          filter: saturate(200%);
+          // - Animation du scale -
+          animation: hoverNav1 0.15s forwards;
+          @keyframes hoverNav1 {
+            0% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(1.04);
+            }
+          }
+    
+          &::after {
+            display: block;
+            content: "";
             width: 0%;
+            height: 1px;
+    
+            background: white;
+            box-shadow: 1px -5px 10px 1px rgba(0, 0, 0, 0.226);
+    
+            // - Animation du after en pourcentage -
+            animation: hoverNav2 0.65s forwards;
+            @keyframes hoverNav2 {
+              0% {
+                width: 0%;
+              }
+              100% {
+                width: 25%;
+              }
+            }
           }
-          100% {
-            width: 25%;
-          }
+    
+          text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24);
         }
       }
-
-      text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24);
     }
   }
 }
 
-// A propos
-.aPropos {
-  & .navigation {
-    & ul {
-      justify-content: space-around;
-      border-bottom: 1px solid #6cb1f67c;
-      padding: 10px 4rem;
-      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.082);
-
-      & li {
-        & a {
-          color: black;
-        }
-      }
-    }
-
-    & li:hover {
-      text-shadow: 0px 3px 3px rgba(0, 0, 0, 0);
-
-      &::after {
-        background: $bluesky;
-      }
-    }
-  }
+.accueil .navigation {
+  background: transparent;
+  box-shadow: none;
 }
