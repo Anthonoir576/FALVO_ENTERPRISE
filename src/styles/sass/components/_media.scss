@@ -4,26 +4,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
-    & .navigation {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-
-      & ul {
-        justify-content: right;
-        width: 830px;
-      }
-
-      & li {
-        text-align: right;
-        margin: 0 2rem;
-      }
-      .navigation--modifier {
-        width: 400px;
-        height: 1px;
-      }
-    }
     & .accueil-information {
       display: flex;
       flex-direction: row-reverse;
@@ -50,22 +30,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
-    & .navigation {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-
-      & ul {
-        justify-content: space-around;
-        width: 100%;
-      }
-
-      & li {
-        text-align: right;
-        margin: 0 2rem;
-      }
-    }
     & .accueil-information {
       display: flex;
       flex-direction: row-reverse;
@@ -101,9 +65,6 @@
 }
 @media only screen and (max-width: 645px) {
   .accueil {
-    & .navigation li {
-      font-size: 1rem;
-    }
     & .accueil-information {
       & .information-image img {
         margin: 0 auto;
@@ -123,9 +84,6 @@
 }
 @media only screen and (max-width: 500px) {
   .accueil {
-    & .navigation li {
-      font-size: 0.8rem;
-    }
     & .accueil-information {
       & .information-image img {
         max-width: 95%;
@@ -150,13 +108,6 @@
 }
 @media only screen and (max-width: 380px) {
   .accueil {
-    & .navigation ul {
-      padding: 15px 8px 0 8px;
-
-      & li {
-        font-size: 0.7rem;
-      }
-    }
     & .accueil-information {
       & .information-dev {
         & h1 {
@@ -175,13 +126,6 @@
 }
 @media only screen and (max-width: 320px) {
   .accueil {
-    & .navigation ul {
-      padding: 15px 8px 0 8px;
-
-      & li {
-        font-size: 0.6rem;
-      }
-    }
     & .accueil-information {
       & .information-dev {
         & h1 {
@@ -201,45 +145,86 @@
 }
 // #######################################
 
+
 // ############  A PROPOS   ##############
 @media only screen and (max-width: 1600px) {
   div.about {
-    margin: 0rem 1rem;
+    margin: 0rem 7rem;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
+  div.about {
+    & .aboutMe-downloadcv {
+      & a {
+        margin-top: 2.6rem;
+      }
+    }
+  } 
+}
+@media only screen and (max-width: 1415px) {
+  div.about {
+    margin: 0rem 2rem;
+    & .aboutMe-downloadcv {
+      & a {
+        margin-top: 3rem;
+      }
+    }
+  } 
+}
+@media only screen and (max-width: 1390px) {
+  div.about {
+    margin: 0rem 3rem;
+    & .aboutMe-downloadcv {
+      & a {
+        margin-top: 2.5rem;
+      }
+    }
+  } 
+}
+@media only screen and (max-width: 1290px) {
   div.about .aboutMe-downloadcv {
     & a {
-      margin-top: 2.5rem;
+      margin-top: 1.7rem;
     }
   }
 }
-@media only screen and (max-width: 1250px) {
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 2.8rem;
-    }
-  }
-}
-@media only screen and (max-width: 1225px) {
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 1.5rem;
-    }
-  }
-}
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1240px) {
   div.about article .aboutMe h4 {
-    margin-bottom: 2.2rem;
-  }
-}
-@media only screen and (max-width: 1130px) {
-  div.about article .aboutMe h4 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   div.about .aboutMe-downloadcv {
     & a {
       margin-top: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 1195px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 2rem;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: .8rem;
+    }
+  }
+}
+@media only screen and (max-width: 1170px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 1.4rem;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: .5rem;
+    }
+  }
+}
+@media only screen and (max-width: 1130px) {
+  div.about article .aboutMe h4 {
+    margin-bottom: 1.2rem;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: .7rem;
     }
   }
 }
@@ -280,6 +265,15 @@
       width: 100%;
     }
   }
+  div.about article .aboutMe h4 {
+    
+    margin: 4rem 0;
+  }
+  div.about .aboutMe-downloadcv {
+    & a {
+      margin-top: 2rem;
+    }
+  }
 }
 @media only screen and (max-width: 815px) {
   div.about {
@@ -291,15 +285,6 @@
   div.about {
     flex-direction: column;
     margin: 1rem 3rem;
-  }
-  .aPropos {
-    & .navigation {
-      & ul {
-        & li {
-          font-size: 1rem;
-        }
-      }
-    }
   }
 }
 @media only screen and (max-width: 590px) {
@@ -326,18 +311,6 @@
         }
         & > p {
           height: 100%;
-        }
-      }
-    }
-  }
-  .aPropos {
-    & .navigation {
-      & ul {
-        padding: 10px 2rem;
-        & li {
-          font-size: 0.7rem;
-          height: 13px;
-          font-weight: 500;
         }
       }
     }
@@ -427,18 +400,7 @@
   }
 }
 @media only screen and (max-width: 400px) {
-  .aPropos {
-    & .navigation {
-      & ul {
-        padding: 10px 1rem;
-        & li {
-          font-size: 0.7rem;
-        }
-      }
-    }
-  }
-
-  div.about {
+ div.about {
     & article {
       .aboutMe {
         h3 {
@@ -493,15 +455,6 @@
       }
     }
   }
-  .aPropos {
-    & .navigation {
-      & ul {
-        & li {
-          font-size: 0.6rem;
-        }
-      }
-    }
-  }
 }
 @media only screen and (max-width: 330px) {
   div.about {
@@ -552,17 +505,9 @@
       }
     }
   }
-  .aPropos {
-    & .navigation {
-      & ul {
-        & li {
-          font-size: 0.6rem;
-        }
-      }
-    }
-  }
 }
 // #######################################
+
 
 // ##########   COMPETENCE   #############
 @media only screen and (max-width: 1300px) {
@@ -632,15 +577,6 @@
       }
     }
   }
-  .competence .navigation {
-    & ul {
-      justify-content: space-between;
-      padding: 10px 1.7rem;
-      & li {
-        font-size: 1rem;
-      }
-    }
-  }
 }
 @media only screen and (max-width: 570px) {
   div.EXP {
@@ -667,40 +603,137 @@
     }
   }
 }
-@media only screen and (max-width: 470px) {
-  .competence .navigation {
+@media only screen and (max-width: 300px) {
+  div.EXP {
+    padding: 3em .5em 3em .5em;
+  }
+}
+// #######################################
+
+
+// #########    NAVIGATION    ############
+@media only screen and (min-width : 1200px) {
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
     & ul {
-      padding: 10px .5rem;
-      & li {
-        font-size: .8rem;
-        height: 14px;
+      justify-content: right;
+      width: 830px;
+    }
+
+    & li {
+      text-align: right;
+      margin: 0 2rem;
+    }
+    .navigation--modifier {
+      width: 400px;
+      height: 1px;
+    }
+  }
+}
+@media only screen and (min-width : 880px) and (max-width: 1199px) {
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    & ul {
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    & li {
+      text-align: right;
+      margin: 0 2rem;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  #root 
+  .accueil,
+  .competence,
+  .aPropos {
+    & .navigation {
+      & ul {
+        justify-content: space-between;
+        padding: 10px .9rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 580px) {
+  #root 
+  .accueil,
+  .competence,
+  .aPropos {
+    & .navigation {
+      & ul {
+        & li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  #root 
+  .accueil,
+  .competence,
+  .aPropos {
+    & .navigation {
+      & ul {
+        padding: 10px .5rem;
+        & li {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  #root 
+  .accueil,
+  .competence,
+  .aPropos {
+    & .navigation {
+      & ul {
+        padding: 15px .3rem;
+        & li {
+          font-size: .8rem;
+          height: 15px;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 370px) {
-  .competence .navigation {
-    & ul {
-
-      padding: 10px .4rem;
-      & li {
-        font-size: .7rem;
-        height: 14px;
+  #root 
+  .accueil,
+  .competence,
+  .aPropos {
+    & .navigation {
+      & ul {
+        padding: 15px .2rem;
+        & li {
+          font-size: .7rem;
+        }
       }
     }
   }
 }
-@media only screen and (max-width: 300px) {
-  div.EXP {
-    padding: 3em .5em 3em .5em;
-  }
-  .competence .navigation {
-    & ul {
-
-      padding: 10px .2rem;
-      & li {
-        font-size: .55rem;
-        height: 10px;
+@media only screen and (max-width: 370px) {
+  #root 
+  .accueil,
+  .competence,
+  .aPropos {
+    & .navigation {
+      & ul {
+        padding: 15px .15rem;
+        & li {
+          font-size: .6rem;
+        }
       }
     }
   }
