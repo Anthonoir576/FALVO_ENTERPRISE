@@ -5,7 +5,7 @@ const APropos = () => {
   return (
     <div className="aPropos">
       <NavBar />
-      <div class="about">
+      <div className="about">
         <aside>
           <figure>
             <img
@@ -13,8 +13,8 @@ const APropos = () => {
               alt="Le développeur web"
             />
           </figure>
-          <div class="about-text_networks">
-            <table class="about-text">
+          <div className="about-text_networks">
+            <table className="about-text">
               <tr>
                 <td>
                   &bull; <strong> Nom / Prénom</strong>
@@ -51,7 +51,7 @@ const APropos = () => {
               </tr>
             </table>
             <hr />
-            <div class="about-networks">
+            <div className="about-networks">
               <div>
                 <a
                   href="https://www.linkedin.com/in/anthony-falvo-25657020a/"
@@ -59,7 +59,7 @@ const APropos = () => {
                   rel="noreferrer"
                 >
                   <img
-                    class="reveal-loaded effectLight02"
+                    className="reveal-loaded effectLight02"
                     src="image/lkn.png"
                     alt="reseaux sociaux"
                   />
@@ -97,7 +97,7 @@ const APropos = () => {
         </aside>
 
         <article>
-          <div class="aboutMe">
+          <div className="aboutMe">
             <h2>FALVO Anthony</h2>
             <h3>
               Développeur React <em>&amp;</em> Node
@@ -121,44 +121,44 @@ const APropos = () => {
             </p>
             <h4>Mes compétences</h4>
 
-            <div class="skill-bars invalide">
-              <div class="bar">
-                <div class="info">
-                  <span class="nameskill">HTML 5 / CSS 3 / SASS</span>
+            <div className="skill-bars invalide">
+              <div className="bar">
+                <div className="info">
+                  <span className="nameskill">HTML 5 / CSS 3 / SASS</span>
                 </div>
-                <div class="progress-line htmlcss">
+                <div className="progress-line htmlcss">
                   <span></span>
                 </div>
               </div>
-              <div class="bar">
-                <div class="info">
-                  <span class="nameskill">REACT / REDUX</span>
+              <div className="bar">
+                <div className="info">
+                  <span className="nameskill">REACT / REDUX</span>
                 </div>
-                <div class="progress-line js">
+                <div className="progress-line js">
                   <span></span>
                 </div>
               </div>
-              <div class="bar">
-                <div class="info">
-                  <span class="nameskill">BACK-END</span>
+              <div className="bar">
+                <div className="info">
+                  <span className="nameskill">BACK-END</span>
                 </div>
-                <div class="progress-line sql">
+                <div className="progress-line sql">
                   <span></span>
                 </div>
               </div>
-              <div class="bar">
-                <div class="info">
-                  <span class="nameskill">
+              <div className="bar">
+                <div className="info">
+                  <span className="nameskill">
                     AUDIO / TRAITEMENT IMAGE &amp; VIDEO
                   </span>
                 </div>
-                <div class="progress-line design">
+                <div className="progress-line design">
                   <span></span>
                 </div>
               </div>
             </div>
 
-            <div class="aboutMe-downloadcv">
+            <div className="aboutMe-downloadcv">
               <a
                 href="/accueil"
                 onclick="return confirm ('En cours de maintenance')"
