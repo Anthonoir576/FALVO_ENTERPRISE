@@ -765,8 +765,12 @@
 @media only screen and (max-width: 740px) {
   .contact .contact-container {
     margin: 2em 1em 0 1em;
+    .formulaire input, textarea, button {
+      margin: 0 auto;
+    }
 
     & .contact-legend {
+      text-align: center;
       & h2 {
         & em {
           display: block;
@@ -781,6 +785,9 @@
   }
   .contact .contact-text .icontxt {
     display: none;
+  }
+  .contact-map {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 400px) {

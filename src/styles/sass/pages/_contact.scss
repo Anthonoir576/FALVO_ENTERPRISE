@@ -90,13 +90,14 @@
 .formulaire {
   width: 100%;
   height: auto;
+  margin-right: 2rem;
 
   & input,
   textarea {
     border: none;
     border-bottom: 2px solid rgba($bluesky, 0.5);
 
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     height: 31px;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.281);
@@ -187,7 +188,7 @@
     text-align: center;
 
     padding: 0.5em 1em 0.4em 1em;
-    width: 90%;
+    width: 100%;
 
     &:hover {
       cursor: pointer;
