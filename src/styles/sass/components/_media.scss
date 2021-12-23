@@ -742,6 +742,7 @@
 }
 // #######################################
 
+
 // ############   CONTACT   ##############
 @media only screen and (max-width: 1400px) {
   body .contact-form_contact {
@@ -763,7 +764,16 @@
 }
 @media only screen and (max-width: 740px) {
   .contact .contact-container {
-    margin: 2em 20em 0 5em;
+    margin: 2em 1em 0 1em;
+
+    & .contact-legend {
+      & h2 {
+        & em {
+          display: block;
+          margin: 2rem 0 0 0;
+        }
+      }
+    }
 
     &:after {
       display: none;
@@ -771,6 +781,19 @@
   }
   .contact .contact-text .icontxt {
     display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact .contact-container {
+    margin: 2em 0em 0 1em;
+
+    & .contact-legend {
+      & h2 {
+        & em {
+          letter-spacing: 4px;
+        }
+      }
+    }
   }
 }
 // #######################################
