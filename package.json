@@ -2,7 +2,7 @@
   "name": "falvo-enterprise",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anthonoir576.github.io/FALVO_ENTERPRISE",
+  "homepage": "https://anthonoir576.github.io/FALVO_ENTERPRISE/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
