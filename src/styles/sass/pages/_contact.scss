@@ -1,0 +1,262 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10em 20em 0 20em;
+
+  & .contact-legend {
+    & h2 {
+      font-size: 40px;
+      letter-spacing: 2px;
+      font-weight: 900;
+      margin: 0 0 40px 0;
+      font-style: italic;
+
+      white-space: nowrap;
+
+      &::first-letter {
+        letter-spacing: 0;
+        font-size: 50px;
+        color: #7272728c;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      & span {
+        color: $gray;
+        font-size: 35px;
+        font-weight: 300;
+      }
+
+      & em {
+        color: $gray;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 10px;
+        font-style: normal;
+        margin-left: 1.8em;
+      }
+    }
+
+    & h3 {
+      margin: 0 0 100px 0;
+      color: $gray;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      font-style: italic;
+    }
+  }
+}
+
+.contact-form_contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulaire {
+  width: 40%;
+  height: auto;
+  border: 2px solid $bluesky;
+  border-radius: 10px;
+
+  & input,
+  textarea {
+    border: 0.5px solid rgba($bluesky, 0.5);
+    border-radius: 10px;
+
+    width: 90%;
+    height: 50px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $bluesky;
+    }
+  }
+
+  & textarea {
+    height: 150px;
+    margin-bottom: 2em;
+  }
+
+  & input:invalid:focus {
+    border: 1px solid rgb(255, 0, 0, 0.4);
+    background-color: rgb(255, 0, 0, 0.05);
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+    transform: translate3d(0, 0, 0);
+  }
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  & span {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    top: 0.7em;
+  }
+
+  & input:invalid ~ span {
+    display: flex;
+    color: red;
+    transition: 0.4s opacity linear;
+  }
+
+  & input:invalid:focus ~ span {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.spaceform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  margin-top: 1em;
+
+  & span {
+    align-self: flex-start;
+    margin: 0 0 0 1.8em;
+    height: 35px;
+  }
+}
+
+.buttonsubmit {
+  margin: 1em 1.5em;
+
+  & button {
+    font-size: 14px;
+    font-weight: 400;
+    border: 1.5px solid white;
+    border-radius: 7px;
+    background-color: $bluesky;
+    letter-spacing: 1px;
+
+    color: white;
+    text-align: center;
+
+    padding: 0.5em 0.7em 0.4em 0.7em;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px 0px $bluesky;
+      filter: saturate(900%);
+
+      transform-origin: top center;
+      animation-name: swing;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+
+      @keyframes swing {
+        20% {
+          transform: rotate3d(0, 0, 1, 5deg);
+        }
+
+        40% {
+          transform: rotate3d(0, 0, 1, -5deg);
+        }
+
+        60% {
+          transform: rotate3d(0, 0, 1, 2.5deg);
+        }
+      }
+    }
+  }
+}
+
+.contact-text_map {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & .contact-text {
+    color: $gray;
+
+    & .icontxt {
+      display: flex;
+      align-items: center;
+
+      & img {
+        margin-right: 2em;
+        text-align: center;
+        width: 14px;
+        height: auto;
+      }
+
+      & p {
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+
+    & :last-child img {
+      width: 12px;
+      margin-left: 2px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.MAP,
+.MAP-S {
+  border: 1px solid $bluesky;
+  border-radius: 15px;
+}
+
+.MAP-S {
+  display: none;
+}
+
+// FOOTER COPYRIGHT
+.contact-copyright {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 3em;
+  color: $gray;
+
+  & em {
+    font-weight: 300;
+  }
+
+  & strong {
+    font-weight: 500;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background-color: black;
+    opacity: 0.1;
+  }
+
+  & p {
+    font-size: 12px;
+    margin: 7px 0;
+  }
+}
