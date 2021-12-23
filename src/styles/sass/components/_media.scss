@@ -762,6 +762,13 @@
     margin: 2em 20em 0 5em;
   }
 }
+@media only screen and (max-width: 950px) {
+  .contact .contact-container {
+  .contact-map {
+    text-align: center;
+  }
+}
+}
 @media only screen and (max-width: 740px) {
   .contact .contact-container {
     margin: 2em 1em 0 1em;
