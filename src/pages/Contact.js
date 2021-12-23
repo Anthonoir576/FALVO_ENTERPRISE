@@ -4,7 +4,7 @@ import NavBar from "../components/Navigation/NavBar";
 const Contact = () => {
   return (
     <div className="contact">
-      <NavBar />  
+      <NavBar />
       <div className="contact-container">
         <div className="contact-legend">
           <h2>
@@ -78,33 +78,13 @@ const Contact = () => {
             </div>
           </form>
 
-          <div className="contact-text_map">
-            <div className="contact-text">
-              <div className="icontxt">
-                <img src="image/02.png" alt="telephone" />
-                <p>07.27.76.52.92</p>
-              </div>
-
-              <div className="icontxt">
-                <img src="image/03.png" alt="e-mail" />
-                <p>anthony.falvo.pro@gmail.com</p>
-              </div>
-
-              <div className="icontxt">
-                <img src="image/01.png" alt="adresse" />
-                <p>
-                  269 Rue du capitaine wazny,
-                  <br /> 59182, Montigny-en-Ostrevent, France
-                </p>
-              </div>
-            </div>
-
+          <div className="contact-map">
             <iframe
               className="MAP"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20359.153255147678!2d3.165719540537278!3d50.36852805927621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2c6167184d777%3A0x40af13e81645fa0!2sMontigny-en-Ostrevent!5e0!3m2!1sfr!2sfr!4v1623908762042!5m2!1sfr!2sfr"
               title="map"
-              width="400"
-              height="300"
+              width="500"
+              height="500"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
@@ -118,6 +98,25 @@ const Contact = () => {
               loading="lazy"
             ></iframe>
           </div>
+        </div>
+      </div>
+      <div className="contact-text">
+        <div className="icontxt">
+          <img src="image/01.png" alt="adresse" />
+          <p>
+            269 Rue du capitaine wazny,
+            <br /> Montigny-en-Ostrevent,
+            <br /> 59182, France
+          </p>
+        </div>
+        <div className="icontxt">
+          <img src="image/03.png" alt="e-mail" />
+          <p>anthony.falvo.pro@gmail.com</p>
+        </div>
+
+        <div className="icontxt">
+          <img src="image/02.png" alt="telephone" />
+          <p>07.27.76.52.92</p>
         </div>
       </div>
     </div>
