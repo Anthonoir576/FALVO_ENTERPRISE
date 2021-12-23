@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
 
-  margin: 2em 20em 0 20em;
+  margin: 2em 25em 0 10em;
 
   &:after {
     content: "";
-    height: 700px;
-    width: 700px;
+    height: 730px;
+    width: 730px;
     background: linear-gradient(
       60deg,
       #ffdc80,
@@ -26,11 +26,11 @@
     top: 150px;
     right: -460px;
     z-index: -10;
-    animation: contactAnim 50s alternate infinite;
+    animation: contactAnim 10s alternate infinite;
 
     @keyframes contactAnim {
       50% {
-        transform: scale(1.05);
+        transform: scale(1.01);
       }
       100% {
         transform: scale(1);
@@ -94,14 +94,15 @@
   & input,
   textarea {
     border: none;
-    border-bottom: 1px solid rgba($bluesky, 0.5);
+    border-bottom: 2px solid rgba($bluesky, 0.5);
 
     width: 90%;
-    height: 39px;
+    height: 31px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.281);
 
     &:focus {
       outline: none;
-      border: .5px solid $bluesky;
+      border: 0.5px solid $bluesky;
     }
   }
 
@@ -161,11 +162,7 @@
 .spaceform {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  width: 100%;
   height: auto;
-
   margin-top: 1em;
 
   & span {
@@ -176,8 +173,6 @@
 }
 
 .buttonsubmit {
-  margin: 1em 1.5em;
-
   & button {
     font-size: 14px;
     font-weight: 400;
@@ -189,12 +184,14 @@
     color: white;
     text-align: center;
 
-    padding: 0.5em 0.7em 0.4em 0.7em;
+    padding: 0.5em 1em 0.4em 1em;
+    width: 90%;
 
     &:hover {
-      transform: scale(1.1);
+      cursor: pointer;
+      transform: scale(1.02);
       box-shadow: 0px 0px 30px 0px $bluesky;
-      filter: saturate(900%);
+      filter: saturate(100%);
 
       transform-origin: top center;
       animation-name: swing;
@@ -203,30 +200,29 @@
 
       @keyframes swing {
         20% {
-          transform: rotate3d(0, 0, 1, 5deg);
+          transform: rotate3d(0, 0, 1, 1deg);
         }
 
         40% {
-          transform: rotate3d(0, 0, 1, -5deg);
+          transform: rotate3d(0, 0, 1, -1deg);
         }
 
         60% {
-          transform: rotate3d(0, 0, 1, 2.5deg);
+          transform: rotate3d(0, 0, 1, 0.5deg);
         }
       }
     }
   }
 }
 
-
 .contact-text {
   position: absolute;
-  top: 40%;
+  top: 35%;
   right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 300px;
+  height: 400px;
   color: white;
 
   & .icontxt {
@@ -249,10 +245,21 @@
   & :last-child img {
     width: 12px;
     margin-left: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  & .icon1 {
+    transform: translate(-15px, -10px);
+  }
+
+  & .icon2 {
+    transform: translate(-50px, -15px);
+  }
+
+  & .icon3 {
+    transform: translate(-5px, 0px);
   }
 }
-
 
 .MAP,
 .MAP-S {
@@ -262,36 +269,4 @@
 
 .MAP-S {
   display: none;
-}
-
-// FOOTER COPYRIGHT
-.contact-copyright {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin-top: 3em;
-  color: $gray;
-
-  & em {
-    font-weight: 300;
-  }
-
-  & strong {
-    font-weight: 500;
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-
-    background-color: black;
-    opacity: 0.1;
-  }
-
-  & p {
-    font-size: 12px;
-    margin: 7px 0;
-  }
 }

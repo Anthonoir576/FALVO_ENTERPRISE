@@ -67,7 +67,7 @@ const Contact = () => {
                 placeholder="&ensp; Message *"
               ></textarea>
             </div>
-            <div className="buttonsubmit">
+            <div className="spaceform buttonsubmit">
               <button
                 id="valid-formulaire"
                 type="submit"
@@ -101,7 +101,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact-text">
-        <div className="icontxt">
+        <div className="icontxt icon1">
           <img src="image/01.png" alt="adresse" />
           <p>
             269 Rue du capitaine wazny,
@@ -109,12 +109,11 @@ const Contact = () => {
             <br /> 59182, France
           </p>
         </div>
-        <div className="icontxt">
+        <div className="icontxt icon2">
           <img src="image/03.png" alt="e-mail" />
           <p>anthony.falvo.pro@gmail.com</p>
         </div>
-
-        <div className="icontxt">
+        <div className="icontxt icon3">
           <img src="image/02.png" alt="telephone" />
           <p>07.27.76.52.92</p>
         </div>
