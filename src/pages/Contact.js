@@ -102,7 +102,7 @@ const Contact = () => {
       </div>
       <div className="contact-text">
         <div className="icontxt icon1">
-          <img src="image/01.png" alt="adresse" />
+          <img src={"./assets/images/01.png"} alt="adresse" />
           <p>
             269 Rue du capitaine wazny,
             <br /> Montigny-en-Ostrevent,
@@ -110,11 +110,11 @@ const Contact = () => {
           </p>
         </div>
         <div className="icontxt icon2">
-          <img src="image/03.png" alt="e-mail" />
+          <img src={"./assets/images/03.png"} alt="e-mail" />
           <p>anthony.falvo.pro@gmail.com</p>
         </div>
         <div className="icontxt icon3">
-          <img src="image/02.png" alt="telephone" />
+          <img src={"./assets/images/02.png"} alt="telephone" />
           <p>07.27.76.52.92</p>
         </div>
       </div>

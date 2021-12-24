@@ -16,7 +16,7 @@ const Accueil = () => {
             <NavBar />
             <div className='accueil-information'>
                 <div className='information-image'>
-                    <img src="./image/photoHEADd.png" alt="le developpeur web" />
+                    <img src={'./assets/images/photo-profil.png'} alt="le developpeur web" />
                 </div>
                 <div className="text-container">
                     <div className='information-dev'>
@@ -24,7 +24,7 @@ const Accueil = () => {
                         <h2>Développeur React <span>&amp;</span> Node</h2>
                     </div>
                     <div className='information-contact'>
-                        <NavLink exact to='/Contact' aria-label='Contact developpeur web'>
+                        <NavLink exact to='/contact' aria-label='Contact developpeur web'>
                             Contactez-moi
                         </NavLink>
                     </div>
