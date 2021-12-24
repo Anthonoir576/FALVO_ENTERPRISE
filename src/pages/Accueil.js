@@ -16,7 +16,7 @@ const Accueil = () => {
             <NavBar />
             <div className='accueil-information'>
                 <div className='information-image'>
-                    <img src={'./assets/images/photo-profil.png'} alt="le developpeur web" />
+                    <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil.png"} alt="le developpeur web" />
                 </div>
                 <div className="text-container">
                     <div className='information-dev'>

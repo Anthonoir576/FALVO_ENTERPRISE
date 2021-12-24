@@ -23,7 +23,7 @@ const Competence = () => {
               &bull; Experience :
             </h4>
             <div className="EXP-items">
-              <img src={"./assets/images/icon01.png"} alt="icon book" />
+              <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon01.png"} alt="icon book" />
               <p>
                 <strong>2019 - 2021</strong>
                 <br />
@@ -31,7 +31,7 @@ const Competence = () => {
               </p>
             </div>
             <div className="EXP-items">
-              <img src={"./assets/images/icon02.png"} alt="icon check list" />
+              <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon02.png"} alt="icon check list" />
               <p>
                 <strong>2015 - 2018</strong>
                 <br />
@@ -39,7 +39,7 @@ const Competence = () => {
               </p>
             </div>
             <div className="EXP-items">
-              <img src={"./assets/images/icon03.png"} alt="diploma" />
+              <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon03.png"} alt="diploma" />
               <p>
                 <strong>2011 - 2015</strong>
                 <br />
@@ -52,7 +52,7 @@ const Competence = () => {
               &bull; Formation :
             </h4>
             <div className="EXP-items">
-              <img src={"./assets/images/icon01.png"} alt="icon book" />
+              <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon01.png"} alt="icon book" />
               <p>
                 <strong>2021 - Développeur web</strong>
                 <br />
@@ -60,7 +60,7 @@ const Competence = () => {
               </p>
             </div>
             <div className="EXP-items">
-              <img src={"./assets/images/icon02.png"} alt="icon check list" />
+              <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon02.png"} alt="icon check list" />
               <p>
                 <strong>2019 - R-408</strong>
                 <br />
@@ -68,7 +68,7 @@ const Competence = () => {
               </p>
             </div>
             <div className="EXP-items">
-              <img src={"./assets/images/icon03.png"} alt="diploma" />
+              <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon03.png"} alt="diploma" />
               <p>
                 <strong>2010 - Fin de scolarité </strong>
                 <br />

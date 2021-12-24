@@ -6,7 +6,7 @@ const Projets = () => {
         <div className='myProjets'>
             <NavBar />
             <p>En cours de préparation</p>
-            <img src="./image/404.png" alt="" />
+            <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/404.png"} alt="404 no found" />
         </div>
     );
 };
