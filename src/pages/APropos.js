@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/Navigation/NavBar";
+import { NavLink } from "react-router-dom";
 
 const APropos = () => {
   return (
@@ -159,11 +160,9 @@ const APropos = () => {
             </div>
 
             <div className="aboutMe-downloadcv">
-              <a
-                href="/"
-              >
-                Voir le profil du développeur
-              </a>
+            <NavLink exact to='/Accueil' aria-label='Accueil du site Falvo Enterprise'>
+              Voir le profil du développeur
+            </NavLink>
             </div>
           </div>
         </article>
