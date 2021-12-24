@@ -160,7 +160,7 @@ const APropos = () => {
             </div>
 
             <div className="aboutMe-downloadcv">
-            <NavLink exact to='/Accueil' aria-label='Accueil du site Falvo Enterprise'>
+            <NavLink exact to='/' aria-label='Accueil du site Falvo Enterprise'>
               Voir le profil du développeur
             </NavLink>
             </div>
