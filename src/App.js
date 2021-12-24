@@ -17,7 +17,7 @@ function App() {
           <Route exact path='/competence' element={ <Competence /> } />
           <Route exact path='/projets'    element={ <Projets /> } />
           <Route exact path='/contact'    element={ <Contact /> } />
-          <Route path='*'                 element={ <Navigate replace to='/' /> } />
+          <Route path='*'                 element={ <Navigate replace to='/accueil' /> } />
         </Routes>
     </BrowserRouter>
   );
