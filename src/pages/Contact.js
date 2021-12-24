@@ -2,6 +2,9 @@ import React from "react";
 import NavBar from "../components/Navigation/NavBar";
 
 const Contact = () => {
+
+  console.log(window.location.href);
+
   return (
     <div className="contact">
       <NavBar />
@@ -88,7 +91,7 @@ const Contact = () => {
               allowfullscreen=""
               loading="lazy"
             ></iframe>
-            <iframe
+            {/* <iframe
               className="MAP-S"
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20364.294020458543!2d3.1767013!3d50.356545149999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1624428366977!5m2!1sfr!2sfr"
               title="map small"
@@ -96,7 +99,7 @@ const Contact = () => {
               height="300"
               allowfullscreen=""
               loading="lazy"
-            ></iframe>
+            ></iframe> */}
           </div>
         </div>
       </div>
