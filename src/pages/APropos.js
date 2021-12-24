@@ -10,7 +10,7 @@ const APropos = () => {
         <aside>
           <figure>
             <img
-              src="image/blocPresentationrefonte.png"
+              src={"./assets/images/photo-profil-about.png"}
               alt="Le développeur web"
             />
           </figure>
@@ -61,7 +61,7 @@ const APropos = () => {
                 >
                   <img
                     className="reveal-loaded effectLight02"
-                    src="image/lkn.png"
+                    src={"./assets/images/linkedin.png"}
                     alt="reseaux sociaux"
                   />
                 </a>
@@ -72,7 +72,9 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="image/gthb2.png" alt="reseaux sociaux" />
+                  <img src={"./assets/images/github.png"} 
+                       alt="reseaux sociaux" 
+                  />
                 </a>
               </div>
               <div>
@@ -81,7 +83,9 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="image/cig.png" alt="reseaux sociaux" />
+                  <img src={"./assets/images/codeingame.png"}
+                       alt="reseaux sociaux" 
+                  />
                 </a>
               </div>
               <div>
@@ -90,7 +94,9 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="image/f.png" alt="reseaux sociaux" />
+                  <img src={"./assets/images/facebook.png"} 
+                       alt="reseaux sociaux" 
+                  />
                 </a>
               </div>
             </div>
