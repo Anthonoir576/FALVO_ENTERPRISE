@@ -10,7 +10,7 @@ const APropos = () => {
         <aside>
           <figure>
             <img
-              src={"./assets/images/photo-profil-about.png"}
+              src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil_about.png"}
               alt="Le développeur web"
             />
           </figure>
@@ -61,7 +61,7 @@ const APropos = () => {
                 >
                   <img
                     className="reveal-loaded effectLight02"
-                    src={"./assets/images/linkedin.png"}
+                    src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/linkedin.png"}
                     alt="reseaux sociaux"
                   />
                 </a>
@@ -72,7 +72,7 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={"./assets/images/github.png"} 
+                  <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/github.png"} 
                        alt="reseaux sociaux" 
                   />
                 </a>
@@ -83,7 +83,7 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={"./assets/images/codeingame.png"}
+                  <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/codeingame.png"}
                        alt="reseaux sociaux" 
                   />
                 </a>
@@ -94,7 +94,7 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={"./assets/images/facebook.png"} 
+                  <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/facebook.png"} 
                        alt="reseaux sociaux" 
                   />
                 </a>
