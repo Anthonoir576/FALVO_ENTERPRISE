@@ -6,7 +6,7 @@ const Projets = () => {
         <div className='myProjets'>
             <NavBar />
             <p>En cours de préparation</p>
-            <img src="./image/404.png" alt="" />
+            <img src={"./assets/images/404.png"} alt="" />
         </div>
     );
 };
