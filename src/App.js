@@ -12,11 +12,11 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-          <Route exact path='/Accueil'    element={ <Accueil /> } />
-          <Route exact path='/A_propos'   element={ <APropos /> } />
-          <Route exact path='/Competence' element={ <Competence /> } />
-          <Route exact path='/Projets'    element={ <Projets /> } />
-          <Route exact path='/Contact'    element={ <Contact /> } />
+          <Route exact path='/'    element={ <Accueil /> } />
+          <Route exact path='/'   element={ <APropos /> } />
+          <Route exact path='/' element={ <Competence /> } />
+          <Route exact path='/'    element={ <Projets /> } />
+          <Route exact path='/'    element={ <Contact /> } />
           <Route path='*'                 element={ <Navigate replace to='/Accueil' /> } />
         </Routes>
     </BrowserRouter>
