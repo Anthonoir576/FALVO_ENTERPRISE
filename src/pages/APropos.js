@@ -160,7 +160,7 @@ const APropos = () => {
 
             <div className="aboutMe-downloadcv">
               <a
-                href="/accueil"
+                href="/Accueil"
                 onclick="return confirm ('En cours de maintenance')"
               >
                 Voir le profil du développeur
