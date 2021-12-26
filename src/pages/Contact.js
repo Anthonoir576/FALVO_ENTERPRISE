@@ -1,9 +1,82 @@
-import React from "react";
-import NavBar from "../components/Navigation/NavBar";
+import React             from "react";
+import { useState }      from "react";
+import NavBar            from "../components/Navigation/NavBar";
+import { init }          from "emailjs-com";
+import { regexNom,
+         regexEmail,
+         regexMessage,
+         regexObjet }    from '../components/Utils/Regex';
+
+
+init("user_kFyT3rLA41sQVqH9BcaF5");
+
 
 const Contact = () => {
+  const [name, setName]       = useState("");
+  const [email, setEmail]     = useState("");
+  const [object, setObject]   = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError]     = useState(false);
+  const [msgErr, setMsgErr]  = useState('')
+ 
+  const sendToMail = (e) => {
+    e.preventDefault();
 
-  console.log(window.location.href);
+    if (!regexNom(name)) {
+ 
+      setError(true);
+      setMsgErr('Votre nom comporte une erreur..');
+
+    } else if (!regexEmail(email)) {
+
+      setError(true);
+      setMsgErr('Votre e-mail comporte une erreur..');
+
+    } else if (!regexObjet(object)) {
+
+      setError(true);
+      setMsgErr('Votre objet comporte une erreur..');
+
+    } else if (!regexMessage(message)) {
+
+      setError(true);
+      setMsgErr('Votre message comporte une erreur..');
+
+    } else if (regexEmail(email) &&
+               regexObjet(object) &&
+               regexMessage(message) && 
+               regexNom(name)) {
+
+      const sendEmailJs = (templateId, variables) => {
+        window.emailjs
+          .send('service_s8v4a09', templateId, variables)
+          .then((resultat) => {
+            console.log('succès !');
+            setName('');
+            setObject('');
+            setEmail('');
+            setMessage('');
+            setError(false);
+            setMsgErr('');
+          })
+          .catch(
+            (erreur) =>
+              (document.querySelector(".formulaire").innerHTML =
+                "Une erreur s'est produite, veuillez réessayer.")
+          );
+      };
+  
+      sendEmailJs("template_ljp5ax8", {
+        name : name.trim(),
+        email : email.trim(),
+        object : object.trim(),
+        message : message.trim(),
+      });
+
+    };
+
+
+  };
 
   return (
     <div className="contact">
@@ -21,17 +94,15 @@ const Contact = () => {
         </div>
 
         <div className="contact-form_contact">
-          <form className="formulaire" action="app.js" method="post">
+          <form className="formulaire">
             <div className="spaceform">
               <input
                 type="text"
                 required
                 id="name"
-                name="user_name"
-                minlength="3"
-                maxlength="20"
-                pattern="^[( )a-zA-Z]+$"
+                name="name"
                 placeholder="&ensp; Noms *"
+                onChange={(e) => setName(e.target.value)}
               />
               <span>Veuillez entrer uniquement des lettres</span>
             </div>
@@ -40,10 +111,10 @@ const Contact = () => {
                 type="email"
                 required
                 id="mail"
-                name="user_mail"
-                minlength="10"
-                maxlength="25"
+                name="email"
                 placeholder="&ensp; E-mail *"
+                autoComplete="off"
+                onChange={(e) => setEmail(e.target.value)}
               />
               <span>Veuillez entrer un e-mail valide</span>
             </div>
@@ -52,11 +123,9 @@ const Contact = () => {
                 type="text"
                 required
                 id="objet"
-                name="user_objet"
-                minlength="5"
-                maxlength="25"
-                pattern="^[( )a-zA-Z]+$"
+                name="object"
                 placeholder="&ensp; Objet *"
+                onChange={(e) => setObject(e.target.value)}
               />
               <span>Veuillez entrer uniquement des lettres</span>
             </div>
@@ -64,21 +133,21 @@ const Contact = () => {
               <textarea
                 id="msg"
                 required
-                name="user_message"
-                minlength="10"
-                maxlength="500"
+                name="message"
                 placeholder="&ensp; Message *"
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div className="spaceform buttonsubmit">
-              <button
-                id="valid-formulaire"
-                type="submit"
-                onclick="return confirm ('En cours de MAINTENANCE ! Veuillez utiliser Anthony.falvo.pro@gmail.com pour tous contact, Merci.')"
-              >
+              <button id="valid-formulaire" type="button" onClick={sendToMail}>
                 VALIDER
               </button>
             </div>
+            {error === true && (
+              <div className="spaceForm error-form">
+                <span className="errorFormulaire">{msgErr}</span>
+              </div>
+            )}
           </form>
 
           <div className="contact-map">
@@ -88,24 +157,20 @@ const Contact = () => {
               title="map"
               width="500"
               height="500"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
             ></iframe>
-            {/* <iframe
-              className="MAP-S"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20364.294020458543!2d3.1767013!3d50.356545149999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1624428366977!5m2!1sfr!2sfr"
-              title="map small"
-              width="300"
-              height="300"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe> */}
           </div>
         </div>
       </div>
       <div className="contact-text">
         <div className="icontxt icon1">
-          <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/01.png"} alt="adresse" />
+          <img
+            src={
+              "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/01.png"
+            }
+            alt="adresse"
+          />
           <p>
             269 Rue du capitaine wazny,
             <br /> Montigny-en-Ostrevent,
@@ -113,11 +178,21 @@ const Contact = () => {
           </p>
         </div>
         <div className="icontxt icon2">
-          <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/03.png"} alt="e-mail" />
+          <img
+            src={
+              "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/03.png"
+            }
+            alt="e-mail"
+          />
           <p>anthony.falvo.pro@gmail.com</p>
         </div>
         <div className="icontxt icon3">
-          <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/02.png"} alt="telephone" />
+          <img
+            src={
+              "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/02.png"
+            }
+            alt="telephone"
+          />
           <p>07.27.76.52.92</p>
         </div>
       </div>

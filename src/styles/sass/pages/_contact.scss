@@ -275,3 +275,23 @@
 .MAP-S {
   display: none;
 }
+
+#root 
+.contact 
+.contact-container 
+.contact-form_contact
+.formulaire
+.spaceForm.error-form {
+  & span {
+    display: block;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    color: white;
+    background: red!important;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+  }
+}
