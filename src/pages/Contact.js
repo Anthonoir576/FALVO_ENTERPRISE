@@ -1,11 +1,24 @@
-import React     from "react";
-import NavBar    from "../components/Navigation/NavBar";
-import{ init }   from 'emailjs-com';
-import emailjs   from 'emailjs-com';
+import React        from "react";
+import { useState } from "react";
+import NavBar       from "../components/Navigation/NavBar";
+import{ init }      from 'emailjs-com';
+import emailjs      from 'emailjs-com';
+
 init("user_kFyT3rLA41sQVqH9BcaF5");
 
 
 const Contact = () => {
+
+  const [name, setName]       = useState('');
+  const [email, setEmail]     = useState('');
+  const [object, setObject]   = useState('');
+  const [message, setMessage] = useState('');
+
+  const sendToMail = (e) => {
+
+    
+  };
+
 
   (function(){
     emailjs.init();
@@ -33,11 +46,12 @@ const Contact = () => {
                 type="text"
                 required
                 id="name"
-                name="user_name"
+                name="name"
                 minlength="2"
                 maxlength="20"
                 pattern="^[( )a-zA-Z]+$"
                 placeholder="&ensp; Noms *"
+                oncChange={(e) => setName(e.target.value)}
               />
               <span>Veuillez entrer uniquement des lettres</span>
             </div>
@@ -46,10 +60,12 @@ const Contact = () => {
                 type="email"
                 required
                 id="mail"
-                name="user_mail"
+                name="email"
                 minlength="7"
                 maxlength="45"
                 placeholder="&ensp; E-mail *"
+                autoComplete="off"
+                oncChange={(e) => setEmail(e.target.value)}
               />
               <span>Veuillez entrer un e-mail valide</span>
             </div>
@@ -58,11 +74,12 @@ const Contact = () => {
                 type="text"
                 required
                 id="objet"
-                name="user_objet"
+                name="object"
                 minlength="5"
                 maxlength="40"
                 pattern="^[( )a-zA-Z]+$"
                 placeholder="&ensp; Objet *"
+                oncChange={(e) => setObject(e.target.value)}
               />
               <span>Veuillez entrer uniquement des lettres</span>
             </div>
@@ -70,17 +87,18 @@ const Contact = () => {
               <textarea
                 id="msg"
                 required
-                name="user_message"
+                name="message"
                 minlength="10"
                 maxlength="500"
                 placeholder="&ensp; Message *"
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div className="spaceform buttonsubmit">
               <button
                 id="valid-formulaire"
-                type="submit"
-                onclick="return confirm ('En cours de MAINTENANCE ! Veuillez utiliser Anthony.falvo.pro@gmail.com pour tous contact, Merci.')"
+                type="button"
+                onclick={sendToMail}
               >
                 VALIDER
               </button>
