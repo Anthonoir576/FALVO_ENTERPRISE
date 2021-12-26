@@ -1,9 +1,15 @@
-import React from "react";
-import NavBar from "../components/Navigation/NavBar";
+import React     from "react";
+import NavBar    from "../components/Navigation/NavBar";
+import{ init }   from 'emailjs-com';
+import emailjs   from 'emailjs-com';
+init("user_kFyT3rLA41sQVqH9BcaF5");
+
 
 const Contact = () => {
 
-  console.log(window.location.href);
+  (function(){
+    emailjs.init();
+  })();
 
   return (
     <div className="contact">
@@ -28,7 +34,7 @@ const Contact = () => {
                 required
                 id="name"
                 name="user_name"
-                minlength="3"
+                minlength="2"
                 maxlength="20"
                 pattern="^[( )a-zA-Z]+$"
                 placeholder="&ensp; Noms *"
@@ -41,8 +47,8 @@ const Contact = () => {
                 required
                 id="mail"
                 name="user_mail"
-                minlength="10"
-                maxlength="25"
+                minlength="7"
+                maxlength="45"
                 placeholder="&ensp; E-mail *"
               />
               <span>Veuillez entrer un e-mail valide</span>
@@ -54,7 +60,7 @@ const Contact = () => {
                 id="objet"
                 name="user_objet"
                 minlength="5"
-                maxlength="25"
+                maxlength="40"
                 pattern="^[( )a-zA-Z]+$"
                 placeholder="&ensp; Objet *"
               />
