@@ -1,10 +1,14 @@
-import React        from "react";
-import { useState } from "react";
-import NavBar       from "../components/Navigation/NavBar";
-import { init }     from "emailjs-com";
+import React             from "react";
+import { useState }      from "react";
+import NavBar            from "../components/Navigation/NavBar";
+import { init }          from "emailjs-com";
+import { regexNom,
+         regexEmail,
+         regexMessage,
+         regexObjet }    from '../components/Utils/Regex';
+
 
 init("user_kFyT3rLA41sQVqH9BcaF5");
-
 
 
 const Contact = () => {
@@ -12,33 +16,65 @@ const Contact = () => {
   const [email, setEmail]     = useState("");
   const [object, setObject]   = useState("");
   const [message, setMessage] = useState("");
-
+  const [error, setError]     = useState(false);
+  const [msgErr, setMsgErr]  = useState('')
+ 
   const sendToMail = (e) => {
     e.preventDefault();
 
-    const sendEmailJs = (templateId, variables) => {
-      window.emailjs
-        .send('service_s8v4a09', templateId, variables)
-        .then((resultat) => {
-          console.log('succès !');
-          setName('');
-          setObject('');
-          setEmail('');
-          setMessage('');
-        })
-        .catch(
-          (erreur) =>
-            (document.querySelector(".formulaire").innerHTML =
-              "Une erreur s'est produite, veuillez réessayer.")
-        );
+    if (!regexNom(name)) {
+ 
+      setError(true);
+      setMsgErr('Votre nom comporte une erreur..');
+
+    } else if (!regexEmail(email)) {
+
+      setError(true);
+      setMsgErr('Votre e-mail comporte une erreur..');
+
+    } else if (!regexObjet(object)) {
+
+      setError(true);
+      setMsgErr('Votre objet comporte une erreur..');
+
+    } else if (!regexMessage(message)) {
+
+      setError(true);
+      setMsgErr('Votre message comporte une erreur..');
+
+    } else if (regexEmail(email) &&
+               regexObjet(object) &&
+               regexMessage(message) && 
+               regexNom(name)) {
+
+      const sendEmailJs = (templateId, variables) => {
+        window.emailjs
+          .send('service_s8v4a09', templateId, variables)
+          .then((resultat) => {
+            console.log('succès !');
+            setName('');
+            setObject('');
+            setEmail('');
+            setMessage('');
+            setError(false);
+            setMsgErr('');
+          })
+          .catch(
+            (erreur) =>
+              (document.querySelector(".formulaire").innerHTML =
+                "Une erreur s'est produite, veuillez réessayer.")
+          );
+      };
+  
+      sendEmailJs("template_ljp5ax8", {
+        name : name.trim(),
+        email : email.trim(),
+        object : object.trim(),
+        message : message.trim(),
+      });
+
     };
 
-    sendEmailJs("template_ljp5ax8", {
-      name : name.trim(),
-      email : email.trim(),
-      object : object.trim(),
-      message : message.trim(),
-    });
 
   };
 
@@ -107,6 +143,11 @@ const Contact = () => {
                 VALIDER
               </button>
             </div>
+            {error === true && (
+              <div className="spaceForm error-form">
+                <span className="errorFormulaire">{msgErr}</span>
+              </div>
+            )}
           </form>
 
           <div className="contact-map">

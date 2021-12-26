@@ -17,7 +17,9 @@ export const regexObjet = (objetTest) => {
 
     if (objetTest.length < 5 || objetTest.length > 40) {
         return false;
-    };
+    } else {
+        return true;
+    }
 
 };
 
@@ -25,6 +27,8 @@ export const regexMessage = (messageTest) => {
 
     if (messageTest.length < 5 || messageTest.length > 500) {
         return false;
-    };
+    } else {
+        return true;
+    }
 
 };
