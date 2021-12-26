@@ -2,9 +2,10 @@ import React        from "react";
 import { useState } from "react";
 import NavBar       from "../components/Navigation/NavBar";
 import { init }     from "emailjs-com";
-import emailjs      from "emailjs-com";
 
 init("user_kFyT3rLA41sQVqH9BcaF5");
+
+
 
 const Contact = () => {
   const [name, setName]       = useState("");
@@ -17,7 +18,7 @@ const Contact = () => {
 
     const sendEmailJs = (templateId, variables) => {
       window.emailjs
-        .send('gmail', templateId, variables)
+        .send('service_s8v4a09', templateId, variables)
         .then((resultat) => {
           console.log('succès !');
           setName('');
@@ -33,17 +34,13 @@ const Contact = () => {
     };
 
     sendEmailJs("template_ljp5ax8", {
-      name : name,
-      email : email,
-      object : object,
-      message : message,
+      name : name.trim(),
+      email : email.trim(),
+      object : object.trim(),
+      message : message.trim(),
     });
 
   };
-
-  // (function(){
-  //   emailjs.init();
-  // })();
 
   return (
     <div className="contact">
