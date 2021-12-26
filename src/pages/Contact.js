@@ -1,26 +1,19 @@
-import React from "react";
+import React        from "react";
 import { useState } from "react";
-import NavBar from "../components/Navigation/NavBar";
-import { init } from "emailjs-com";
-import emailjs from "emailjs-com";
+import NavBar       from "../components/Navigation/NavBar";
+import { init }     from "emailjs-com";
+import emailjs      from "emailjs-com";
 
 init("user_kFyT3rLA41sQVqH9BcaF5");
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [object, setObject] = useState("");
+  const [name, setName]       = useState("");
+  const [email, setEmail]     = useState("");
+  const [object, setObject]   = useState("");
   const [message, setMessage] = useState("");
 
   const sendToMail = (e) => {
     e.preventDefault();
-
-    sendEmailJs("template_ljp5ax8", {
-      name,
-      email,
-      object,
-      message,
-    });
 
     const sendEmailJs = (templateId, variables) => {
       window.emailjs
@@ -38,6 +31,14 @@ const Contact = () => {
               "Une erreur s'est produite, veuillez réessayer.")
         );
     };
+
+    sendEmailJs("template_ljp5ax8", {
+      name : name,
+      email : email,
+      object : object,
+      message : message,
+    });
+
   };
 
   // (function(){
