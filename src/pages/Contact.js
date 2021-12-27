@@ -1,11 +1,13 @@
-import React             from "react";
-import { useState }      from "react";
-import NavBar            from "../components/Navigation/NavBar";
-import { init }          from "emailjs-com";
+import React               from "react";
+import { useState }        from "react";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import NavBar              from "../components/Navigation/NavBar";
+import { init }            from "emailjs-com";
 import { regexNom,
          regexEmail,
          regexMessage,
-         regexObjet }    from '../components/Utils/Regex';
+         regexObjet }      from '../components/Utils/Regex';
+
 
 
 init("user_kFyT3rLA41sQVqH9BcaF5");
@@ -75,8 +77,9 @@ const Contact = () => {
       setMsgErr('Votre message doit contenir entre 5 et 500 caractères...');
     };
 
-
   };
+
+
 
   return (
     <div className="contact">
@@ -179,11 +182,13 @@ const Contact = () => {
             }
             alt="adresse"
           />
-          <p>
-            269 Rue du capitaine wazny,
-            <br /> Montigny-en-Ostrevent,
-            <br /> 59182, France
-          </p>
+          <CopyToClipboard text="180 Rue du capitaine wazny, Montigny-en-Ostrevent, 59182, France"> 
+            <p>
+              180 Rue du capitaine wazny,
+              <br /> Montigny-en-Ostrevent,
+              <br /> 59182, France
+            </p>
+          </CopyToClipboard>
         </div>
         <div className="icontxt icon2">
           <img
@@ -192,7 +197,9 @@ const Contact = () => {
             }
             alt="e-mail"
           />
-          <p>anthony.falvo.pro@gmail.com</p>
+          <CopyToClipboard text="anthony.falvo.pro@gmail.com">
+            <p>anthony.falvo.pro@gmail.com</p>
+          </CopyToClipboard>
         </div>
         <div className="icontxt icon3">
           <img
@@ -201,11 +208,15 @@ const Contact = () => {
             }
             alt="telephone"
           />
-          <p>07.27.76.52.92</p>
+          <CopyToClipboard text='0627765292'>
+            <p>06.27.76.52.92</p>
+          </CopyToClipboard>
         </div>
       </div>
     </div>
   );
+
+
 };
 
 export default Contact;
