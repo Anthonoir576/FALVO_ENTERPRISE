@@ -85,6 +85,11 @@
 @media only screen and (max-width: 500px) {
   .accueil {
     & .accueil-information {
+      & .information-dev {
+        & h1 {
+          font-size: 2.38rem;
+        }
+      }
       & .information-image img {
         max-width: 95%;
       }
@@ -771,9 +776,9 @@
 }
 @media only screen and (max-width: 740px) {
   .contact .contact-container {
-    margin: 2em 1em 0 1em;
+    margin: 2em 1em 0 .5em;
     .formulaire input, textarea, button, span {
-      margin: 0 auto;
+      margin: 0 auto 40px auto;
     }
 
     & .contact-legend {
@@ -783,6 +788,9 @@
           display: block;
           margin: 2rem 0 0 0;
         }
+      }
+      & h3 {
+        font-size: 1rem;
       }
     }
 
@@ -806,6 +814,9 @@
         & em {
           letter-spacing: 4px;
         }
+      }
+      & h3 {
+        font-size: 14px;
       }
     }
   }

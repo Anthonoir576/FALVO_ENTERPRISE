@@ -17,35 +17,16 @@ const Contact = () => {
   const [object, setObject]   = useState("");
   const [message, setMessage] = useState("");
   const [error, setError]     = useState(false);
-  const [msgErr, setMsgErr]  = useState('')
+  const [msgErr, setMsgErr]  = useState('');
+
  
   const sendToMail = (e) => {
     e.preventDefault();
 
-    if (!regexNom(name)) {
- 
-      setError(true);
-      setMsgErr('Votre nom comporte une erreur..');
-
-    } else if (!regexEmail(email)) {
-
-      setError(true);
-      setMsgErr('Votre e-mail comporte une erreur..');
-
-    } else if (!regexObjet(object)) {
-
-      setError(true);
-      setMsgErr('Votre objet comporte une erreur..');
-
-    } else if (!regexMessage(message)) {
-
-      setError(true);
-      setMsgErr('Votre message comporte une erreur..');
-
-    } else if (regexEmail(email) &&
-               regexObjet(object) &&
-               regexMessage(message) && 
-               regexNom(name)) {
+    if (regexEmail(email) &&
+        regexObjet(object) &&
+        regexMessage(message) && 
+        regexNom(name)) {
 
       const sendEmailJs = (templateId, variables) => {
         window.emailjs
@@ -73,6 +54,25 @@ const Contact = () => {
         message : message.trim(),
       });
 
+    } else if (!regexNom(name)) {
+ 
+      setError(true);
+      setMsgErr('Votre nom doit contenir entre 2 et 30 caractères...');
+
+    } else if (!regexEmail(email)) {
+
+      setError(true);
+      setMsgErr('Votre e-mail comporte une erreur...');
+
+    } else if (!regexObjet(object)) {
+
+      setError(true);
+      setMsgErr('Votre objet doit contenir entre 5 et 40 caractères...');
+
+    } else if (!regexMessage(message)) {
+
+      setError(true);
+      setMsgErr('Votre message doit contenir entre 5 et 500 caractères...');
     };
 
 
@@ -102,9 +102,11 @@ const Contact = () => {
                 id="name"
                 name="name"
                 placeholder="&ensp; Noms *"
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               />
-              <span>Veuillez entrer uniquement des lettres</span>
+              {/* <span>Veuillez entrer uniquement des lettres</span> */}
             </div>
             <div className="spaceform">
               <input
@@ -114,9 +116,11 @@ const Contact = () => {
                 name="email"
                 placeholder="&ensp; E-mail *"
                 autoComplete="off"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               />
-              <span>Veuillez entrer un e-mail valide</span>
+              {/* <span>Veuillez entrer un e-mail valide</span> */}
             </div>
             <div className="spaceform">
               <input
@@ -125,9 +129,11 @@ const Contact = () => {
                 id="objet"
                 name="object"
                 placeholder="&ensp; Objet *"
-                onChange={(e) => setObject(e.target.value)}
+                onChange={(e) => {
+                  setObject(e.target.value);
+                }}
               />
-              <span>Veuillez entrer uniquement des lettres</span>
+              {/* <span>Veuillez entrer uniquement des lettres</span> */}
             </div>
             <div className="spaceform">
               <textarea
@@ -135,11 +141,13 @@ const Contact = () => {
                 required
                 name="message"
                 placeholder="&ensp; Message *"
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
               ></textarea>
             </div>
             <div className="spaceform buttonsubmit">
-              <button id="valid-formulaire" type="button" onClick={sendToMail}>
+              <button id="valid-formulaire" type="button" onClick={(e) => sendToMail(e)}>
                 VALIDER
               </button>
             </div>
