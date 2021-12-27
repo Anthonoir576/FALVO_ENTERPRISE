@@ -221,12 +221,13 @@
 
 .contact-text {
   position: absolute;
-  top: 35%;
+  top: 320px;
   right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 400px;
+  width: 250px;
   color: white;
 
   & .icontxt {
@@ -253,7 +254,12 @@
   }
 
   & .icon1 {
-    transform: translate(-15px, -10px);
+    transform: translate(-8px, -10px);
+    & img {
+      transform: translate(0px, -5px);
+      height: 18px;
+      width: 12px;
+    }
   }
 
   & .icon2 {
@@ -262,6 +268,11 @@
 
   & .icon3 {
     transform: translate(-5px, 0px);
+    & img {
+      transform: translate(8px, 2px);
+      height: 14px;
+      width: 14px;
+    }
   }
 
   & .icontxt p {
