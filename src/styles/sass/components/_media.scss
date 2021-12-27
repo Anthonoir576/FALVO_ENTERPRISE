@@ -776,7 +776,7 @@
 }
 @media only screen and (max-width: 740px) {
   .contact .contact-container {
-    margin: 2em 1em 0 .5em;
+    margin: 2em 1em 0 1em;
     .formulaire input, textarea, button {
       margin: 0 auto 40px auto;
     }
@@ -827,7 +827,6 @@
     margin: 2rem 0 0 0;
     padding: 0 10%;
     background: $gray;
-    filter :saturate(300%);
     
     & .icontxt p {
       font-family: 'Lato', sans-serif;
@@ -875,7 +874,7 @@
 }
 @media only screen and (max-width: 400px) {
   .contact .contact-container {
-    margin: 2em 0em 0 1em;
+    margin: 2em 1em 0 1em;
 
     & .contact-legend {
       & h2 {
@@ -884,7 +883,8 @@
         }
       }
       & h3 {
-        font-size: 14px;
+        font-size: 12px;
+        margin: 1rem 0;
       }
     }
   }
