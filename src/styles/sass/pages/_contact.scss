@@ -321,3 +321,24 @@
     padding: 10px 0;
   }
 }
+
+#root 
+.contact 
+.contact-container 
+.contact-form_contact
+.formulaire
+.spaceForm.succes-form {
+  & span {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    color: white;
+    background: #008000!important;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+  }
+}

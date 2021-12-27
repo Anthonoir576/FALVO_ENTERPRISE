@@ -14,13 +14,14 @@ init("user_kFyT3rLA41sQVqH9BcaF5");
 
 
 const Contact = () => {
-  const [name, setName]       = useState("");
-  const [email, setEmail]     = useState("");
-  const [object, setObject]   = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError]     = useState(false);
-  const [msgErr, setMsgErr]  = useState('');
-
+  const [name, setName]          = useState("");
+  const [email, setEmail]        = useState("");
+  const [object, setObject]      = useState("");
+  const [message, setMessage]    = useState("");
+  const [error, setError]        = useState(false);
+  const [msgErr, setMsgErr]      = useState('');
+  const [succes, setSucces]        = useState(false);
+  const [msgSucces, setMsgSucces]  = useState('');
  
   const sendToMail = (e) => {
     e.preventDefault();
@@ -30,17 +31,28 @@ const Contact = () => {
         regexMessage(message) && 
         regexNom(name)) {
 
+      setSucces(true);   
+   
       const sendEmailJs = (templateId, variables) => {
         window.emailjs
           .send('service_s8v4a09', templateId, variables)
           .then((resultat) => {
             console.log('succès !');
+
+            setError(false);
+            setMsgErr('');
+
             setName('');
             setObject('');
             setEmail('');
             setMessage('');
-            setError(false);
-            setMsgErr('');
+
+            setMsgSucces('Message envoyé !'); 
+            setTimeout(() => {
+              setSucces(false);
+              setMsgSucces(''); 
+            }, 3000);
+
           })
           .catch(
             (erreur) =>
@@ -92,7 +104,7 @@ const Contact = () => {
           </h2>
           <h3>
             hésitez pas à m’envoyer un petit message
-            <br /> de soutien, ou de suggestion. Merci :)
+            <br /> de soutien, ou de suggestion. Merci :{')'}
           </h3>
         </div>
 
@@ -149,16 +161,21 @@ const Contact = () => {
                 }}
               ></textarea>
             </div>
+            {error === true && (
+              <div className='spaceForm error-form'>
+                <span className="errorFormulaire">{msgErr}</span>
+              </div>
+            )}
+            {succes === true && (
+              <div className='spaceForm succes-form'>
+                <span className="succesFormulaire">{msgSucces}</span>
+              </div>
+            )}
             <div className="spaceform buttonsubmit">
               <button id="valid-formulaire" type="button" onClick={(e) => sendToMail(e)}>
                 VALIDER
               </button>
             </div>
-            {error === true && (
-              <div className="spaceForm error-form">
-                <span className="errorFormulaire">{msgErr}</span>
-              </div>
-            )}
           </form>
 
           <div className="contact-map">
@@ -184,7 +201,7 @@ const Contact = () => {
           />
           <CopyToClipboard text="180 Rue du capitaine wazny, Montigny-en-Ostrevent, 59182, France"> 
             <p>
-              180 Rue du capitaine wazny,
+              XXX Rue du capitaine wazny,
               <br /> Montigny-en-Ostrevent,
               <br /> 59182, France
             </p>
