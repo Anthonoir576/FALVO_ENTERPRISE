@@ -263,6 +263,31 @@
   & .icon3 {
     transform: translate(-5px, 0px);
   }
+
+  & .icontxt p {
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      transform: translateX(3px);
+
+      &::after {
+        transition: all .3s ease-in-out;
+        content: '';
+        display: block;
+        width: 25%;
+        height: 2px;
+        position: absolute;
+        bottom: -6px;
+        background: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
 }
 
 .MAP,
