@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/FALVO_ENTERPRISE/static/css/main.fda8e1c4.css",
+    "main.css": "/FALVO_ENTERPRISE/static/css/main.52ca0cac.css",
     "main.js": "/FALVO_ENTERPRISE/static/js/main.80631b03.js",
     "index.html": "/FALVO_ENTERPRISE/index.html",
-    "main.fda8e1c4.css.map": "/FALVO_ENTERPRISE/static/css/main.fda8e1c4.css.map",
+    "main.52ca0cac.css.map": "/FALVO_ENTERPRISE/static/css/main.52ca0cac.css.map",
     "main.80631b03.js.map": "/FALVO_ENTERPRISE/static/js/main.80631b03.js.map"
   },
   "entrypoints": [
-    "static/css/main.fda8e1c4.css",
+    "static/css/main.52ca0cac.css",
     "static/js/main.80631b03.js"
   ]
 }
