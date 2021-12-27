@@ -85,6 +85,11 @@
 @media only screen and (max-width: 500px) {
   .accueil {
     & .accueil-information {
+      & .information-dev {
+        & h1 {
+          font-size: 2.38rem;
+        }
+      }
       & .information-image img {
         max-width: 95%;
       }
@@ -771,10 +776,15 @@
 }
 @media only screen and (max-width: 740px) {
   .contact .contact-container {
-    margin: 2em 1em 0 1em;
-    .formulaire input, textarea, button, span {
-      margin: 0 auto;
+    margin: 2em 1em 0 .5em;
+    .formulaire input, textarea, button {
+      margin: 0 auto 40px auto;
     }
+
+    .formulaire span {
+      margin: 0 auto 0px auto;
+    }
+
 
     & .contact-legend {
       text-align: center;
@@ -784,17 +794,83 @@
           margin: 2rem 0 0 0;
         }
       }
+      & h3 {
+        font-size: 1rem;
+      }
     }
 
     &:after {
       display: none;
     }
   }
-  .contact .contact-text .icontxt {
-    display: none;
+
+  .formulaire .buttonsubmit {
+    & button {
+      &:hover {
+        box-shadow: 0px 0px 10px 0px $bluesky;
+        transform: scale(1);
+        animation-duration: 0s;
+        transform-origin: center;
+      }
+    }
   }
+
   .contact-map {
     text-align: center;
+  }
+
+  .contact .contact-text {
+    box-shadow: 0px -1px 10px 0 rgba(0, 0, 0, 0.384);
+    position: sticky;
+    height: auto;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    padding: 0 10%;
+    background: $gray;
+    filter :saturate(300%);
+    
+    & .icontxt p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all .15s ease-in-out;
+
+      &::first-letter {
+        color: $bluesky;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transition: all .3s ease-in-out;
+        transform: translateX(5px);
+
+        &::after {
+          transition: all .3s ease-in-out;
+          content: '';
+          display: block;
+          width: 25%;
+          height: 2px;
+          position: absolute;
+          bottom: -6px;
+          background: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+
+    & .icon1, .icon2, .icon3 {
+      transform: translate(0, 0);
+    }
+
+    & .icon3 img {
+      transform: translateY(3px);
+    }
+    & .icon2 img {
+      transform: translateY(2px);
+    }
+    & .icon1 img {
+      transform: translateY(-5px);
+    }
+
   }
 }
 @media only screen and (max-width: 400px) {
@@ -806,6 +882,9 @@
         & em {
           letter-spacing: 4px;
         }
+      }
+      & h3 {
+        font-size: 14px;
       }
     }
   }

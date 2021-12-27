@@ -101,6 +101,7 @@
     max-width: 500px;
     height: 31px;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.281);
+    margin-bottom: 40px;
 
     &:focus {
       outline: none;
@@ -113,52 +114,52 @@
     margin-bottom: 2em;
   }
 
-  & input:invalid:focus {
-    border: 1px solid rgb(255, 0, 0, 0.4);
-    background-color: rgb(255, 0, 0, 0.05);
-    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
-    transform: translate3d(0, 0, 0);
-  }
-  @keyframes shake {
-    10%,
-    90% {
-      transform: translate3d(-1px, 0, 0);
-    }
+  // & input:invalid:focus {
+  //   border: 1px solid rgb(255, 0, 0, 0.4);
+  //   background-color: rgb(255, 0, 0, 0.05);
+  //   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  //   transform: translate3d(0, 0, 0);
+  // }
+  // @keyframes shake {
+  //   10%,
+  //   90% {
+  //     transform: translate3d(-1px, 0, 0);
+  //   }
 
-    20%,
-    80% {
-      transform: translate3d(2px, 0, 0);
-    }
+  //   20%,
+  //   80% {
+  //     transform: translate3d(2px, 0, 0);
+  //   }
 
-    30%,
-    50%,
-    70% {
-      transform: translate3d(-4px, 0, 0);
-    }
+  //   30%,
+  //   50%,
+  //   70% {
+  //     transform: translate3d(-4px, 0, 0);
+  //   }
 
-    40%,
-    60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+  //   40%,
+  //   60% {
+  //     transform: translate3d(4px, 0, 0);
+  //   }
+  // }
 
-  & span {
-    opacity: 0;
-    visibility: hidden;
-    position: relative;
-    top: 0.7em;
-  }
+  // & span {
+  //   opacity: 0;
+  //   visibility: hidden;
+  //   position: relative;
+  //   top: 0.7em;
+  // }
 
-  & input:invalid ~ span {
-    display: flex;
-    color: red;
-    transition: 0.4s opacity linear;
-  }
+  // & input:invalid ~ span {
+  //   display: flex;
+  //   color: red;
+  //   transition: 0.4s opacity linear;
+  // }
 
-  & input:invalid:focus ~ span {
-    visibility: visible;
-    opacity: 1;
-  }
+  // & input:invalid:focus ~ span {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
 }
 
 .spaceform {
@@ -262,6 +263,31 @@
   & .icon3 {
     transform: translate(-5px, 0px);
   }
+
+  & .icontxt p {
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      transform: translateX(3px);
+
+      &::after {
+        transition: all .3s ease-in-out;
+        content: '';
+        display: block;
+        width: 25%;
+        height: 2px;
+        position: absolute;
+        bottom: -6px;
+        background: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
 }
 
 .MAP,
@@ -289,6 +315,27 @@
     opacity: 1;
     color: white;
     background: red!important;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+  }
+}
+
+#root 
+.contact 
+.contact-container 
+.contact-form_contact
+.formulaire
+.spaceForm.succes-form {
+  & span {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    color: white;
+    background: #008000!important;
     border-radius: 5px;
     width: 100%;
     max-width: 500px;

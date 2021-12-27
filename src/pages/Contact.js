@@ -1,63 +1,58 @@
-import React             from "react";
-import { useState }      from "react";
-import NavBar            from "../components/Navigation/NavBar";
-import { init }          from "emailjs-com";
+import React               from "react";
+import { useState }        from "react";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import NavBar              from "../components/Navigation/NavBar";
+import { init }            from "emailjs-com";
 import { regexNom,
          regexEmail,
          regexMessage,
-         regexObjet }    from '../components/Utils/Regex';
+         regexObjet }      from '../components/Utils/Regex';
+
 
 
 init("user_kFyT3rLA41sQVqH9BcaF5");
 
 
 const Contact = () => {
-  const [name, setName]       = useState("");
-  const [email, setEmail]     = useState("");
-  const [object, setObject]   = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError]     = useState(false);
-  const [msgErr, setMsgErr]  = useState('')
+  const [name, setName]          = useState("");
+  const [email, setEmail]        = useState("");
+  const [object, setObject]      = useState("");
+  const [message, setMessage]    = useState("");
+  const [error, setError]        = useState(false);
+  const [msgErr, setMsgErr]      = useState('');
+  const [succes, setSucces]        = useState(false);
+  const [msgSucces, setMsgSucces]  = useState('');
  
   const sendToMail = (e) => {
     e.preventDefault();
 
-    if (!regexNom(name)) {
- 
-      setError(true);
-      setMsgErr('Votre nom comporte une erreur..');
+    if (regexEmail(email) &&
+        regexObjet(object) &&
+        regexMessage(message) && 
+        regexNom(name)) {
 
-    } else if (!regexEmail(email)) {
-
-      setError(true);
-      setMsgErr('Votre e-mail comporte une erreur..');
-
-    } else if (!regexObjet(object)) {
-
-      setError(true);
-      setMsgErr('Votre objet comporte une erreur..');
-
-    } else if (!regexMessage(message)) {
-
-      setError(true);
-      setMsgErr('Votre message comporte une erreur..');
-
-    } else if (regexEmail(email) &&
-               regexObjet(object) &&
-               regexMessage(message) && 
-               regexNom(name)) {
-
+      setSucces(true);   
+   
       const sendEmailJs = (templateId, variables) => {
         window.emailjs
           .send('service_s8v4a09', templateId, variables)
           .then((resultat) => {
             console.log('succès !');
+
+            setError(false);
+            setMsgErr('');
+
             setName('');
             setObject('');
             setEmail('');
             setMessage('');
-            setError(false);
-            setMsgErr('');
+
+            setMsgSucces('Message envoyé !'); 
+            setTimeout(() => {
+              setSucces(false);
+              setMsgSucces(''); 
+            }, 3000);
+
           })
           .catch(
             (erreur) =>
@@ -73,10 +68,30 @@ const Contact = () => {
         message : message.trim(),
       });
 
+    } else if (!regexNom(name)) {
+ 
+      setError(true);
+      setMsgErr('Votre nom doit contenir entre 2 et 30 caractères...');
+
+    } else if (!regexEmail(email)) {
+
+      setError(true);
+      setMsgErr('Votre e-mail comporte une erreur...');
+
+    } else if (!regexObjet(object)) {
+
+      setError(true);
+      setMsgErr('Votre objet doit contenir entre 5 et 40 caractères...');
+
+    } else if (!regexMessage(message)) {
+
+      setError(true);
+      setMsgErr('Votre message doit contenir entre 5 et 500 caractères...');
     };
 
-
   };
+
+
 
   return (
     <div className="contact">
@@ -89,7 +104,7 @@ const Contact = () => {
           </h2>
           <h3>
             hésitez pas à m’envoyer un petit message
-            <br /> de soutien, ou de suggestion. Merci :)
+            <br /> de soutien, ou de suggestion. Merci :{')'}
           </h3>
         </div>
 
@@ -102,9 +117,11 @@ const Contact = () => {
                 id="name"
                 name="name"
                 placeholder="&ensp; Noms *"
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               />
-              <span>Veuillez entrer uniquement des lettres</span>
+              {/* <span>Veuillez entrer uniquement des lettres</span> */}
             </div>
             <div className="spaceform">
               <input
@@ -114,9 +131,11 @@ const Contact = () => {
                 name="email"
                 placeholder="&ensp; E-mail *"
                 autoComplete="off"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               />
-              <span>Veuillez entrer un e-mail valide</span>
+              {/* <span>Veuillez entrer un e-mail valide</span> */}
             </div>
             <div className="spaceform">
               <input
@@ -125,9 +144,11 @@ const Contact = () => {
                 id="objet"
                 name="object"
                 placeholder="&ensp; Objet *"
-                onChange={(e) => setObject(e.target.value)}
+                onChange={(e) => {
+                  setObject(e.target.value);
+                }}
               />
-              <span>Veuillez entrer uniquement des lettres</span>
+              {/* <span>Veuillez entrer uniquement des lettres</span> */}
             </div>
             <div className="spaceform">
               <textarea
@@ -135,19 +156,26 @@ const Contact = () => {
                 required
                 name="message"
                 placeholder="&ensp; Message *"
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
               ></textarea>
             </div>
-            <div className="spaceform buttonsubmit">
-              <button id="valid-formulaire" type="button" onClick={sendToMail}>
-                VALIDER
-              </button>
-            </div>
             {error === true && (
-              <div className="spaceForm error-form">
+              <div className='spaceForm error-form'>
                 <span className="errorFormulaire">{msgErr}</span>
               </div>
             )}
+            {succes === true && (
+              <div className='spaceForm succes-form'>
+                <span className="succesFormulaire">{msgSucces}</span>
+              </div>
+            )}
+            <div className="spaceform buttonsubmit">
+              <button id="valid-formulaire" type="button" onClick={(e) => sendToMail(e)}>
+                VALIDER
+              </button>
+            </div>
           </form>
 
           <div className="contact-map">
@@ -171,11 +199,13 @@ const Contact = () => {
             }
             alt="adresse"
           />
-          <p>
-            269 Rue du capitaine wazny,
-            <br /> Montigny-en-Ostrevent,
-            <br /> 59182, France
-          </p>
+          <CopyToClipboard text="180 Rue du capitaine wazny, Montigny-en-Ostrevent, 59182, France"> 
+            <p>
+              XXX Rue du capitaine wazny,
+              <br /> Montigny-en-Ostrevent,
+              <br /> 59182, France
+            </p>
+          </CopyToClipboard>
         </div>
         <div className="icontxt icon2">
           <img
@@ -184,7 +214,9 @@ const Contact = () => {
             }
             alt="e-mail"
           />
-          <p>anthony.falvo.pro@gmail.com</p>
+          <CopyToClipboard text="anthony.falvo.pro@gmail.com">
+            <p>anthony.falvo.pro@gmail.com</p>
+          </CopyToClipboard>
         </div>
         <div className="icontxt icon3">
           <img
@@ -193,11 +225,15 @@ const Contact = () => {
             }
             alt="telephone"
           />
-          <p>07.27.76.52.92</p>
+          <CopyToClipboard text='0627765292'>
+            <p>06.27.76.52.92</p>
+          </CopyToClipboard>
         </div>
       </div>
     </div>
   );
+
+
 };
 
 export default Contact;

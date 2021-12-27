@@ -42,7 +42,7 @@ const APropos = () => {
                 <td>
                   &bull; <strong>Téléphone</strong>
                 </td>
-                <td>: 06.xx.xx.52.92</td>
+                <td>: 06.27.76.52.92</td>
               </tr>
               <tr>
                 <td>

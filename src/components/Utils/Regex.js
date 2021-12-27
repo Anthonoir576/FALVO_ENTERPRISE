@@ -8,7 +8,7 @@ export const regexNom = (nomTest) => {
 
 export const regexEmail = (mailTest) => {
 
-    let email = new RegExp('^[a-zA-Z0-9._-]+[@]+[a-zA-Z0-9.-_]+[.]+[a-z]{2,5}[ ]{0,2}$', 'g');
+    let email = new RegExp('^[a-zA-Z0-9._-]+[@]+[a-zA-Z0-9.-_]+[.]+[a-z]{1,10}[ ]{0,2}$', 'g');
     return email.test(mailTest.trim());
 
 };
