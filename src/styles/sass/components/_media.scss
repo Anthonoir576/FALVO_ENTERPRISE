@@ -747,7 +747,6 @@
 }
 // #######################################
 
-
 // ############   CONTACT   ##############
 @media only screen and (max-width: 1400px) {
   body .contact-form_contact {
@@ -769,22 +768,23 @@
 }
 @media only screen and (max-width: 950px) {
   .contact .contact-container {
-  .contact-map {
-    text-align: center;
+    .contact-map {
+      text-align: center;
+    }
   }
 }
-}
-@media only screen and (max-width: 740px) {
+@media only screen and (max-height: 871px) {
   .contact .contact-container {
     margin: 2em 1em 0 1em;
-    .formulaire input, textarea, button {
+    .formulaire input,
+    textarea,
+    button {
       margin: 0 auto 40px auto;
     }
 
     .formulaire span {
       margin: 0 auto 0px auto;
     }
-
 
     & .contact-legend {
       text-align: center;
@@ -827,12 +827,12 @@
     margin: 2rem 0 0 0;
     padding: 0 10%;
     background: $gray;
-    
+
     & .icontxt p {
-      font-family: 'Lato', sans-serif;
+      font-family: "Lato", sans-serif;
       font-weight: 300;
       cursor: pointer;
-      transition: all .15s ease-in-out;
+      transition: all 0.15s ease-in-out;
 
       &::first-letter {
         color: $bluesky;
@@ -840,12 +840,12 @@
       }
 
       &:hover {
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         transform: translateX(5px);
 
         &::after {
-          transition: all .3s ease-in-out;
-          content: '';
+          transition: all 0.3s ease-in-out;
+          content: "";
           display: block;
           width: 25%;
           height: 2px;
@@ -856,7 +856,9 @@
       }
     }
 
-    & .icon1, .icon2, .icon3 {
+    & .icon1,
+    .icon2,
+    .icon3 {
       transform: translate(0, 0);
     }
 
@@ -869,7 +871,127 @@
     & .icon1 img {
       transform: translateY(-5px);
     }
+  }
+}
+@media only screen and (max-height: 871px) and (min-width: 740px) {
+  .contact .contact-container {
+    & .formulaire{
+      width: 500px;
+    }
+    & .contact-form_contact {
+      justify-content: space-around;
+    }
+  }
+}
+@media only screen and (max-height: 871px) and (max-width: 1400px) {
+  .contact .contact-container {
+    & .formulaire{
+      margin: 0 auto;
+      width: 500px;
+    }
+    & .contact-form_contact {
+      justify-content: space-around;
+    }
+  }
+}
+@media only screen and (max-width: 740px) {
+  .contact .contact-container {
+    margin: 2em 1em 0 1em;
+    .formulaire input,
+    textarea,
+    button {
+      margin: 0 auto 40px auto;
+    }
 
+    .formulaire span {
+      margin: 0 auto 0px auto;
+    }
+
+    & .contact-legend {
+      text-align: center;
+      & h2 {
+        & em {
+          display: block;
+          margin: 2rem 0 0 0;
+        }
+      }
+      & h3 {
+        font-size: 1rem;
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .formulaire .buttonsubmit {
+    & button {
+      &:hover {
+        box-shadow: 0px 0px 10px 0px $bluesky;
+        transform: scale(1);
+        animation-duration: 0s;
+        transform-origin: center;
+      }
+    }
+  }
+
+  .contact-map {
+    text-align: center;
+  }
+
+  .contact .contact-text {
+    box-shadow: 0px -1px 10px 0 rgba(0, 0, 0, 0.384);
+    position: sticky;
+    height: auto;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    padding: 0 10%;
+    background: $gray;
+
+    & .icontxt p {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+
+      &::first-letter {
+        color: $bluesky;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        transform: translateX(5px);
+
+        &::after {
+          transition: all 0.3s ease-in-out;
+          content: "";
+          display: block;
+          width: 25%;
+          height: 2px;
+          position: absolute;
+          bottom: -6px;
+          background: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+
+    & .icon1,
+    .icon2,
+    .icon3 {
+      transform: translate(0, 0);
+    }
+
+    & .icon3 img {
+      transform: translateY(3px);
+    }
+    & .icon2 img {
+      transform: translateY(2px);
+    }
+    & .icon1 img {
+      transform: translateY(-5px);
+    }
   }
 }
 @media only screen and (max-width: 400px) {
