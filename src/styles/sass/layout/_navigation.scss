@@ -31,6 +31,7 @@
 
       padding: 10px 1rem;
       & li {
+        display: flex;
         height: 20px;
         color: white;
         font-weight: 300;
@@ -45,7 +46,7 @@
         }
 
         &:hover {
-          &::first-letter {
+          & a::first-letter {
             color: $bluesky;
           }
           filter: saturate(200%);
@@ -62,6 +63,8 @@
     
           &::after {
             display: block;
+            position: absolute;
+            bottom: 0;
             content: "";
             width: 0%;
             height: 1px;
@@ -82,6 +85,13 @@
           }
     
           text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24);
+        }
+      }
+      & li.homePageIcon {
+        margin: 0;
+        & img {
+          width: 15px;
+          height: 15px;
         }
       }
     }

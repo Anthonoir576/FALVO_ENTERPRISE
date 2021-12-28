@@ -24,7 +24,14 @@ const NavBar = () => {
                     <NavLink exact to='/contact' aria-label='Contact avec le développeur web'>
                         Contact
                     </NavLink>
-                    <img src="./assets/images/home.png" alt="retour à l'accueil" />
+                </li>
+                <li className='homePageIcon'>
+                    <NavLink exact to='/accueil' aria-label="Retour à l'accueil du site web">
+                        <img src="https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/home.png" 
+                            alt="retour à l'accueil"
+                            className='homeIcon'
+                        />
+                </NavLink>
                 </li>
             </ul>
             <div className="navigation--modifier"></div>
