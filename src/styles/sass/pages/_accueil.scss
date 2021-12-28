@@ -4,7 +4,13 @@
 .accueil-switch {
   text-align: center;
   color: white;
-  font-size: 0.8rem;
+  font-size: 2rem;
+  & p {
+    margin: 0 auto;
+    max-height: 64px;
+    transform: rotate(180deg);
+    opacity: 0.3;
+  }
 }
 
 .accueil {

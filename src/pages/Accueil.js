@@ -31,7 +31,7 @@ const Accueil = () => {
                 </div>
             </div>
             <div className="accueil-switch">
-                Fonctionnalité à venir ici
+                <p>^</p>
             </div>
         </div>
     );

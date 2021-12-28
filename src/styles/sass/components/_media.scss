@@ -151,97 +151,6 @@
 // #######################################
 
 // ############  A PROPOS   ##############
-@media only screen and (max-width: 1600px) {
-  div.about {
-    margin: 0rem 7rem;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  div.about {
-    & .aboutMe-downloadcv {
-      & a {
-        margin-top: 2.6rem;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1415px) {
-  div.about {
-    margin: 0rem 2rem;
-    & .aboutMe-downloadcv {
-      & a {
-        margin-top: 3rem;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1390px) {
-  div.about {
-    margin: 0rem 3rem;
-    & .aboutMe-downloadcv {
-      & a {
-        margin-top: 2.5rem;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1290px) {
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 1.7rem;
-    }
-  }
-}
-@media only screen and (max-width: 1240px) {
-  div.about article .aboutMe h4 {
-    margin-bottom: 2.5rem;
-  }
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 1rem;
-    }
-  }
-}
-@media only screen and (max-width: 1195px) {
-  div.about article .aboutMe h4 {
-    margin-bottom: 2rem;
-  }
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 0.8rem;
-    }
-  }
-}
-@media only screen and (max-width: 1170px) {
-  div.about article .aboutMe h4 {
-    margin-bottom: 1.4rem;
-  }
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 0.5rem;
-    }
-  }
-}
-@media only screen and (max-width: 1130px) {
-  div.about article .aboutMe h4 {
-    margin-bottom: 1.2rem;
-  }
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 0.7rem;
-    }
-  }
-}
-@media only screen and (max-width: 1110px) {
-  div.about article .aboutMe h4 {
-    margin-bottom: 1.3rem;
-  }
-  div.about .aboutMe-downloadcv {
-    & a {
-      margin-top: 0.7rem;
-    }
-  }
-}
 @media only screen and (max-width: 1070px) {
   div.about {
     flex-direction: column;
@@ -267,11 +176,19 @@
     }
     & article {
       width: 100%;
+
+      & .aboutMe {
+        & h4 {
+          margin: 30px 0 40px 0;
+        }
+
+        & > p {
+          height: auto;
+        }
+      }
     }
   }
-  div.about article .aboutMe h4 {
-    margin: 4rem 0;
-  }
+
   div.about .aboutMe-downloadcv {
     & a {
       margin-top: 2rem;
@@ -875,7 +792,7 @@
 }
 @media only screen and (max-height: 871px) and (min-width: 740px) {
   .contact .contact-container {
-    & .formulaire{
+    & .formulaire {
       width: 500px;
     }
     & .contact-form_contact {
@@ -885,7 +802,7 @@
 }
 @media only screen and (max-height: 871px) and (max-width: 1400px) {
   .contact .contact-container {
-    & .formulaire{
+    & .formulaire {
       margin: 0 auto;
       width: 500px;
     }
