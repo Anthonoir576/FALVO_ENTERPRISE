@@ -14,15 +14,16 @@ init("user_kFyT3rLA41sQVqH9BcaF5");
 
 
 const Contact = () => {
-  const [name, setName]          = useState("");
-  const [email, setEmail]        = useState("");
-  const [object, setObject]      = useState("");
-  const [message, setMessage]    = useState("");
-  const [error, setError]        = useState(false);
-  const [msgErr, setMsgErr]      = useState('');
+  const [name, setName]            = useState("");
+  const [email, setEmail]          = useState("");
+  const [object, setObject]        = useState("");
+  const [message, setMessage]      = useState("");
+  const [error, setError]          = useState(false);
+  const [msgErr, setMsgErr]        = useState('');
   const [succes, setSucces]        = useState(false);
   const [msgSucces, setMsgSucces]  = useState('');
  
+
   const sendToMail = (e) => {
     e.preventDefault();
 
@@ -30,13 +31,14 @@ const Contact = () => {
         regexObjet(object) &&
         regexMessage(message) && 
         regexNom(name)) {
-
-      setSucces(true);   
-   
+      
+      setError(false);    
+         
       const sendEmailJs = (templateId, variables) => {
         window.emailjs
           .send('service_s8v4a09', templateId, variables)
           .then((resultat) => {
+
             console.log('succès !');
 
             setError(false);
@@ -46,8 +48,10 @@ const Contact = () => {
             setObject('');
             setEmail('');
             setMessage('');
+            
+            setMsgSucces('Message envoyé !');
+            setSucces(true);
 
-            setMsgSucces('Message envoyé !'); 
             setTimeout(() => {
               setSucces(false);
               setMsgSucces(''); 
@@ -73,26 +77,42 @@ const Contact = () => {
       setError(true);
       setMsgErr('Votre nom doit contenir entre 2 et 30 caractères...');
 
+      setTimeout(() => {
+        setError(false);
+      }, 3500);
+
     } else if (!regexEmail(email)) {
 
       setError(true);
       setMsgErr('Votre e-mail comporte une erreur...');
+
+      setTimeout(() => {
+        setError(false);
+      }, 3500);
 
     } else if (!regexObjet(object)) {
 
       setError(true);
       setMsgErr('Votre objet doit contenir entre 5 et 40 caractères...');
 
+      setTimeout(() => {
+        setError(false);
+      }, 3500);
+
     } else if (!regexMessage(message)) {
 
       setError(true);
       setMsgErr('Votre message doit contenir entre 5 et 500 caractères...');
+
+      setTimeout(() => {
+        setError(false);
+      }, 3500);
+
     };
 
   };
 
-
-
+  
   return (
     <div className="contact">
       <NavBar />
