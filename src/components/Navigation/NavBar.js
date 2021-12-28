@@ -24,6 +24,7 @@ const NavBar = () => {
                     <NavLink exact to='/contact' aria-label='Contact avec le développeur web'>
                         Contact
                     </NavLink>
+                    <img src="./assets/images/home.png" alt="retour à l'accueil" />
                 </li>
             </ul>
             <div className="navigation--modifier"></div>
