@@ -12,12 +12,13 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-          <Route exact path='/accueil'    element={ <Accueil /> } />
-          <Route exact path='/a_propos'   element={ <APropos /> } />
-          <Route exact path='/competence' element={ <Competence /> } />
-          <Route exact path='/projets'    element={ <Projets /> } />
-          <Route exact path='/contact'    element={ <Contact /> } />
-          <Route path='*'                 element={ <Navigate replace to='/falvo_enterprise' /> } />
+          <Route exact path='/accueil'              element={ <Accueil /> } />
+          <Route exact path='/a_propos'             element={ <APropos /> } />
+          <Route exact path='/competence'           element={ <Competence /> } />
+          <Route exact path='/projets'              element={ <Projets /> } />
+          <Route exact path='/contact'              element={ <Contact /> } />
+          <Route exact path='/FALVO_ENTERPRISE/'    element={ <Accueil /> } />
+          <Route path='*'                           element={ <Navigate replace to='/FALVO_ENTERPRISE/' /> } />
         </Routes>
     </BrowserRouter>
   );
