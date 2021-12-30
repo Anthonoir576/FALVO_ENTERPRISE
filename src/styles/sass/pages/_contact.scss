@@ -193,7 +193,7 @@
 
     &:hover {
       cursor: pointer;
-      transform: scale(1.02);
+      transform: scale(1);
       box-shadow: 0px 0px 30px 0px $bluesky;
       filter: saturate(100%);
 
@@ -204,15 +204,15 @@
 
       @keyframes swing {
         20% {
-          transform: rotate3d(0, 0, 1, 1deg);
+          transform: translateX(5px);
         }
 
         40% {
-          transform: rotate3d(0, 0, 1, -1deg);
+          transform: translateX(-5px);
         }
 
         60% {
-          transform: rotate3d(0, 0, 1, 0.5deg);
+          transform: translateX(2.5px);
         }
       }
     }
