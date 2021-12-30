@@ -1,5 +1,5 @@
-import React       from "react";
-import NavBar      from "../components/Navigation/NavBar";
+import React from "react";
+import NavBar from "../components/Navigation/NavBar";
 import { NavLink } from "react-router-dom";
 
 const APropos = () => {
@@ -10,46 +10,50 @@ const APropos = () => {
         <aside>
           <figure>
             <img
-              src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil_about.png"}
+              src={
+                "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil_about.png"
+              }
               alt="Le développeur web"
             />
           </figure>
           <div className="about-text_networks">
             <table className="about-text">
-              <tr>
-                <td>
-                  &bull; <strong> Nom / Prénom</strong>
-                </td>
-                <td>: FALVO Anthony</td>
-              </tr>
-              <tr>
-                <td>
-                  &bull; <strong>Date de naissance</strong>
-                </td>
-                <td>: 25 Juin 1993</td>
-              </tr>
-              <tr>
-                <td>
-                  &bull; <strong>Adresse</strong>
-                </td>
-                <td>
-                  : xxx rue du capitaine wazny
-                  <br /> Montigny-en-ostrevent,
-                  <br /> 59182, France
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &bull; <strong>Téléphone</strong>
-                </td>
-                <td>: 06.27.76.52.92</td>
-              </tr>
-              <tr>
-                <td>
-                  &bull; <strong>E-mail</strong>
-                </td>
-                <td>: anthony.falvo.pro@gmail.com</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>
+                    &bull; <strong> Nom / Prénom</strong>
+                  </td>
+                  <td>: FALVO Anthony</td>
+                </tr>
+                <tr>
+                  <td>
+                    &bull; <strong>Date de naissance</strong>
+                  </td>
+                  <td>: 25 Juin 1993</td>
+                </tr>
+                <tr>
+                  <td>
+                    &bull; <strong>Adresse</strong>
+                  </td>
+                  <td>
+                    : xxx rue du capitaine wazny
+                    <br /> Montigny-en-ostrevent,
+                    <br /> 59182, France
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &bull; <strong>Téléphone</strong>
+                  </td>
+                  <td>: 06.27.76.52.92</td>
+                </tr>
+                <tr>
+                  <td>
+                    &bull; <strong>E-mail</strong>
+                  </td>
+                  <td>: anthony.falvo.pro@gmail.com</td>
+                </tr>
+              </tbody>
             </table>
             <hr />
             <div className="about-networks">
@@ -61,7 +65,9 @@ const APropos = () => {
                 >
                   <img
                     className="reveal-loaded effectLight02"
-                    src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/linkedin.png"}
+                    src={
+                      "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/linkedin.png"
+                    }
                     alt="reseaux sociaux"
                   />
                 </a>
@@ -72,8 +78,11 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/github.png"} 
-                       alt="reseaux sociaux" 
+                  <img
+                    src={
+                      "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/github.png"
+                    }
+                    alt="reseaux sociaux"
                   />
                 </a>
               </div>
@@ -83,8 +92,11 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/codeingame.png"}
-                       alt="reseaux sociaux" 
+                  <img
+                    src={
+                      "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/codeingame.png"
+                    }
+                    alt="reseaux sociaux"
                   />
                 </a>
               </div>
@@ -94,8 +106,11 @@ const APropos = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/facebook.png"} 
-                       alt="reseaux sociaux" 
+                  <img
+                    src={
+                      "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/facebook.png"
+                    }
+                    alt="reseaux sociaux"
                   />
                 </a>
               </div>
@@ -123,8 +138,9 @@ const APropos = () => {
               traitement, mixage, mastering sous Fl Studio. Concernant Photoshop
               / Gimp, je l’utilise depuis 2008 environs, et quelque notion en
               traitement vidéo sous after effect / shotcut depuis 2014.
-              Autodidacte pendant 1 an dans le développement, j'ai suivi, et réussi ma
-              formation développeur web chez OpenClassRooms en 2 mois et demi. 
+              Autodidacte pendant 1 an dans le développement, j'ai suivi, et
+              réussi ma formation développeur web chez OpenClassRooms en 2 mois
+              et demi.
             </p>
             <h4>Mes compétences</h4>
 
@@ -166,9 +182,12 @@ const APropos = () => {
             </div>
 
             <div className="aboutMe-downloadcv">
-            <NavLink exact to='/accueil' aria-label='Accueil du site Falvo Enterprise'>
-              Voir le profil du développeur
-            </NavLink>
+              <NavLink
+                to="/accueil"
+                aria-label="Accueil du site Falvo Enterprise"
+              >
+                Voir le profil du développeur
+              </NavLink>
             </div>
           </div>
         </article>
