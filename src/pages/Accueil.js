@@ -24,7 +24,7 @@ const Accueil = () => {
                         <h2>Développeur React <span>&amp;</span> Node</h2>
                     </div>
                     <div className='information-contact'>
-                        <NavLink exact to='/FALVO_ENTERPRISE/contact' aria-label='Contact developpeur web'>
+                        <NavLink exact to='/contact' aria-label='Contact developpeur web'>
                             Contactez-moi
                         </NavLink>
                     </div>
