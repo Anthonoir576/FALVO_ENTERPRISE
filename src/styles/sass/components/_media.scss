@@ -505,19 +505,27 @@
       margin-bottom: 4em;
     }
 
-    & .EXP-legend h2 {
-      font-size: 30px;
-      white-space: normal;
-      &::first-letter {
-        font-size: 40px;
+    & .EXP-legend {
+      text-align: center;
+      & h2 {
+        margin: 0 0 30px 0;
+        font-size: 30px;
+        white-space: normal;
+        &::first-letter {
+          font-size: 40px;
+        }
+        & span {
+          font-size: 25px;
+        }
+        & em {
+          display: block;
+          margin-top: 1.2rem;
+          letter-spacing: 1px;
+        }
       }
-      & span {
-        font-size: 25px;
-      }
-      & em {
-        display: block;
-        margin-top: 1.2rem;
-        letter-spacing: 1px;
+      & h3 {
+        font-size: 1rem;
+        margin: 0 0 60px;
       }
     }
   }
