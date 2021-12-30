@@ -14,7 +14,7 @@ const Competence = () => {
             </em>
           </h2>
           <h3 className="reveal-loaded reveal-POP">
-            Experience globale dans le monde du travail.
+            Résumé de mon expérience professionnelle.
           </h3>
         </div>
         <div id="EXP-list">
