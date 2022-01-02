@@ -10,10 +10,32 @@
 
     & figure {
       margin: 0;
+      position: relative;
+      text-align: center;
       & img {
-        width: 100%;
+        position: relative;
+        z-index: 2;
+        width: 456.5px;
+        max-width: 456.5px;
         height: auto;
         object-fit: cover;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        bottom: -3px;
+        left: 0px;
+        right: 0;
+        width: 100%;
+        max-width: 456px;
+        height: 100%;
+        max-height: 465px;
+        background: transparent;
+        border: 7px solid $bluesky;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 2px 5px 20px 0px rgb(11, 50, 94, 0.2);
       }
     }
 
@@ -44,7 +66,7 @@
       & hr {
         width: 90%;
         opacity: 0.2;
-        margin: 55px 20px 0 23px;
+        margin: 30px 20px 0 23px;
         text-align: center;
       }
 
