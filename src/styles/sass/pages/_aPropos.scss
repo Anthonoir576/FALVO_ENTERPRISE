@@ -10,6 +10,11 @@
 
     & figure {
       margin: 0;
+      & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
     }
 
     & .about-text_networks {
