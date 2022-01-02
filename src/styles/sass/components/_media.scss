@@ -497,6 +497,19 @@
     }
   }
 }
+@media only screen and (max-width: 740px) {
+  div.EXP {
+    & h2 {
+      text-align: center;
+      & em {
+        font-size: 17px;
+      }
+    }
+    & h3 {
+      text-align: center;
+    }
+  }
+}
 @media only screen and (max-width: 570px) {
   div.EXP {
     padding: 3em 1em 3em 1em;
@@ -509,7 +522,6 @@
       text-align: center;
       & h2 {
         margin: 0 0 30px 0;
-        font-size: 30px;
         white-space: normal;
         &::first-letter {
           font-size: 40px;
@@ -520,7 +532,7 @@
         & em {
           display: block;
           margin-top: 1.2rem;
-          letter-spacing: 1px;
+          letter-spacing: 4px;
         }
       }
       & h3 {
@@ -530,9 +542,27 @@
     }
   }
 }
+@media only screen and (max-width: 365px) {
+  div.EXP {
+    & .EXP-legend {
+      & h2 {
+        & em {
+          letter-spacing: 1.8px;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 300px) {
   div.EXP {
     padding: 3em 0.5em 3em 0.5em;
+    & .EXP-legend {
+      & h2 {
+        & em {
+          letter-spacing: 1.5px;
+        }
+      }
+    }
   }
 }
 // #######################################
