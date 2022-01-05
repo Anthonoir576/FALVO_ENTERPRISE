@@ -1,0 +1,115 @@
+body#darkTheme {
+  background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+
+  & .aPropos,
+  .accueil {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+  }
+
+  & .aPropos {
+    & p,
+    h2,
+    h3,
+    h4,
+    td,
+    strong,
+    hr,
+    span,
+    em {
+      color: white;
+      opacity: 1;
+    }
+
+    & .about {
+      aside .about-text_networks {
+        border-top: 1px solid transparent;
+        box-shadow: 2px 5px 20px 0px rgba(255, 255, 255, 0.2);
+
+        & .about-networks img {
+          filter: grayscale(0%);
+          filter: brightness(150%);
+        }
+      }
+
+      & aside figure::after {
+        box-shadow: 5px 15px 15px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      & .skill-bars {
+        background: transparent;
+
+        & .bar .progress-line {
+          box-shadow: 0 0 0 0;
+        }
+      }
+    }
+  }
+
+  & .competence {
+    & p,
+    h2,
+    h3,
+    h4,
+    td,
+    strong,
+    hr,
+    span,
+    em {
+      color: white;
+      opacity: 1;
+    }
+
+    & .EXP {
+      background: transparent;
+      box-shadow: 0 0 0 0;
+    }
+  }
+
+  & .myProjets {
+    p {
+      color: white;
+      border-color: white;
+    }
+  }
+
+  & .contact {
+    & p,
+    h2,
+    h3,
+    h4,
+    td,
+    strong,
+    hr,
+    span,
+    em {
+      color: white;
+      opacity: 1;
+    }
+
+    & .contact-container::after {
+      background: rgba(0, 0, 0, 0.137);
+      box-shadow: 0 0 10px 0 white;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+      .contact .contact-text {
+          background: #72727224;
+      }
+  }
+  
+  @media only screen and (max-height: 871px) {
+    .contact .contact-text {
+        background: #72727224;
+    }
+}
+
+  & .navigation {
+    background: transparent;
+    box-shadow: 0 0 0 0;
+  }
+}
+
+/* #09FBBA  #333 */
