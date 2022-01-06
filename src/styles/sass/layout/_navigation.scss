@@ -97,26 +97,33 @@
       }
       & li.menuIcon {
         margin: 0 0 0 10px;
-        & img, .closeMenu {
+        & img{
           cursor: pointer;
           width: 20px;
           height: 13px;
           transform: translateY(0.5px);
         }
         & .closeMenu {
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          transform: translateY(0.5px);
           position: relative;
           z-index: 2;
-          font-size: .8rem;
+          font-size: .9rem;
           color: white;
           border: 1px solid white;
+          border-radius: 50%;
           background: red;
           padding: 6.5px 0;
           position: relative;
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
           & p {
             display: inline-block;
             position: absolute;
+            text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.842);
             margin: 0;
-            top: -1px;
+            top: 0.45px;
             left: 4.5px;
           }
         }

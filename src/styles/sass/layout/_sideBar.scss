@@ -8,6 +8,7 @@
 
   & .menuDeNavigation {
     position: fixed;
+
     transform: translate(7px, -7px);
     width: 200px;
     height: 350px;
@@ -17,6 +18,8 @@
     animation: none;
     background: hsla(210, 88%, 69%, 0.95);
     border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.747);
+    box-shadow: 0 0 10px 0 black;
 
     & ul {
       display: flex;
@@ -66,7 +69,6 @@
                 width: 100%;
               }
             }
-
           }
           text-shadow: 0 0 0;
         }
