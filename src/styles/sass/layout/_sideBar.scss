@@ -1,0 +1,31 @@
+#root nav.menuDeNavigation {
+    position: relative;
+    z-index: 0;
+    animation: none;
+    & ul {
+        display: block;
+        position: absolute;
+        min-height: 90vh;
+        width: 300px;
+        top: 0;
+        right: 0;
+        background: black;
+
+        & li {
+            align-items:center;
+        }
+    }
+}
+
+// enlever le display none
+#root .menuIcon {
+    display: none;
+    animation: none;
+    & li {
+        transform: scale(1);
+    }
+    & ::first-letter {
+        color: white;
+    }
+}
+

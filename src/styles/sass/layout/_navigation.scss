@@ -104,6 +104,8 @@
           transform: translateY(0.5px);
         }
         & .closeMenu {
+          position: relative;
+          z-index: 2;
           font-size: .8rem;
           color: white;
           border: 1px solid white;
