@@ -32,7 +32,7 @@ const NavBar = () => {
                             alt="retour à l'accueil"
                             className='homeIcon'
                         />
-                </NavLink>
+                    </NavLink>
                 </li>
                 <li className='menuIcon'>
                     <SideBar />

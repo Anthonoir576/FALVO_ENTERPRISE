@@ -97,11 +97,26 @@
       }
       & li.menuIcon {
         margin: 0 0 0 10px;
-        & img {
+        & img, .closeMenu {
           cursor: pointer;
           width: 20px;
           height: 13px;
           transform: translateY(0.5px);
+        }
+        & .closeMenu {
+          font-size: .8rem;
+          color: white;
+          border: 1px solid white;
+          background: red;
+          padding: 6.5px 0;
+          position: relative;
+          & p {
+            display: inline-block;
+            position: absolute;
+            margin: 0;
+            top: -1px;
+            left: 4.5px;
+          }
         }
       }
     }
@@ -115,7 +130,7 @@
 .openMenuOff {
   display: none;
 }
-.openMenu{
+.openMenu {
   background: transparent;
   border: none;
   padding: 0;
