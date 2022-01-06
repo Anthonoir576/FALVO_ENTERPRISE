@@ -101,11 +101,24 @@
           cursor: pointer;
           width: 20px;
           height: 13px;
-          transform: translateY(2.5px);
+          transform: translateY(0.5px);
         }
       }
     }
   }
+}
+
+.closeMenuOff {
+  display: none;
+}
+
+.openMenuOff {
+  display: none;
+}
+.openMenu{
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .accueil .navigation {

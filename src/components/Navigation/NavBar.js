@@ -4,7 +4,7 @@ import SideBar from './SideBar';
 
 const NavBar = () => {
     return (
-        <div className='navigation'>
+        <nav className='navigation'>
             <ul>
                 <li>
                     <NavLink to='/a_propos' aria-label='En savoir plus sur le développeur web'>
@@ -39,7 +39,7 @@ const NavBar = () => {
                 </li>
             </ul>
             <div className="navigation--modifier"></div>
-        </div>
+        </nav>
     );
 };
 
