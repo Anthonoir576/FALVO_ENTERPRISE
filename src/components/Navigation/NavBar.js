@@ -1,6 +1,6 @@
 import React       from 'react';
 import { NavLink } from 'react-router-dom';
-import SideBar from './SideBar';
+// import SideBar from './SideBar';
 
 const NavBar = () => {
     return (
@@ -34,9 +34,9 @@ const NavBar = () => {
                         />
                     </NavLink>
                 </li>
-                <li className='menuIcon'>
+                {/* <li className='menuIcon'>
                     <SideBar />
-                </li>
+                </li> */}
             </ul>
             <div className="navigation--modifier"></div>
         </nav>

@@ -17,9 +17,7 @@
     }
 }
 
-// enlever le display none
 #root .menuIcon {
-    display: none;
     animation: none;
     & li {
         transform: scale(1);
