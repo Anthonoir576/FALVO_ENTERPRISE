@@ -34,7 +34,7 @@ const NavBar = () => {
                         />
                 </NavLink>
                 </li>
-                <li>
+                <li className='menuIcon'>
                     <SideBar />
                 </li>
             </ul>
