@@ -1,5 +1,6 @@
 import React       from 'react';
 import { NavLink } from 'react-router-dom';
+import SideBar from './SideBar';
 
 const NavBar = () => {
     return (
@@ -32,6 +33,9 @@ const NavBar = () => {
                             className='homeIcon'
                         />
                 </NavLink>
+                </li>
+                <li>
+                    <SideBar />
                 </li>
             </ul>
             <div className="navigation--modifier"></div>
