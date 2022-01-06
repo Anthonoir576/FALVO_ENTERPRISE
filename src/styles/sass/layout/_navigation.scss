@@ -90,14 +90,18 @@
       & li.homePageIcon {
         margin: 0;
         & img {
-          width: 15px;
-          height: 15px;
+          width: 18px;
+          height: 18px;
+          transform: translateY(-1.5px);
         }
       }
       & li.menuIcon {
+        margin: 0 0 0 10px;
         & img {
-          width: 30px;
-          height: 30px;
+          cursor: pointer;
+          width: 20px;
+          height: 13px;
+          transform: translateY(2.5px);
         }
       }
     }
