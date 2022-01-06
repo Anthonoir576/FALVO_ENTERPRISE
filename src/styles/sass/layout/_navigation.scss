@@ -90,12 +90,52 @@
       & li.homePageIcon {
         margin: 0;
         & img {
-          width: 15px;
-          height: 15px;
+          width: 18px;
+          height: 18px;
+          transform: translateY(-1.5px);
+        }
+      }
+      & li.menuIcon {
+        margin: 0 0 0 10px;
+        & img, .closeMenu {
+          cursor: pointer;
+          width: 20px;
+          height: 13px;
+          transform: translateY(0.5px);
+        }
+        & .closeMenu {
+          position: relative;
+          z-index: 2;
+          font-size: .8rem;
+          color: white;
+          border: 1px solid white;
+          background: red;
+          padding: 6.5px 0;
+          position: relative;
+          & p {
+            display: inline-block;
+            position: absolute;
+            margin: 0;
+            top: -1px;
+            left: 4.5px;
+          }
         }
       }
     }
   }
+}
+
+.closeMenuOff {
+  display: none;
+}
+
+.openMenuOff {
+  display: none;
+}
+.openMenu {
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .accueil .navigation {

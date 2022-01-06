@@ -1,9 +1,10 @@
 import React       from 'react';
 import { NavLink } from 'react-router-dom';
+import SideBar from './SideBar';
 
 const NavBar = () => {
     return (
-        <div className='navigation'>
+        <nav className='navigation'>
             <ul>
                 <li>
                     <NavLink to='/a_propos' aria-label='En savoir plus sur le développeur web'>
@@ -31,11 +32,14 @@ const NavBar = () => {
                             alt="retour à l'accueil"
                             className='homeIcon'
                         />
-                </NavLink>
+                    </NavLink>
+                </li>
+                <li className='menuIcon'>
+                    <SideBar />
                 </li>
             </ul>
             <div className="navigation--modifier"></div>
-        </div>
+        </nav>
     );
 };
 
