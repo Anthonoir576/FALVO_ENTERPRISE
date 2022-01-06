@@ -5,8 +5,10 @@ const Projets = () => {
     return (
         <div className='myProjets'>
             <NavBar />
-            <p>En cours de préparation</p>
-            <p>404</p>
+            <div>
+                <p>En cours de préparation</p>
+                <p>404</p>
+            </div>
         </div>
     );
 };
