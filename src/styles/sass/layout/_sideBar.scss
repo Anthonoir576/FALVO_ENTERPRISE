@@ -43,15 +43,14 @@
       top: 30px;
       right: 0;
       text-shadow: 0 0 0;
-      transform: translateX(50px);
+      transform: translateX(100px);
       opacity: 0;
-      overflow-x: hidden;
 
       animation: apparitionMenu2 0.65s forwards;
       @keyframes apparitionMenu2 {
         0% {
           opacity: 0;
-          transform: translateX(50px);
+          transform: translateX(100px);
         }
         50% {
           opacity: 0;

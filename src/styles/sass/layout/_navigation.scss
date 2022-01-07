@@ -126,6 +126,21 @@
             top: 0.45px;
             left: 4.5px;
           }
+
+
+          opacity: 0;
+    
+          animation: apparitionBtnMenu 2.5s forwards;
+          @keyframes apparitionBtnMenu {
+            0% {
+              opacity: 0;
+
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+    
         }
       }
     }

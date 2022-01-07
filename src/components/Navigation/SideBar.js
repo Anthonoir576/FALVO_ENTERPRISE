@@ -6,6 +6,8 @@ const SideBar = () => {
 
     const [toggleNavigation, setToggleNavigation] = useState(false);
 
+
+
     const menuFonction = () => {
         setToggleNavigation(!toggleNavigation);
     };
