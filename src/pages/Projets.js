@@ -5,9 +5,9 @@ const Projets = () => {
     return (
         <div className='myProjets'>
             <NavBar />
-            <div>
-                <p>En cours de préparation</p>
-                <p>404</p>
+            <div className='standBy'>
+                <p className='standByP1'>En cours de préparation</p>
+                <p className='standByP2'> <i class="fas fa-spinner"></i> </p>
             </div>
         </div>
     );
