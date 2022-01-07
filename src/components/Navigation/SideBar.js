@@ -1,12 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 
 const SideBar = () => {
 
     const [toggleNavigation, setToggleNavigation] = useState(false);
-
-
 
     const menuFonction = () => {
         setToggleNavigation(!toggleNavigation);
