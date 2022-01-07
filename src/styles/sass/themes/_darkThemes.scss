@@ -108,6 +108,14 @@ body#darkTheme {
   & .navigation {
     background: transparent;
     box-shadow: 0 0 0 0;
+
+    & ul {
+      & .menuIcon {
+        & .menuDeNavigation {
+          background: rgb(122, 122, 219, .90);
+        }
+      }
+    }
   }
 }
 
