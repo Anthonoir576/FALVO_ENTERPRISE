@@ -9,7 +9,7 @@ const DarkMode = () => {
           value="None"
           id="slideDarkMode"
           name="check"
-          checked
+          defaultChecked
         />
         <label htmlFor="slideDarkMode"></label>
       </div>
