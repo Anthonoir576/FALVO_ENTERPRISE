@@ -627,7 +627,6 @@
 @media only screen and (min-width: 880px) and (max-width: 1199px) {
   .navigation {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
 
     & ul {
@@ -641,7 +640,7 @@
     }
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
   #root .myProjets,
   .accueil,
   .competence,
@@ -651,6 +650,9 @@
       & ul {
         justify-content: space-between;
         padding: 10px 0.9rem;
+      }
+      & li {
+        text-align: right;
       }
     }
   }
@@ -663,14 +665,9 @@
   .contact {
     & .navigation {
       & ul {
-        & li {
-          font-size: 1rem;
-        }
-        & li.homePageIcon {
-          & img {
-            width: 13px;
-            height: 13px;
-          }
+        padding: 10px 0.25rem;
+        & li.raccourciMenu {
+          font-size: 1.05rem;
         }
       }
     }
@@ -683,77 +680,24 @@
   .aPropos,
   .contact {
     & .navigation {
-      & ul {
-        padding: 10px 0.5rem;
+      ul {
+        justify-content: space-between;
+        padding: 10px 2rem;
         & li {
-          font-size: 0.9rem;
+          font-size: 1.2rem;
         }
-        & li.homePageIcon {
-          & img {
-            width: 12px;
-            height: 12px;
-          }
+        & li.raccourciMenu {
+          display: none;
         }
       }
-    }
-  }
-}
-@media only screen and (max-width: 420px) {
-  #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
-    & .navigation {
-      & ul {
-        padding: 15px 0.3rem;
-        & li {
-          font-size: 0.8rem;
-          height: 15px;
-        }
-        & li.homePageIcon {
-          & img {
-            transform: translateY(-1px);
+      & .menuDeNavigation {
+        ul {
+          padding: 10px 0.5rem;
+          & li {
+            &:hover {
+              animation: none !important;
+            }
           }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 370px) {
-  #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
-    & .navigation {
-      & ul {
-        padding: 15px 0.2rem;
-        & li {
-          font-size: 0.7rem;
-        }
-        & li.homePageIcon {
-          transform: translateY(-1px);
-          & img {
-            width: 10px;
-            height: 10px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 370px) {
-  #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
-    & .navigation {
-      & ul {
-        padding: 15px 0.15rem;
-        & li {
-          font-size: 0.6rem;
         }
       }
     }

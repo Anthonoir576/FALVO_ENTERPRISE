@@ -6,6 +6,8 @@ const SideBar = () => {
 
     const [toggleNavigation, setToggleNavigation] = useState(false);
 
+
+
     const menuFonction = () => {
         setToggleNavigation(!toggleNavigation);
     };
@@ -13,11 +15,13 @@ const SideBar = () => {
     return (
         <>
             <button className={toggleNavigation ? 'openMenuOff' : 'openMenu'}
-                    onClick={() => menuFonction()}>
+                    onClick={() => menuFonction()}
+                    arria-label='ouvrir le menu'>
                 <img src="https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/menuTypeUn.png" alt="Menu latéral" />
             </button>
             <button className={toggleNavigation ? 'closeMenu' : 'closeMenuOff'}
-                    onClick={() => menuFonction()}>
+                    onClick={() => menuFonction()}
+                    arria-label='fermer le menu'>
                 <p>X</p>
             </button>
             {toggleNavigation ? (
