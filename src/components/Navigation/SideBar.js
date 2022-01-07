@@ -10,7 +10,7 @@ const SideBar = () => {
     };
 
     return (
-        <>
+        <li className='menuIcon'>
             <button className={toggleNavigation ? 'openMenuOff' : 'openMenu'}
                     onClick={() => menuFonction()}
                     arria-label='ouvrir le menu'>
@@ -55,7 +55,7 @@ const SideBar = () => {
                 <>
                 </>
             )}
-        </>
+        </li>
     );
 };
 
