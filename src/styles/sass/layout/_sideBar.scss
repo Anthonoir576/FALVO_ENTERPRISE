@@ -43,14 +43,27 @@
       top: 30px;
       right: 0;
       text-shadow: 0 0 0;
-      transform: translateX(500px);
+      transform: translateX(50px);
+      opacity: 0;
+      overflow-x: hidden;
 
-      animation: apparitionMenu2 0.55s forwards;
+      animation: apparitionMenu2 0.65s forwards;
       @keyframes apparitionMenu2 {
         0% {
-          transform: translateX(500px);
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        50% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 0.25;
+        }
+        85% {
+          opacity: 0.5;
         }
         100% {
+          opacity: 1;
           transform: translateX(0px);
         }
       }

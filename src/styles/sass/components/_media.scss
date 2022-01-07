@@ -627,7 +627,6 @@
 @media only screen and (min-width: 880px) and (max-width: 1199px) {
   .navigation {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
 
     & ul {
@@ -641,7 +640,7 @@
     }
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
   #root .myProjets,
   .accueil,
   .competence,
@@ -651,6 +650,9 @@
       & ul {
         justify-content: space-between;
         padding: 10px 0.9rem;
+      }
+      & li {
+        text-align: right;
       }
     }
   }
@@ -663,12 +665,9 @@
   .contact {
     & .navigation {
       & ul {
-        align-items: center;
-        & li {
-          font-size: 0.95rem;
-        }
-        & .raccourciMenu {
+        & li.raccourciMenu {
           transform: translateY(2.5px);
+          font-size: 0.95rem;
         }
       }
     }
@@ -681,11 +680,24 @@
   .aPropos,
   .contact {
     & .navigation {
-      & ul {
+      ul {
         justify-content: space-between;
         padding: 10px 2rem;
+        & li {
+          font-size: 1.2rem;
+        }
         & li.raccourciMenu {
           display: none;
+        }
+      }
+      & .menuDeNavigation {
+        ul {
+          padding: 10px .5rem;
+          & li {
+            &:hover {
+              animation: none!important;
+            }
+          }
         }
       }
     }
