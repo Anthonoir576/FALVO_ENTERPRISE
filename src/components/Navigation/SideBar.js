@@ -1,19 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 
 const SideBar = () => {
 
     const [toggleNavigation, setToggleNavigation] = useState(false);
-
-
 
     const menuFonction = () => {
         setToggleNavigation(!toggleNavigation);
     };
 
     return (
-        <>
+        <li className='menuIcon'>
             <button className={toggleNavigation ? 'openMenuOff' : 'openMenu'}
                     onClick={() => menuFonction()}
                     arria-label='ouvrir le menu'>
@@ -58,7 +55,7 @@ const SideBar = () => {
                 <>
                 </>
             )}
-        </>
+        </li>
     );
 };
 

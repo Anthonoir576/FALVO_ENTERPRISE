@@ -30,6 +30,14 @@
       padding: 10px 15px 0 15px;
 
       padding: 10px 1rem;
+
+      & :nth-child(4) a {
+        min-width: 72px;
+      }
+      & :nth-child(2) a {
+        min-width: 112px;
+      }
+
       & li {
         display: flex;
         height: 20px;

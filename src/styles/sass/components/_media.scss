@@ -649,7 +649,7 @@
     & .navigation {
       & ul {
         justify-content: space-between;
-        padding: 10px 0.9rem;
+        padding: 10px 1.2rem;
       }
       & li {
         text-align: right;
@@ -657,7 +657,7 @@
     }
   }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 600px) {
   #root .myProjets,
   .accueil,
   .competence,
@@ -665,15 +665,26 @@
   .contact {
     & .navigation {
       & ul {
-        padding: 10px 0.25rem;
+        padding: 10px 1.1rem;
+        & :nth-child(4) a {
+          min-width: 64px;
+        }
+        & :nth-child(2) a {
+          min-width: 100px;
+        }
         & li.raccourciMenu {
-          font-size: 1.05rem;
+          font-size: 1.1rem;
+        }
+      }
+      & li.menuIcon .menuDeNavigation {
+        ul {
+          padding: 10px 1.2rem;
         }
       }
     }
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   #root .myProjets,
   .accueil,
   .competence,
