@@ -663,14 +663,12 @@
   .contact {
     & .navigation {
       & ul {
+        align-items: center;
         & li {
-          font-size: 1rem;
+          font-size: 0.95rem;
         }
-        & li.homePageIcon {
-          & img {
-            width: 13px;
-            height: 13px;
-          }
+        & .raccourciMenu {
+          transform: translateY(2.5px);
         }
       }
     }
@@ -684,76 +682,10 @@
   .contact {
     & .navigation {
       & ul {
-        padding: 10px 0.5rem;
-        & li {
-          font-size: 0.9rem;
-        }
-        & li.homePageIcon {
-          & img {
-            width: 12px;
-            height: 12px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 420px) {
-  #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
-    & .navigation {
-      & ul {
-        padding: 15px 0.3rem;
-        & li {
-          font-size: 0.8rem;
-          height: 15px;
-        }
-        & li.homePageIcon {
-          & img {
-            transform: translateY(-1px);
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 370px) {
-  #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
-    & .navigation {
-      & ul {
-        padding: 15px 0.2rem;
-        & li {
-          font-size: 0.7rem;
-        }
-        & li.homePageIcon {
-          transform: translateY(-1px);
-          & img {
-            width: 10px;
-            height: 10px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 370px) {
-  #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
-    & .navigation {
-      & ul {
-        padding: 15px 0.15rem;
-        & li {
-          font-size: 0.6rem;
+        justify-content: space-between;
+        padding: 10px 2rem;
+        & li.raccourciMenu {
+          display: none;
         }
       }
     }
