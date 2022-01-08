@@ -14,3 +14,4 @@ En cours de réalisation. Il s'agit de la mise à jour d'un site crée il y a 1 
 - Version 0.0.2 : 24 Décembre 2021
 - Version 0.0.3 : 27 Décembre 2021 [ Application fonctionnelle ]
 - Version 0.0.4 : 07 Janvier  2022 [ Amélioration navigation   ]
+- Version 0.0.5 : 08 Janvier  2022 [ Ajout dark mode button    ]
