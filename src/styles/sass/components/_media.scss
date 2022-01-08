@@ -623,6 +623,13 @@
       height: 1px;
     }
   }
+
+  #root .slideDark {
+    margin: 0 0rem 0 5.7rem;
+    & input[type="checkbox"]:checked + label {
+      left: 40px;
+    }
+  }
 }
 @media only screen and (min-width: 880px) and (max-width: 1199px) {
   .navigation {
@@ -638,6 +645,10 @@
       text-align: right;
       margin: 0 2rem;
     }
+  }
+
+  #root .slideDark {
+    margin: 0 0rem 0 5.5rem;
   }
 }
 @media only screen and (max-width: 880px) {

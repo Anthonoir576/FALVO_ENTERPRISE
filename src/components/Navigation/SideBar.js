@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink }         from 'react-router-dom';
+import DarkMode            from './DarkMode';
 
 
 const SideBar = () => {
@@ -50,6 +51,7 @@ const SideBar = () => {
                                 Contact
                             </NavLink>
                         </li>
+                        <DarkMode />
                     </ul>
                 </nav>
             ) : (
