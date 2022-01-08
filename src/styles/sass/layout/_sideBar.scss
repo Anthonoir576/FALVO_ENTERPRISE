@@ -29,7 +29,7 @@
       }
       100% {
         width: 200px;
-        height: 350px;
+        height: 410px;
       }
     }
 
@@ -81,7 +81,7 @@
               transform: scale(1);
             }
             100% {
-              transform: scale(1.04);
+              transform: scale(1);
             }
           }
 
@@ -123,6 +123,19 @@
 
 #root .menuIcon {
   animation: none;
+
+  height: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  transform: scale(1);
+
+  & a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
   & .closeMenu {
     z-index: 5;
   }

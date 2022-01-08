@@ -2,7 +2,7 @@ import React from "react";
 
 const DarkMode = () => {
   return (
-    <li>
+    <li className="btn-darkMODE">
       <div className="slideDark">
         <input
           type="checkbox"
