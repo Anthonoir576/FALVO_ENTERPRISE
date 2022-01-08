@@ -1,6 +1,6 @@
 import React, 
       { useContext }    from "react";
-import { useEffect }    from "react/cjs/react.development";
+import { useEffect }    from "react";
 
 import { ThemeContext } from "../../context/ThemeContext";
 
