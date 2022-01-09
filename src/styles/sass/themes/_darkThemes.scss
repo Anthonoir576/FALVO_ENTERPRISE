@@ -57,8 +57,8 @@ body.darkTheme {
     hr,
     span,
     em {
-      color: white!important;
-      opacity: 1!important;
+      color: white !important;
+      opacity: 1 !important;
     }
 
     & .EXP {
@@ -92,19 +92,33 @@ body.darkTheme {
       background: rgba(0, 0, 0, 0.137);
       box-shadow: 0 0 10px 0 white;
     }
+
+    & .formulaire {
+      & .spaceform {
+        & input,
+        textarea {
+          background: transparent;
+          box-shadow: 0px 15px 10px -15px white;
+        }
+        & input::placeholder,
+        textarea::placeholder {
+          color: white;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 740px) {
-      .contact .contact-text {
-          background: #72727224;
-      }
+    .contact .contact-text {
+      background: #72727224;
+    }
   }
-  
+
   @media only screen and (max-height: 871px) {
     .contact .contact-text {
-        background: #72727224;
+      background: #72727224;
     }
-}
+  }
 
   & .navigation {
     background: transparent;
@@ -113,7 +127,7 @@ body.darkTheme {
     & ul {
       & .menuIcon {
         & .menuDeNavigation {
-          background: rgb(122, 122, 219, .90);
+          background: rgb(122, 122, 219, 0.9);
         }
       }
     }
