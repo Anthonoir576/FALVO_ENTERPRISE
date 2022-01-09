@@ -136,7 +136,7 @@ const Contact = () => {
                 required
                 id="name"
                 name="name"
-                placeholder="&ensp; Noms *"
+                placeholder="&thinsp; Noms *"
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
@@ -149,7 +149,7 @@ const Contact = () => {
                 required
                 id="mail"
                 name="email"
-                placeholder="&ensp; E-mail *"
+                placeholder="&thinsp; E-mail *"
                 autoComplete="off"
                 onChange={(e) => {
                   setEmail(e.target.value);
@@ -163,7 +163,7 @@ const Contact = () => {
                 required
                 id="objet"
                 name="object"
-                placeholder="&ensp; Objet *"
+                placeholder="&thinsp; Objet *"
                 onChange={(e) => {
                   setObject(e.target.value);
                 }}
@@ -172,10 +172,11 @@ const Contact = () => {
             </div>
             <div className="spaceform">
               <textarea
+                type='text'
                 id="msg"
                 required
                 name="message"
-                placeholder="&ensp; Message *"
+                placeholder="&thinsp;Message *"
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
