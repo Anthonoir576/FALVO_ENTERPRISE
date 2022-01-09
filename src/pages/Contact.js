@@ -1,12 +1,15 @@
-import React               from "react";
-import { useState }        from "react";
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-import NavBar              from "../components/Navigation/NavBar";
-import { init }            from "emailjs-com";
+import React                from "react";
+import { useState }         from "react";
+import { CopyToClipboard }  from 'react-copy-to-clipboard';
+import NavBar               from "../components/Navigation/NavBar";
+import { init }             from "emailjs-com";
+import { alertAdress, 
+         alertEmail,
+         alertPhoneNumber } from "../components/Utils/Alerts";
 import { regexNom,
          regexEmail,
          regexMessage,
-         regexObjet }      from '../components/Utils/Regex';
+         regexObjet }       from '../components/Utils/Regex';
 
 
 
@@ -221,7 +224,9 @@ const Contact = () => {
             alt="adresse"
           />
           <CopyToClipboard text="180 Rue du capitaine wazny, Montigny-en-Ostrevent, 59182, France"> 
-            <p>
+            <p 
+              onClick={alertAdress}
+            >
               XXX Rue du capitaine wazny,
               <br /> Montigny-en-Ostrevent,
               <br /> 59182, France
@@ -236,7 +241,11 @@ const Contact = () => {
             alt="e-mail"
           />
           <CopyToClipboard text="anthony.falvo.pro@gmail.com">
-            <p>anthony.falvo.pro@gmail.com</p>
+            <p 
+              onClick={alertEmail}
+            >
+              anthony.falvo.pro@gmail.com
+            </p>
           </CopyToClipboard>
         </div>
         <div className="icontxt icon3">
@@ -247,7 +256,11 @@ const Contact = () => {
             alt="telephone"
           />
           <CopyToClipboard text='0627765292'>
-            <p>06.27.76.52.92</p>
+            <p
+              onClick={alertPhoneNumber}
+            >
+              06.27.76.52.92
+            </p>
           </CopyToClipboard>
         </div>
       </div>
