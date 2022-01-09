@@ -1,12 +1,15 @@
-import React               from "react";
-import { useState }        from "react";
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-import NavBar              from "../components/Navigation/NavBar";
-import { init }            from "emailjs-com";
+import React                from "react";
+import { useState }         from "react";
+import { CopyToClipboard }  from 'react-copy-to-clipboard';
+import NavBar               from "../components/Navigation/NavBar";
+import { init }             from "emailjs-com";
+import { alertAdress, 
+         alertEmail,
+         alertPhoneNumber } from "../components/Utils/Alerts";
 import { regexNom,
          regexEmail,
          regexMessage,
-         regexObjet }      from '../components/Utils/Regex';
+         regexObjet }       from '../components/Utils/Regex';
 
 
 
@@ -136,7 +139,7 @@ const Contact = () => {
                 required
                 id="name"
                 name="name"
-                placeholder="&ensp; Noms *"
+                placeholder="&thinsp; Noms *"
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
@@ -149,7 +152,7 @@ const Contact = () => {
                 required
                 id="mail"
                 name="email"
-                placeholder="&ensp; E-mail *"
+                placeholder="&thinsp; E-mail *"
                 autoComplete="off"
                 onChange={(e) => {
                   setEmail(e.target.value);
@@ -163,7 +166,7 @@ const Contact = () => {
                 required
                 id="objet"
                 name="object"
-                placeholder="&ensp; Objet *"
+                placeholder="&thinsp; Objet *"
                 onChange={(e) => {
                   setObject(e.target.value);
                 }}
@@ -172,10 +175,11 @@ const Contact = () => {
             </div>
             <div className="spaceform">
               <textarea
+                type='text'
                 id="msg"
                 required
                 name="message"
-                placeholder="&ensp; Message *"
+                placeholder="&thinsp;Message *"
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
@@ -220,7 +224,9 @@ const Contact = () => {
             alt="adresse"
           />
           <CopyToClipboard text="180 Rue du capitaine wazny, Montigny-en-Ostrevent, 59182, France"> 
-            <p>
+            <p 
+              onClick={alertAdress}
+            >
               XXX Rue du capitaine wazny,
               <br /> Montigny-en-Ostrevent,
               <br /> 59182, France
@@ -235,7 +241,11 @@ const Contact = () => {
             alt="e-mail"
           />
           <CopyToClipboard text="anthony.falvo.pro@gmail.com">
-            <p>anthony.falvo.pro@gmail.com</p>
+            <p 
+              onClick={alertEmail}
+            >
+              anthony.falvo.pro@gmail.com
+            </p>
           </CopyToClipboard>
         </div>
         <div className="icontxt icon3">
@@ -246,7 +256,11 @@ const Contact = () => {
             alt="telephone"
           />
           <CopyToClipboard text='0627765292'>
-            <p>06.27.76.52.92</p>
+            <p
+              onClick={alertPhoneNumber}
+            >
+              06.27.76.52.92
+            </p>
           </CopyToClipboard>
         </div>
       </div>
