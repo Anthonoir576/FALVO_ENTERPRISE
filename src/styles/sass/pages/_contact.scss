@@ -26,7 +26,7 @@
     top: 150px;
     right: -460px;
     z-index: -10;
-    animation: contactAnim 7s alternate infinite;
+    animation: contactAnim 4.9s alternate infinite;
 
     @keyframes contactAnim {
       50% {
@@ -113,52 +113,6 @@
     margin-bottom: 2em;
   }
 
-  // & input:invalid:focus {
-  //   border: 1px solid rgb(255, 0, 0, 0.4);
-  //   background-color: rgb(255, 0, 0, 0.05);
-  //   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
-  //   transform: translate3d(0, 0, 0);
-  // }
-  // @keyframes shake {
-  //   10%,
-  //   90% {
-  //     transform: translate3d(-1px, 0, 0);
-  //   }
-
-  //   20%,
-  //   80% {
-  //     transform: translate3d(2px, 0, 0);
-  //   }
-
-  //   30%,
-  //   50%,
-  //   70% {
-  //     transform: translate3d(-4px, 0, 0);
-  //   }
-
-  //   40%,
-  //   60% {
-  //     transform: translate3d(4px, 0, 0);
-  //   }
-  // }
-
-  // & span {
-  //   opacity: 0;
-  //   visibility: hidden;
-  //   position: relative;
-  //   top: 0.7em;
-  // }
-
-  // & input:invalid ~ span {
-  //   display: flex;
-  //   color: red;
-  //   transition: 0.4s opacity linear;
-  // }
-
-  // & input:invalid:focus ~ span {
-  //   visibility: visible;
-  //   opacity: 1;
-  // }
 }
 
 .spaceform {
