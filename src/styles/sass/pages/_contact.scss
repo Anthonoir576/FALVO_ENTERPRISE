@@ -26,11 +26,11 @@
     top: 150px;
     right: -460px;
     z-index: -10;
-    animation: contactAnim 4.9s alternate infinite;
+    animation: contactAnim 4.78s alternate infinite;
 
     @keyframes contactAnim {
       50% {
-        transform: scale(1.01);
+        transform: scale(1.015);
       }
       100% {
         transform: scale(1);
