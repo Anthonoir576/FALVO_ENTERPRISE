@@ -22,12 +22,12 @@ const Competence = () => {
             <h4 className="reveal-loaded reveal-L--title">
               &bull; Experience :
             </h4>
-            <div className="EXP-items">
+            <div className="EXP-items first-EXP">
               <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon01.png"} alt="icon book" />
               <p>
                 <strong>2019 - 2021</strong>
                 <br />
-                Pilote de ligne, Gestion de l’équipe, et de la production.
+                Pilote de ligne de production dans l'agro-alimentaire, Gestion de l’équipe, et de la production.
               </p>
             </div>
             <div className="EXP-items">
@@ -35,7 +35,7 @@ const Competence = () => {
               <p>
                 <strong>2015 - 2018</strong>
                 <br />
-                Agent de sécurité privé.
+                Agent de sécurité privé. Gestion de conflit. HOB0.
               </p>
             </div>
             <div className="EXP-items">
@@ -43,7 +43,7 @@ const Competence = () => {
               <p>
                 <strong>2011 - 2015</strong>
                 <br />
-                Armée de terre, BTP, et logistique.
+                Armée de terre, BTP, et agent de production.
               </p>
             </div>
           </div>
@@ -51,12 +51,12 @@ const Competence = () => {
             <h4 className="reveal-loaded reveal-R--title">
               &bull; Formation :
             </h4>
-            <div className="EXP-items">
+            <div className="EXP-items first-EXP">
               <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon01.png"} alt="icon book" />
               <p>
-                <strong>2021 - Développeur web</strong>
+                <strong>2021 - Développeur web </strong>
                 <br />
-                Formation de développeur web en autodidacte
+                Formation de développeur web en autodidacte, puis une formation officiel chez OpenClassRooms en tant que développeur d'application web & web mobile (bac +2).
               </p>
             </div>
             <div className="EXP-items">
