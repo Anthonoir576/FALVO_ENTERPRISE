@@ -464,14 +464,14 @@
 @media only screen and (max-width: 1090px) {
   div.EXP {
     & #EXP-list {
-     & .EXP-list-L .first-EXP,
-     & .EXP-list-R .first-EXP {
-      min-height: 180px;
-     }
+      & .EXP-list-L .first-EXP,
+      & .EXP-list-R .first-EXP {
+        min-height: 150px;
+      }
     }
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 780px) {
   div.EXP {
     padding: 3em 2em 3em 2em;
 
@@ -484,6 +484,16 @@
         border-radius: 5px;
         padding: 11px 20px 8px 10px;
         color: white;
+      }
+      & .EXP-list-L .first-EXP,
+      .EXP-list-R .first-EXP {
+        min-height: 0px;
+      }
+      & p {
+        min-height: 0;
+      }
+      & p {
+        margin-bottom: 2rem;
       }
     }
     & .EXP-list-L {
@@ -520,7 +530,12 @@
       margin-right: 0em;
       margin-bottom: 4em;
     }
-
+    #EXP-list {
+      & p strong {
+        font-size: 22px;
+        text-align: left;
+      }
+    }
     & .EXP-legend {
       text-align: center;
       & h2 {

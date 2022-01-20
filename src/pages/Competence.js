@@ -54,7 +54,7 @@ const Competence = () => {
             <div className="EXP-items first-EXP">
               <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon01.png"} alt="icon book" />
               <p>
-                <strong>2021 - Développeur d'application web </strong>
+                <strong>2021 - Développeur web </strong>
                 <br />
                 Formation de développeur web en autodidacte, puis une formation officiel chez OpenClassRooms en tant que développeur d'application web & web mobile (bac +2).
               </p>
