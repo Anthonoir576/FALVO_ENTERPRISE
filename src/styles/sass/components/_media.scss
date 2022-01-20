@@ -530,12 +530,6 @@
       margin-right: 0em;
       margin-bottom: 4em;
     }
-    #EXP-list {
-      & p strong {
-        font-size: 22px;
-        text-align: left;
-      }
-    }
     & .EXP-legend {
       text-align: center;
       & h2 {
@@ -560,8 +554,14 @@
     }
   }
 }
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 370px) {
   div.EXP {
+    #EXP-list {
+      & p strong {
+        font-size: 22px;
+        text-align: left;
+      }
+    }
     & .EXP-legend {
       & h2 {
         & em {
