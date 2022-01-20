@@ -456,42 +456,18 @@
 // #######################################
 
 // ##########   COMPETENCE   #############
-@media only screen and (max-width: 1300px) {
-  div.EXP {
-    padding: 3em 5em 3em 5em;
-  }
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1342px) {
   div.EXP {
     padding: 3em 2em 3em 2em;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1090px) {
   div.EXP {
-    padding: 3em 2em 3em 2em;
-
     & #EXP-list {
-      flex-direction: column;
-      & h4 {
-        text-align: center;
-        display: block;
-        background: $bluesky;
-        border-radius: 5px;
-        padding: 11px 20px 8px 10px;
-        color: white;
-      }
-    }
-    & .EXP-list-L {
-      margin-right: 0em;
-      margin-bottom: 4em;
-    }
-
-    & .EXP-legend h2 {
-      white-space: normal;
-
-      & em {
-        letter-spacing: 3px;
-      }
+     & .EXP-list-L .first-EXP,
+     & .EXP-list-R .first-EXP {
+      min-height: 180px;
+     }
     }
   }
 }

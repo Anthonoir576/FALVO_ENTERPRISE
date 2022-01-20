@@ -22,7 +22,7 @@ const Competence = () => {
             <h4 className="reveal-loaded reveal-L--title">
               &bull; Experience :
             </h4>
-            <div className="EXP-items">
+            <div className="EXP-items first-EXP">
               <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon01.png"} alt="icon book" />
               <p>
                 <strong>2019 - 2021</strong>
@@ -51,7 +51,7 @@ const Competence = () => {
             <h4 className="reveal-loaded reveal-R--title">
               &bull; Formation :
             </h4>
-            <div className="EXP-items">
+            <div className="EXP-items first-EXP">
               <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/icon01.png"} alt="icon book" />
               <p>
                 <strong>2021 - Développeur d'application web </strong>
