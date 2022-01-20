@@ -56,7 +56,7 @@ const Competence = () => {
               <p>
                 <strong>2021 - Développeur d'application web </strong>
                 <br />
-                Formation de développeur web en autodidacte, puis une formation officiel chez OpenClassRooms en tant que développeur d'application web & web mobile (bac +2)
+                Formation de développeur web en autodidacte, puis une formation officiel chez OpenClassRooms en tant que développeur d'application web & web mobile (bac +2).
               </p>
             </div>
             <div className="EXP-items">
