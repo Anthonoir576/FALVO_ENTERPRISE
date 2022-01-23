@@ -133,6 +133,16 @@ body.darkTheme {
       }
     }
   }
+
+  & .EXP-about {
+    & .btn-exp-about {
+      border-color: white;
+      & svg {
+        color: white;
+      }
+    }
+  }
+
 }
 
 /* #09FBBA  #333 */
