@@ -12,6 +12,8 @@ const Terminal = () => {
         error: 'Commande introuvable !'
     };
 
+    // Mettre commands OBJET dans un fichier js je pense pour en créez un complet
+
     return (
         
         <ReactTerminal commands={commands} theme="dracula" 
