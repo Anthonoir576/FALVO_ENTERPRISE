@@ -1,9 +1,11 @@
-import React from 'react';
+import React               from 'react';
+import { AiFillCaretDown } from 'react-icons/ai';
+
 
 const CompetencePartie2 = () => {
     return (
         <div className='EXP-about'>
-            <button> En savoir plus </button>
+            <button className='btn-exp-about'> <AiFillCaretDown /></button>
         </div>
     );
 };

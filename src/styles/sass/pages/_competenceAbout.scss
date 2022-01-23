@@ -1,3 +1,25 @@
 .EXP-about {
-    text-align: center;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+
+  & .btn-exp-about {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+    background: transparent;
+    padding: 0 5px 0px 5px;
+
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.8);
+    transition: transform 0.2s ease-in-out;
+
+    & svg {
+      transform: translateY(2px);
+    }
+
+    &:hover {
+      transition: transform 0.12s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
 }
