@@ -3,6 +3,7 @@ import CompetencePartie2 from "../components/Competence/CompetencePartie2";
 import NavBar            from "../components/Navigation/NavBar";
 
 const Competence = () => {
+
   return (
     <div className="competence">
       <NavBar />
