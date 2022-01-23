@@ -1,7 +1,9 @@
 import React, 
       { useState }           from 'react';
+      
 import { AiFillCaretDown }   from 'react-icons/ai';
 import { AiFillCaretUp }     from 'react-icons/ai';
+import Terminal              from './Terminal';
 
 
 const CompetencePartie2 = () => {
@@ -20,7 +22,7 @@ const CompetencePartie2 = () => {
                             onClick={() => setBtnOpen(!btnOpen)}> <AiFillCaretUp /> 
                         </button>
                         <div className='About-terminal'>
-                            Terminal
+                            <Terminal />
                         </div>
                     </>
                 )
