@@ -13,7 +13,8 @@ const Terminal = () => {
     return (
         
         <ReactTerminal commands={commands} theme="dracula" 
-                       welcomeMessage={commands.welcome}/>
+                       welcomeMessage={commands.welcome}
+        />
 
     );
 };
