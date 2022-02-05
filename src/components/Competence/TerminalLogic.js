@@ -2,10 +2,29 @@
 // Logique du terminal
 
 export const commands = {
-    nom: "FALVO",
+    nom       : "FALVO",
+    prénom    :'Anthony',
+    age       : '28 ansc',
     cd: (directory) => `changed path to ${directory}`,
-    welcome: `saisissez la commande " help " pour en savoir plus...
-              Le terminal est en cours de développement...   `,
-    help   : "En savoir plus sur mon profil ?",
-    error  : 'Commande introuvable !'
+    welcome   : `Saisissez la commande " info " pour en savoir plus...`,
+    help      : 'ICI COMMANDE',
+    yes       : '',
+    no        : '',
+    error     : 'Commande introuvable !',
+    info      : 'Saisissez une année, pour en savoir plus sur mon expérience professionnelle, exemple : 2019, ou "allYear" pour la totalitée de mon curriculum vitae, saisissez "help" pour connaitre l\'intégralité des commandes.',
+    2009      : '',
+    2010      : '',
+    2011      : '',
+    2012      : '',
+    2013      : '',
+    2014      : '',
+    2015      : '',
+    2016      : '',
+    2017      : '',
+    2018      : '',
+    2019      : '',
+    2020      : '',
+    2021      : '',
+    2022      : '',
+    allYear   : '',
 };

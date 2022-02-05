@@ -1,6 +1,5 @@
 import React, 
-      { useState }           from 'react';
-      
+       { useState }          from 'react';
 import { AiFillCaretDown }   from 'react-icons/ai';
 import { AiFillCaretUp }     from 'react-icons/ai';
 import Terminal              from './Terminal';
