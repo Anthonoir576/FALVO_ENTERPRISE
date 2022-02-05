@@ -7,7 +7,7 @@ export const commands = {
     age       : '28 ans',
     cd: (directory) => `changed path to ${directory}`,
     welcome   : `Saisissez la commande " info " pour en savoir plus...`,
-    help      : 'ICI COMMANDE',
+    help      : 'Utilisez la commande "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022" concernant une recherche ciblée. Sinon la commande "allYear" vous donnera un résumé de mon curriculum vitae. La commande "nom", "prénom", "age" vous donnera plus d\'information me concernant.',
     yes       : '',
     no        : '',
     error     : 'Commande introuvable !',
