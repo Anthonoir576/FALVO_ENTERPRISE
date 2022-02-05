@@ -9,11 +9,11 @@
 En cours de réalisation. Il s'agit de la mise à jour d'un site crée il y a 1 an.
 
 ## Librairies : 
-- emailJS
-- SweetAlert
-- React Icons
-- react copy to clipboard
-- react terminal
+- emailJS (contact par e-mail)
+- SweetAlert (alerte personnalisée)
+- React Icons (icon directement via react)
+- react copy to clipboard (copier coller)
+- react terminal (terminal personnalisé)
 
 ## Version : 
 
