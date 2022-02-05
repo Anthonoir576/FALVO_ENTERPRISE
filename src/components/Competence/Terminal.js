@@ -1,19 +1,18 @@
-import React from 'react';
-import { ReactTerminal } from 'react-terminal';
+import React              from 'react';
+import { ReactTerminal }  from 'react-terminal';
+import { commands }       from './TerminalLogic';
+
+// Terminal => Partie compétence
 
 const Terminal = () => {
 
-    const commands = {
-        nom: "FALVO",
-        cd: (directory) => `changed path to ${directory}`,
-        welcome: `saisissez la commande " help " pour en savoir plus  `,
-        help: "En savoir plus sur mon profil ?"
-    };
-
     return (
         
-        <ReactTerminal commands={commands} theme="dracula" 
-                       welcomeMessage={commands.welcome}/>
+        <ReactTerminal commands={commands} 
+                       theme="dracula" 
+                       welcomeMessage={commands.welcome}
+                       errorMessage={commands.error}
+        />
 
     );
 };
