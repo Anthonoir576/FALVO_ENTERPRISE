@@ -1,18 +1,9 @@
-import React from 'react';
-import { ReactTerminal } from 'react-terminal';
+import React              from 'react';
+import { ReactTerminal }  from 'react-terminal';
+import { commands }       from './TerminalLogic';
+
 
 const Terminal = () => {
-
-    const commands = {
-        nom: "FALVO",
-        cd: (directory) => `changed path to ${directory}`,
-        welcome: `saisissez la commande " help " pour en savoir plus...
-                  Le terminal est en cours de développement...   `,
-        help: "En savoir plus sur mon profil ?",
-        error: 'Commande introuvable !'
-    };
-
-    // Mettre commands OBJET dans un fichier js je pense pour en créez un complet
 
     return (
         
