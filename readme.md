@@ -15,6 +15,7 @@ En cours de réalisation. Il s'agit de la mise à jour d'un site crée il y a 1 
 - React copy to clipboard (copier coller)
 - React terminal (terminal personnalisé)
 - Swiper (carousel)
+- Rc-menu (menu react)
 
 ## Version : 
 
