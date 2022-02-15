@@ -15,6 +15,7 @@ En cours de réalisation. Il s'agit de la mise à jour d'un site crée il y a 1 
 - React copy to clipboard (copier coller)
 - React terminal (terminal personnalisé)
 - Swiper (carousel)
+- Rc-menu (menu react)
 
 ## Version : 
 
@@ -25,4 +26,3 @@ En cours de réalisation. Il s'agit de la mise à jour d'un site crée il y a 1 
 - Version 0.0.5 : 08 Janvier  2022 [ Ajout dark mode button         ] 
 - Version 0.0.6 : 23 Janvier  2022 [ Ajout Terminal (bêta)          ]
 - Version 0.0.7 : 05 Fevrier  2022 [ Terminal ok    (bêta)          ]  
-- Version 0.0.8 : 09 Fevrier  2022 
