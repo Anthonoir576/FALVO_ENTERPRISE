@@ -126,7 +126,7 @@ const APropos = () => {
             </h3>
             <p>
               Développeur React et Node.js, basé sur les éléments : HTML 5, CSS
-              3, Sass et JavaScript, React, et Redux ainsi que les connaissances
+              3, Sass et JavaScript, React, et Redux, Typescript ainsi que les connaissances
               basique sur la partie back-end, avec node.js , Express, Mongoose,
               MongoDB, MySql et Sequelize. Le programme comporte l’apprentissage
               et l’utilisation de GIT / GitHub dans les projets comme vous
@@ -155,7 +155,7 @@ const APropos = () => {
               </div>
               <div className="bar">
                 <div className="info">
-                  <span className="nameskill">REACT / REDUX</span>
+                  <span className="nameskill">REACT / REDUX / TS</span>
                 </div>
                 <div className="progress-line js">
                   <span></span>
@@ -163,7 +163,7 @@ const APropos = () => {
               </div>
               <div className="bar">
                 <div className="info">
-                  <span className="nameskill">BACK-END</span>
+                  <span className="nameskill">NODE.JS</span>
                 </div>
                 <div className="progress-line sql">
                   <span></span>
