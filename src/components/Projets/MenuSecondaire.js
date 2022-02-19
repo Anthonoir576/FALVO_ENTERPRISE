@@ -23,56 +23,79 @@ const MenuSecondaire = () => {
 
 
     return (
-        <div className='menuSecondaire'>
-            <nav>
-                <ul>
-                    <li>
-                        <p 
-                           aria-label='Mes projets de développement web'
-                           className={web === true ? 'active-menuSecondaire' : 'none'}
-                           onClick={() => { 
-                                            isActive();
-                                            setWeb(true);
-                                            setLogiciel(false);
-                                            setUe(false); 
-                                          }
-                           }
-                        > 
-                            Projet Web    
-                        </p>
-                    </li>
-                    
-                    <li>
-                        <p  
-                           aria-label='Mes projets de développement logiciel'
-                           className={logiciel === true ? 'active-menuSecondaire' : 'none'}
-                           onClick={() => { 
-                                            isActive(); 
-                                            setLogiciel(true);
-                                            setWeb(false);
-                                            setUe(false); 
-                                          }
-                           }
-                        >
-                            Projet Logiciel    
-                        </p>
-                    </li>
-                    <li>
-                        <p
-                           aria-label='Mes projets de développement sous unreal engine'
-                           className={ue === true ? 'active-menuSecondaire' : 'none'}
-                           onClick={() => { isActive(); 
-                                            setUe(true);
-                                            setWeb(false);
-                                            setLogiciel(false); 
-                                          }
-                           }
-                        >
-                            Projet Unreal Engine    
-                        </p>
-                    </li>
-                </ul>
-            </nav>
+        <div>
+            <div className='menuSecondaire'>
+                <nav>
+                    <ul>
+                        <li>
+                            <p 
+                            aria-label='Mes projets de développement web'
+                            className={web === true ? 'active-menuSecondaire' : 'none'}
+                            onClick={() => { 
+                                                isActive();
+                                                setWeb(true);
+                                                setLogiciel(false);
+                                                setUe(false); 
+                                            }
+                            }
+                            > 
+                                Projet Web    
+                            </p>
+                        </li>
+                        <li>
+                            <p  
+                            aria-label='Mes projets de développement logiciel'
+                            className={logiciel === true ? 'active-menuSecondaire' : 'none'}
+                            onClick={() => { 
+                                                isActive(); 
+                                                setLogiciel(true);
+                                                setWeb(false);
+                                                setUe(false); 
+                                            }
+                            }
+                            >
+                                Projet Logiciel    
+                            </p>
+                        </li>
+                        <li>
+                            <p
+                            aria-label='Mes projets de développement sous unreal engine'
+                            className={ue === true ? 'active-menuSecondaire' : 'none'}
+                            onClick={() => { isActive(); 
+                                                setUe(true);
+                                                setWeb(false);
+                                                setLogiciel(false); 
+                                            }
+                            }
+                            >
+                                Projet Unreal Engine    
+                            </p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div className='affichage-option-projets'>
+                {/* TEST EN COURS */}
+
+                {web === true ? (
+                    <p>web</p>
+                ) : (
+                    <></>
+                )}
+
+                {logiciel === true ? (
+                    <p>logiciel</p>
+                ) : (
+                    <></>
+                )}
+
+                {ue === true ? (
+                    <p>unreal engine</p>
+                ) : (
+                    <></>
+                )}
+                
+            </div>
         </div>
     );
 };

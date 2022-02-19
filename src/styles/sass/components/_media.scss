@@ -718,6 +718,57 @@
 }
 // #######################################
 
+// ############   PROJETS   ##############
+@media only screen and (max-width: 690px) {
+  .menuSecondaire {
+    & nav {
+      & ul {
+        padding: 0;
+        & li {
+          & p {
+            font-size: 10px;
+            padding: 14px 18px 6px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 440px) {
+  .menuSecondaire {
+    & nav {
+      & ul {
+        justify-content: space-between;
+        & li {
+          & p {
+            font-size: 8px;
+            padding: 10px 13px 3px;
+            &.active-menuSecondaire::after {
+              margin-top: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 330px) {
+  .menuSecondaire {
+    & nav {
+      & ul {
+        & li {
+          & p {
+            min-width: 0px;
+            font-size: 8px;
+            padding: 10px 9px 6px;
+          }
+        }
+      }
+    }
+  }
+}
+// #######################################
+
 // ############   CONTACT   ##############
 @media only screen and (max-width: 1400px) {
   body .contact-form_contact {
