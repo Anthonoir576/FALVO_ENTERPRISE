@@ -76,9 +76,25 @@ const MenuSecondaire = () => {
             </div>
             <div className='affichage-option-projets'>
                 {/* TEST EN COURS */}
-                {web === true ? (<p>web</p>) : (<></>)}
-                {logiciel === true ? (<p>logiciel</p>) : (<></>)}
-                {ue === true ? (<p>unreal engine</p>) : (<></>)}
+
+                {web === true ? (
+                    <p>web</p>
+                ) : (
+                    <></>
+                )}
+
+                {logiciel === true ? (
+                    <p>logiciel</p>
+                ) : (
+                    <></>
+                )}
+
+                {ue === true ? (
+                    <p>unreal engine</p>
+                ) : (
+                    <></>
+                )}
+                
             </div>
         </div>
     );

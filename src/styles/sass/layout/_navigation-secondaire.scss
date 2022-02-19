@@ -21,7 +21,8 @@
 
           &.active-menuSecondaire {
             background: $bluesky;
-            border-radius: 8px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.18);
             background-size: 100% 100%;
             color: white;
             animation: animeMenuSecondaire 300ms ease-out;
