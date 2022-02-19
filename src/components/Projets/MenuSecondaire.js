@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-
+import React, { useState }   from 'react';
+import ProjetWeb             from './ProjetWeb';
+import ProjetLogiciel        from './ProjetLogiciel';
+import ProjetUnrealEngine    from './ProjetUnrealEngine';
 
 
 const MenuSecondaire = () => {
@@ -78,23 +80,23 @@ const MenuSecondaire = () => {
                 {/* TEST EN COURS */}
 
                 {web === true ? (
-                    <p>web</p>
+                    <ProjetWeb />
                 ) : (
                     <></>
                 )}
 
                 {logiciel === true ? (
-                    <p>logiciel</p>
+                    <ProjetLogiciel />
                 ) : (
                     <></>
                 )}
 
                 {ue === true ? (
-                    <p>unreal engine</p>
+                    <ProjetUnrealEngine />
                 ) : (
                     <></>
                 )}
-                
+
             </div>
         </div>
     );
