@@ -4,6 +4,7 @@ const MenuSecondaire = () => {
     return (
         <div>
             <nav>
+                ici
                 {/* <ul>
                     <li>Projet Web</li>
                     <li>Projet Logiciel</li>
