@@ -1,27 +1,59 @@
 .menuSecondaire {
   margin-top: 2rem;
   & nav {
-    border-top: 2px solid $bluesky;
-    border-bottom: 2px solid $bluesky;
+    background: $centerbanner;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
     & ul {
       display: flex;
       justify-content: space-around;
       list-style: none;
+      margin: 0;
 
       & li {
         cursor: pointer;
-
         & p {
           color: $gray;
+          margin: 0;
+          text-transform: uppercase;
+          padding: 1rem 2rem 0.5rem;
+          font-weight: 400;
+          min-width: 100px;
 
           &.active-menuSecondaire {
+            background: $bluesky;
+            border-radius: 8px;
+            background-size: 100% 100%;
+            color: white;
+            animation: animeMenuSecondaire 300ms ease-out;
+            text-shadow: 0 -1px 0 $bluesky;
+            font-weight: bold;
+
+            @keyframes animeMenuSecondaire {
+              15% {
+                transform-origin: center center;
+                transform: scale(1.2, 1.1);
+              }
+              40% {
+                transform-origin: center center;
+                transform: scale(0.95, 0.95);
+              }
+              75% {
+                transform-origin: center center;
+                transform: scale(1.05, 1);
+              }
+              100% {
+                transform-origin: center center;
+                transform: scale(1, 1);
+              }
+            }
+
             &::after {
               content: "";
               display: block;
               margin-top: 0.4rem;
               width: 30%;
               height: 2px;
-              background: $gray;
+              background: white;
             }
           }
         }
