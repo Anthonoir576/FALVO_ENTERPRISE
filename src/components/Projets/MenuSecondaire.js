@@ -8,6 +8,20 @@ const MenuSecondaire = () => {
     const [web, setWeb]            = useState(true);
     const [ue, setUe]              = useState(false);
 
+    const isActive = () => {
+        if (web === true) {
+            setLogiciel(false);
+            setUe(false);
+        } else if (logiciel === true) {
+            setWeb(false);
+            setUe(false);
+        } else if (ue === true) {
+            setWeb(false);
+            setLogiciel(false);
+        }; 
+    };
+
+
     return (
         <div className='menuSecondaire'>
             <nav>
@@ -16,13 +30,13 @@ const MenuSecondaire = () => {
                         <p 
                            aria-label='Mes projets de développement web'
                            className={web === true ? 'active-menuSecondaire' : 'none'}
-                           onClick={() => {
-
-                               if (web === true) {
-                                   setLogiciel(false);
-                                   setUe(false);
-                               }; 
-                           }}
+                           onClick={() => { 
+                                            isActive();
+                                            setWeb(true);
+                                            setLogiciel(false);
+                                            setUe(false); 
+                                          }
+                           }
                         > 
                             Projet Web    
                         </p>
@@ -32,15 +46,13 @@ const MenuSecondaire = () => {
                         <p  
                            aria-label='Mes projets de développement logiciel'
                            className={logiciel === true ? 'active-menuSecondaire' : 'none'}
-                           onClick={() => {
-
-                            setLogiciel(!logiciel);
-
-                            if (logiciel === true) {
-                                setWeb(false);
-                                setUe(false);
-                            }; 
-                        }}
+                           onClick={() => { 
+                                            isActive(); 
+                                            setLogiciel(true);
+                                            setWeb(false);
+                                            setUe(false); 
+                                          }
+                           }
                         >
                             Projet Logiciel    
                         </p>
@@ -49,15 +61,12 @@ const MenuSecondaire = () => {
                         <p
                            aria-label='Mes projets de développement sous unreal engine'
                            className={ue === true ? 'active-menuSecondaire' : 'none'}
-                           onClick={() => {
-
-                               setUe(!ue);
-
-                               if (ue === true) {
-                                   setWeb(false);
-                                   setLogiciel(false);
-                               }; 
-                           }}
+                           onClick={() => { isActive(); 
+                                            setUe(true);
+                                            setWeb(false);
+                                            setLogiciel(false); 
+                                          }
+                           }
                         >
                             Projet Unreal Engine    
                         </p>
@@ -69,7 +78,3 @@ const MenuSecondaire = () => {
 };
 
 export default MenuSecondaire;
-
-
-
-
