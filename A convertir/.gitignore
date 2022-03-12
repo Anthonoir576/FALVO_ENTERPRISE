@@ -1,0 +1,12 @@
+# ---- Fichier racine ----
+
+/falvoEnterprise.code-workspace
+/build
+
+# ------------------------
+
+# ---- NODE MODULE ----
+
+/node_modules
+
+# ---------------------
