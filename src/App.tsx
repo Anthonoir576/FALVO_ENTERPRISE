@@ -1,8 +1,8 @@
-import Accueil               from "./pages/Accueil.js";
-import APropos               from "./pages/APropos.js";
-import Competence            from "./pages/Competence.js";
+import Accueil               from "./pages/Accueil";
+import APropos               from "./pages/APropos";
+import Competence            from "./pages/Competence";
 import Projets               from "./pages/Projets.js";
-import Contact               from "./pages/Contact.js";
+import Contact               from "./pages/Contact";
 import ThemeContextProvider  from "./context/ThemeContext.js";
 
 import { Routes, 
