@@ -1,7 +1,7 @@
 import Accueil               from "./pages/Accueil";
 import APropos               from "./pages/APropos";
 import Competence            from "./pages/Competence";
-import Projets               from "./pages/Projets.js";
+import Projets               from "./pages/Projets";
 import Contact               from "./pages/Contact";
 import ThemeContextProvider  from "./context/ThemeContext.js";
 

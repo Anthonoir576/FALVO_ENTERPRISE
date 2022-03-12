@@ -10,7 +10,8 @@ import { regexNom,
          regexEmail,
          regexMessage,
          regexObjet }       from '../components/Utils/Regex';
-         
+       
+
 declare const window :any;
 
 
