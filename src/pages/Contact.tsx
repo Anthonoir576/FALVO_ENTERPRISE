@@ -92,7 +92,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     } else if (!regexEmail(email)) {
 
@@ -101,7 +101,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     } else if (!regexObjet(object)) {
 
@@ -110,7 +110,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     } else if (!regexMessage(message)) {
 
@@ -119,7 +119,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     };
 
