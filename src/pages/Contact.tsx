@@ -10,7 +10,9 @@ import { regexNom,
          regexEmail,
          regexMessage,
          regexObjet }       from '../components/Utils/Regex';
-       
+
+
+
 
 declare const window :any;
 
@@ -27,7 +29,7 @@ const Contact = () => {
   const [msgErr, setMsgErr]        = useState('');
   const [succes, setSucces]        = useState(false);
   const [msgSucces, setMsgSucces]  = useState('');
-  
+    
 
   const sendToMail = (e?: any) => {
     e.preventDefault();
