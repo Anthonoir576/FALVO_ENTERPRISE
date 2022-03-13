@@ -1,5 +1,5 @@
-import React from "react";
-import NavBar from "../components/Navigation/NavBar";
+import React       from "react";
+import NavBar      from "../components/Navigation/NavBar";
 import { NavLink } from "react-router-dom";
 
 const APropos = () => {
