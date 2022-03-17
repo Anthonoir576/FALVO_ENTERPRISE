@@ -1,13 +1,12 @@
 import React       from 'react';
 import Maintenance from '../Maintenance/Maintenance';
 
-const ProjetUnrealEngine = () => {
+const ProjetWeb = () => {
     return (
         <div>
-            <>Unreal Engine</>
             <Maintenance />
         </div>
     );
 };
 
-export default ProjetUnrealEngine;
+export default ProjetWeb;

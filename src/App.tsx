@@ -5,7 +5,10 @@ import Projets               from "./pages/Projets";
 import Contact               from "./pages/Contact";
 import ThemeContextProvider  from "./context/ThemeContext";
 
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { Routes, 
+         Route,
+         BrowserRouter,
+         Navigate }          from "react-router-dom";
 
 
 function App() {
@@ -14,13 +17,13 @@ function App() {
     <BrowserRouter>
       <ThemeContextProvider>
         <Routes>
-          <Route exact path='/accueil' element={ <Accueil /> } />
-          <Route exact path='/a_propos' element={ <APropos /> } />
-          <Route exact path='/competence' element={ <Competence /> } />
-          <Route exact path='/projets' element={ <Projets /> } />
-          <Route exact path='/contact' element={ <Contact /> } />
+          <Route path='/accueil' element={ <Accueil /> } />
+          <Route path='/a_propos' element={ <APropos /> } />
+          <Route path='/competence' element={ <Competence /> } />
+          <Route path='/projets' element={ <Projets /> } />
+          <Route path='/contact' element={ <Contact /> } />
           <Route path='*' element={ <Navigate replace to='/FALVO_ENTERPRISE/' /> } />
-          <Route exact path='/FALVO_ENTERPRISE/' element={ <Accueil /> } />
+          <Route path='/FALVO_ENTERPRISE/' element={ <Accueil /> } />
         </Routes>
       </ThemeContextProvider>
     </BrowserRouter>

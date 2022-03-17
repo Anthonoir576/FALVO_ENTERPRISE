@@ -13,6 +13,10 @@ import { regexNom,
 
 
 
+
+declare const window :any;
+
+
 init("user_kFyT3rLA41sQVqH9BcaF5");
 
 
@@ -25,9 +29,9 @@ const Contact = () => {
   const [msgErr, setMsgErr]        = useState('');
   const [succes, setSucces]        = useState(false);
   const [msgSucces, setMsgSucces]  = useState('');
- 
+    
 
-  const sendToMail = (e) => {
+  const sendToMail = (e?: any) => {
     e.preventDefault();
 
     if (regexEmail(email) &&
@@ -37,10 +41,10 @@ const Contact = () => {
       
       setError(false);    
          
-      const sendEmailJs = (templateId, variables) => {
+      const sendEmailJs = (templateId?: any, variables?: any) => {
         window.emailjs
           .send('service_s8v4a09', templateId, variables)
-          .then((resultat) => {
+          .then((resultat: any) => {
 
             console.log('succès !');
 
@@ -62,9 +66,15 @@ const Contact = () => {
 
           })
           .catch(
-            (erreur) =>
-              (document.querySelector(".formulaire").innerHTML =
-                "Une erreur s'est produite, veuillez réessayer.")
+            (erreur: any) =>
+              {             
+                let err: any = document.querySelector(".formulaire");
+
+                (
+                  err.innerHTML =
+                  "Une erreur s'est produite, veuillez réessayer."
+                )
+              }
           );
       };
   
@@ -82,7 +92,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     } else if (!regexEmail(email)) {
 
@@ -91,7 +101,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     } else if (!regexObjet(object)) {
 
@@ -100,7 +110,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     } else if (!regexMessage(message)) {
 
@@ -109,7 +119,7 @@ const Contact = () => {
 
       setTimeout(() => {
         setError(false);
-      }, 3500);
+      }, 2500);
 
     };
 
@@ -175,7 +185,6 @@ const Contact = () => {
             </div>
             <div className="spaceform">
               <textarea
-                type='text'
                 id="msg"
                 required
                 name="message"
@@ -209,7 +218,6 @@ const Contact = () => {
               title="map"
               width="500"
               height="500"
-              allowFullScreen=""
               loading="lazy"
             ></iframe>
           </div>
