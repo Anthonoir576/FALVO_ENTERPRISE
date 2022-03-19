@@ -211,11 +211,11 @@
     }
 
     .bar .progress-line.js span {
-      width: 45%;
+      width: 85%;
     }
 
     .bar .progress-line.sql span {
-      width: 70%;
+      width: 45%;
     }
 
     .bar .progress-line.design span {
@@ -263,11 +263,11 @@
     }
 
     .progress-line.js span::after {
-      content: "45 %";
+      content: "85 %";
     }
 
     .progress-line.sql span::after {
-      content: "70 %";
+      content: "45 %";
     }
 
     .progress-line.design span::after {
