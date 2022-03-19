@@ -1,23 +1,33 @@
 // -- Effet binaire sur texte Accueil --
 export const txtEffect = () => {
+
   class TextScramble {
-    constructor(el) {
-      this.el = el;
-      this.chars = "01101010";
+    el          ?: any;
+    chars       ?: any;
+    resolve     ?: any;
+    frame       ?: any;
+    queue       ?: any;
+    frameRequest?: any;
+
+    constructor(el?: any, chars?: any, update?: any) {
+      this.el     = el;
+      this.chars  = "01101010";
       this.update = this.update.bind(this);
     }
 
-    setText(newText) {
+    setText(newText?: any) {
       const oldText = this.el.innerText;
-      const length = Math.max(oldText.length, newText.length);
+      const length  = Math.max(oldText.length, newText.length);
       const promise = new Promise((resolve) => (this.resolve = resolve));
       this.queue = [];
 
       for (let i = 0; i < length; i++) {
-        const from = oldText[i] || "";
-        const to = newText[i] || "";
+
+        const from  = oldText[i] || "";
+        const to    = newText[i] || "";
         const start = Math.floor(Math.random() * 40);
-        const end = start + Math.floor(Math.random() * 40);
+        const end   = start + Math.floor(Math.random() * 40);
+
         this.queue.push({
           from,
           to,
@@ -33,7 +43,8 @@ export const txtEffect = () => {
     };
 
     update() {
-      let output = "";
+
+      let output   = "";
       let complete = 0;
 
       for (let i = 0, n = this.queue.length; i < n; i++) {
@@ -70,9 +81,9 @@ export const txtEffect = () => {
   };
 
   const phrases = ["FALVO Anthony", "FALVO. Enterprise"];
-  const el = document.querySelector(".text-effect");
-  const fx = new TextScramble(el);
-  let counter = 0;
+  const el      = document.querySelector(".text-effect");
+  const fx      = new TextScramble(el);
+  let counter   = 0;
 
   const next = () => {
     fx.setText(phrases[counter]).then(() => {

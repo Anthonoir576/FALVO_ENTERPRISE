@@ -1,13 +1,12 @@
 import React       from 'react';
 import Maintenance from '../Maintenance/Maintenance';
 
-const ProjetWeb = () => {
+const ProjetLogiciel = () => {
     return (
         <div>
-            <>web</>
             <Maintenance />
         </div>
     );
 };
 
-export default ProjetWeb;
+export default ProjetLogiciel;
