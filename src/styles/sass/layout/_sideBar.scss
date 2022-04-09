@@ -1,49 +1,51 @@
-#root .navigation ul li.menuIcon {
+#root .navigation {
   position: relative;
   z-index: 10;
 
   &:hover {
     filter: saturate(100%);
   }
+  & a {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  & ::first-letter {
+    color: white;
+  }
 
   & .menuDeNavigation {
-    position: fixed;
-
-    transform: translate(7px, -7px);
-    width: 0px;
-    height: 0px;
-    top: 5px;
-    right: 2px;
+    position: absolute;
+    transform: translate(0px, 0px);
+    width: 25%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0px;
+    right: -900px;
     z-index: 4;
     animation: none;
-    background: hsla(210, 88%, 69%, 0.95);
+    background: hsla(210, 88%, 69%, 0.85);
     border-radius: 5px;
-    border: 2px solid rgba(255, 255, 255, 0.747);
+    border-left: 2px solid rgba(255, 255, 255, 0.747);
     box-shadow: 0 0 10px 0 black;
 
-    animation: apparitionMenu 0.65s forwards;
+    animation: apparitionMenu 1s both;
     @keyframes apparitionMenu {
       0% {
-        width: 0px;
-        height: 0px;
+        right: -900px;
       }
       100% {
-        width: 200px;
-        height: 410px;
+        right: 0px;
       }
     }
 
     & ul {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      position: absolute;
-      width: 200px;
-      height: 100%;
-      top: 30px;
-      right: 0;
+      justify-content: center;
+      width: 100%;
       text-shadow: 0 0 0;
-      transform: translateX(100px);
       opacity: 0;
 
       animation: apparitionMenu2 0.65s forwards;
@@ -70,51 +72,36 @@
       & li {
         display: block;
         z-index: 6;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
+
+        & a {
+          padding: 10px 20px 10px 0;
+        }
 
         &:hover {
           filter: saturate(100%);
 
-          animation: hoverNav3 0.15s forwards;
-          @keyframes hoverNav3 {
-            0% {
-              transform: scale(1);
-            }
-            100% {
-              transform: scale(1);
-            }
+          & a,
+          a::first-letter {
+            color: $bluesky;
+            background: white;
+            border-radius: 5px;
           }
 
-          &::after {
-            position: static;
-            content: "";
-            width: 0%;
-            height: 2px;
-
-            background: white;
-            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-
-            // - Animation du after en pourcentage -
-            animation: hoverNav4 0.65s forwards;
-            @keyframes hoverNav4 {
-              0% {
-                width: 0%;
-              }
-              100% {
-                width: 100%;
-              }
+          & a {
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 10px;
+              height: 100%;
+              width: 5px;
+              background: $bluesky;
+              box-shadow: 0px 3px 2px -2px #000000;
             }
           }
           text-shadow: 0 0 0;
-        }
-
-        &::after {
-          display: block;
-          margin-top: 0.5rem;
-          content: "";
-          width: 100%;
-          height: 2px;
-          background: white;
         }
       }
     }
@@ -124,25 +111,32 @@
 #root .menuIcon {
   animation: none;
 
+  margin-left: 20px;
   height: 20px;
   color: white;
   font-weight: 300;
   font-size: 1.2rem;
   letter-spacing: 1px;
   transform: scale(1);
+}
 
-  & a {
+#root .menuDeNavigation .closeMenu {
+  background: red;
+  display: block;
+  border: 1px solid white;
+  box-shadow: 2px 2px 5px -1px #000000ab;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+
+  cursor: pointer;
+  & p {
     display: block;
-    text-decoration: none;
-    color: white;
+    margin: 0;
   }
-  & .closeMenu {
-    z-index: 5;
-  }
-  & li {
-    transform: scale(1);
-  }
-  & ::first-letter {
-    color: white;
-  }
+}
+
+#root .navigation .menuDeNavigation ul .closeMenu-container {
+  border-bottom: 1px solid white;
+  margin-bottom: 2.5rem;
+  box-shadow: 0px 7px 8px -5px #00000011;
 }

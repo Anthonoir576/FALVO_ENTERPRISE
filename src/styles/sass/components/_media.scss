@@ -614,13 +614,6 @@
       height: 1px;
     }
   }
-
-  #root .slideDark {
-    margin: 0 0rem 0 5.7rem;
-    & input[type="checkbox"]:checked + label {
-      left: 40px;
-    }
-  }
 }
 @media only screen and (min-width: 880px) and (max-width: 1199px) {
   .navigation {
@@ -629,7 +622,7 @@
 
     & ul {
       justify-content: space-around;
-      width: 100%;
+      min-width: 100%;
     }
 
     & li {
@@ -637,24 +630,40 @@
       margin: 0 2rem;
     }
   }
-
+}
+@media only screen and (max-width: 960px) {
+  #root .navigation .menuDeNavigation ul li a {
+    padding: 10px 10px 10px 0;
+    font-size: 18px;
+  }
   #root .slideDark {
-    margin: 0 0rem 0 5.5rem;
+    margin: 50px 0px 0 0;
+  }
+  #root .navigation .menuDeNavigation {
+    width: 40%;
+    height: 100%;
+    min-height: 100vh;
   }
 }
 @media only screen and (max-width: 880px) {
   #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact {
     & .navigation {
+      display: flex;
+      justify-content: center;
       & ul {
         justify-content: space-between;
-        padding: 10px 1.2rem;
+        width: 100%;
+        
       }
       & li {
         text-align: right;
+      }
+      & .menuIcon, .homePageIcon {
+        transform: translateX(18px);
       }
     }
   }
@@ -686,14 +695,15 @@
     }
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 620px) {
   #root .myProjets,
-  .accueil,
-  .competence,
-  .aPropos,
-  .contact {
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact {
     & .navigation {
       ul {
+        display: flex;
         justify-content: space-between;
         padding: 10px 2rem;
         & li {
@@ -702,14 +712,73 @@
         & li.raccourciMenu {
           display: none;
         }
+        & .menuIcon {
+          display: block;
+          position: absolute;
+          right: 65px;
+        }
       }
       & .menuDeNavigation {
         ul {
-          padding: 10px 0.5rem;
+          padding: 20px;
           & li {
             &:hover {
               animation: none !important;
             }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  #root .myProjets,
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact {
+    & .navigation {
+      & .menuDeNavigation {
+        ul {
+          padding: 5px;
+          & li a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  #root .myProjets,
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact {
+    & .navigation {
+      & .menuDeNavigation {
+        ul {
+          padding: 5px;
+          & li a {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 310px) {
+  #root .myProjets,
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact {
+    & .navigation {
+      & .menuDeNavigation {
+        ul {
+          padding: 5px;
+          & li a {
+            font-size: .78rem;
           }
         }
       }
