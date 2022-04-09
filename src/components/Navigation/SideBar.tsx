@@ -4,7 +4,7 @@ import DarkMode            from './DarkMode';
 
 
 const SideBar = () => {
-    
+
     const [toggleNavigation, setToggleNavigation] = useState(false);
 
     const menuFonction = () => {
@@ -26,7 +26,7 @@ const SideBar = () => {
                     <>
                         <nav className='menuDeNavigation'>
                             <ul>
-                                <li>
+                                <li className='closeMenu-container'>
                                     <button className={toggleNavigation ? 'closeMenu' : 'closeMenuOff'}
                                         onClick={() => menuFonction()}
                                         arria-label='fermer le menu'

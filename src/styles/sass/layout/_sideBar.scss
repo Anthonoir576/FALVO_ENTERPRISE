@@ -37,7 +37,8 @@
       }
       100% {
         width: 20%;
-        height: 100vh;
+        height: 100%;
+        min-height: 100vh;
       }
     }
 
@@ -91,7 +92,7 @@
 
           & a {
             &::before {
-              content: '';
+              content: "";
               display: block;
               position: absolute;
               top: 0;
@@ -126,11 +127,17 @@
   border: 1px solid white;
   box-shadow: 2px 2px 5px -1px #000000ab;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 
   cursor: pointer;
   & p {
     display: block;
     margin: 0;
   }
+}
+
+#root .navigation .menuDeNavigation ul .closeMenu-container {
+  border-bottom: 1px solid white;
+  margin-bottom: 2.5rem;
+  box-shadow: 0px 7px 8px -5px #00000011;
 }
