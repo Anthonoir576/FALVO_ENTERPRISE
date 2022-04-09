@@ -18,27 +18,25 @@
   & .menuDeNavigation {
     position: absolute;
     transform: translate(0px, 0px);
-    width: 0px;
-    height: 0px;
+    width: 25%;
+    height: 100%;
+    min-height: 100vh;
     top: 0px;
-    right: 0px;
+    right: -900px;
     z-index: 4;
     animation: none;
-    background: hsla(210, 88%, 69%, 0.8);
+    background: hsla(210, 88%, 69%, 0.85);
     border-radius: 5px;
     border-left: 2px solid rgba(255, 255, 255, 0.747);
     box-shadow: 0 0 10px 0 black;
 
-    animation: apparitionMenu 0.65s forwards;
+    animation: apparitionMenu 1s both;
     @keyframes apparitionMenu {
       0% {
-        width: 0px;
-        height: 0px;
+        right: -900px;
       }
       100% {
-        width: 25%;
-        height: 100%;
-        min-height: 100vh;
+        right: 0px;
       }
     }
 
