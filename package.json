@@ -61,6 +61,7 @@
   },
 
   "devDependencies"                       : {
+    "@types/react-burger-menu"            : "^2.8.3",
     "@types/react-copy-to-clipboard"      : "^5.0.2",
     "file-loader"                         : "^6.2.0",
     "url-loader"                          : "^4.1.1"
