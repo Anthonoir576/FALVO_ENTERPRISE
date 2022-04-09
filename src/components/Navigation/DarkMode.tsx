@@ -16,7 +16,7 @@ const DarkMode = () => {
       document.body.classList.remove('darkTheme');
     } else if (!theme) {
       document.body.classList.add('darkTheme');
-    }
+    };
 
   }, [theme]);
 
