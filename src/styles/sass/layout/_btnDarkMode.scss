@@ -1,8 +1,9 @@
 #root .slideDark {
   width: 77px;
   height: 25px;
+  float: right;
+  margin: 50px 20px 0 0;
   background: #333;
-  margin: 0 0rem 0 0rem;
   position: relative;
   border-radius: 5px;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
@@ -59,8 +60,6 @@
 }
 
 #root nav.navigation .menuIcon .menuDeNavigation ul .btn-darkMODE {
-  display: flex;
-
   &::after {
     display: none !important;
   }
