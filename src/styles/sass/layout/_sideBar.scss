@@ -24,7 +24,7 @@
     right: 0px;
     z-index: 4;
     animation: none;
-    background: hsla(210, 88%, 69%, 0.95);
+    background: hsla(210, 88%, 69%, 0.8);
     border-radius: 5px;
     border-left: 2px solid rgba(255, 255, 255, 0.747);
     box-shadow: 0 0 10px 0 black;
@@ -36,7 +36,7 @@
         height: 0px;
       }
       100% {
-        width: 20%;
+        width: 25%;
         height: 100%;
         min-height: 100vh;
       }
@@ -113,6 +113,7 @@
 #root .menuIcon {
   animation: none;
 
+  margin-left: 20px;
   height: 20px;
   color: white;
   font-weight: 300;
