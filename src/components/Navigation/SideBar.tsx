@@ -14,7 +14,7 @@ const SideBar = () => {
     return (
         <>
             <li className='menuIcon'>
-                <button className={toggleNavigation ? 'openMenuOff' : 'openMenu'}
+                <button className={toggleNavigation ? 'openMenuOff openMenu' : 'openMenu'}
                         onClick={() => menuFonction()}
                         arria-label='ouvrir le menu'
                 >
