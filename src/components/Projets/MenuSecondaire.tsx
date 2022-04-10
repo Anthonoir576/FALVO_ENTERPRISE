@@ -1,7 +1,7 @@
 import React, { useState }   from 'react';
-import ProjetWeb             from './ProjetWeb';
-import ProjetLogiciel        from './ProjetLogiciel';
-import ProjetUnrealEngine    from './ProjetUnrealEngine';
+import ProjetWeb             from './Logiques projets/ProjetWeb';
+import ProjetLogiciel        from './Logiques projets/ProjetLogiciel';
+import ProjetUnrealEngine    from './Logiques projets/ProjetUnrealEngine';
 
 
 const MenuSecondaire = () => {
