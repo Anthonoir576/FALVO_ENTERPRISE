@@ -33,18 +33,21 @@ const MenuSecondaire = () => {
         <div className='menuSecondaire'>
             <nav>
                 <ul>
-                    
+
                     <li>
-                        <Menu menuButton={<MenuButton>Projet Web</MenuButton>}
-                              aria-label='Mes projets de développement web'
-                              className={web === true ? 'active-menuSecondaire' : 'none'}
-                              onClick={ () => { 
-                                            isActive();
-                                            setWeb(true);
-                                            setLogiciel(false);
-                                            setUe(false); 
-                                        }
-                                      }
+                        <Menu menuButton={
+                            <MenuButton className={web === true ? 'active-menuSecondaire szh-menu-button' : 'szh-menu-button'}
+                                        aria-label='Mes projets de développement web'
+                                        onClick={ () => { 
+                                                        isActive();
+                                                        setWeb(true);
+                                                        setLogiciel(false);
+                                                        setUe(false); 
+                                                    }
+                                                }
+                            >
+                                Projet Web
+                            </MenuButton>}
                         >
                             <MenuItem>Projets d'études</MenuItem>
                             <MenuItem>Projets solo</MenuItem>
@@ -54,16 +57,20 @@ const MenuSecondaire = () => {
                     </li>
 
                     <li>
-                        <Menu menuButton={<MenuButton>Projet Logiciel</MenuButton>}
-                              aria-label='Mes projets de développement logiciel'
-                              className={logiciel === true ? 'active-menuSecondaire' : 'none'}
-                              onClick={ () => { 
-                                            isActive(); 
-                                            setLogiciel(true);
-                                            setWeb(false);
-                                            setUe(false); 
-                                        }
-                                      }
+                        <Menu menuButton={
+                            <MenuButton aria-label='Mes projets de développement logiciel'
+                                        className={logiciel === true ? 'active-menuSecondaire szh-menu-button' : 'szh-menu-button'}
+                                        onClick={ () => { 
+                                                    isActive(); 
+                                                    setLogiciel(true);
+                                                    setWeb(false);
+                                                    setUe(false); 
+                                                }
+                                                }
+                            >
+                                Projet Logiciel
+                            </MenuButton>}
+                              
                         >
                             <MenuItem>Projets d'études</MenuItem>
                             <MenuItem>Projets solo</MenuItem>
@@ -72,16 +79,19 @@ const MenuSecondaire = () => {
                     </li>
 
                     <li>
-                        <Menu menuButton={<MenuButton>Projet Unreal engine</MenuButton>}
-                              aria-label='Mes projets de développement sous unreal engine'
-                              className={ue === true ? 'active-menuSecondaire' : 'none'}
-                              onClick={() => { 
-                                            isActive(); 
-                                            setUe(true);
-                                            setWeb(false);
-                                            setLogiciel(false); 
-                                        }
-                                      }
+                        <Menu menuButton={
+                            <MenuButton aria-label='Mes projets de développement sous unreal engine'
+                                        className={ue === true ? 'active-menuSecondaire szh-menu-button' : 'szh-menu-button'}
+                                        onClick={() => { 
+                                                    isActive(); 
+                                                    setUe(true);
+                                                    setWeb(false);
+                                                    setLogiciel(false); 
+                                                }
+                                                }
+                            >
+                                Projet Unreal engine
+                            </MenuButton>}
                         >
                             <MenuItem>Projets d'études</MenuItem>
                             <MenuItem>Projets solo</MenuItem>

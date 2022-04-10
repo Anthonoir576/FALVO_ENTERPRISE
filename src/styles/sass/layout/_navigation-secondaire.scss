@@ -12,14 +12,15 @@
 
       & li {
         & button {
-          
+
           cursor: pointer;
-          color: $gray;
           margin: 0;
           text-transform: uppercase;
-          padding: .95rem 2rem 0.5rem;
+          padding: .65rem 2rem 0.5rem;
           font-weight: 400;
           min-width: 100px;
+          background: transparent;
+          border: none;
 
           &.active-menuSecondaire {
             background: $bluesky;
