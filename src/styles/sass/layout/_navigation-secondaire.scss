@@ -11,8 +11,9 @@
       margin: 0;
 
       & li {
-        cursor: pointer;
-        & p {
+        & button {
+          
+          cursor: pointer;
           color: $gray;
           margin: 0;
           text-transform: uppercase;

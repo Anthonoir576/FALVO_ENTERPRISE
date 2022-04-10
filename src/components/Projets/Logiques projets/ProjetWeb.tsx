@@ -1,12 +1,14 @@
-import React       from 'react';
-import Maintenance from '../../Maintenance/Maintenance';
+import React from 'react';
+
 
 const ProjetWeb = () => {
     return (
         <div>
-            <Maintenance />
+            Projet web
         </div>
     );
 };
+
+
 
 export default ProjetWeb;
