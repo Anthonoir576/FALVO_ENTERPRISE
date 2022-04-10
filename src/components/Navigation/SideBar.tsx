@@ -40,6 +40,11 @@ const SideBar = () => {
                                     </NavLink>
                                 </li>
                                 <li>
+                                    <NavLink to='/veille' aria-label='veille technologique'>
+                                        Veille technologique
+                                    </NavLink>
+                                </li>
+                                <li>
                                     <NavLink to='/a_propos' aria-label='En savoir plus sur le développeur web'>
                                         En savoir plus...
                                     </NavLink>
@@ -52,6 +57,16 @@ const SideBar = () => {
                                 <li>
                                     <NavLink to='/projets' aria-label='Les projets du développeur web'>
                                         Projets web
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/tutoriel' aria-label='tutoriel developpement'>
+                                        Tutoriel
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/blog' aria-label='blog sur le site falvo enterprise'>
+                                        Blog
                                     </NavLink>
                                 </li>
                                 <li>
