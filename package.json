@@ -6,6 +6,7 @@
 
   "dependencies"                          : {
     "@testing-library/jest-dom"           : "^5.16.2",
+    "@szhsin/react-menu"                  : "^3.0.0",
     "@testing-library/react"              : "^12.1.4",
     "@testing-library/user-event"         : "^13.5.0",
     "@types/jest"                         : "^27.4.1",
@@ -27,7 +28,8 @@
     "sweetalert"                          : "^2.1.2",
     "swiper"                              : "^8.0.5",
     "typescript"                          : "^4.6.2",
-    "web-vitals"                          : "^2.1.2"
+    "web-vitals"                          : "^2.1.2",
+    "react-accessible-dropdown-menu-hook" : "^3.2.0"
   },
 
   "scripts"                               : {
