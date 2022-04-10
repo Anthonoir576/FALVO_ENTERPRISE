@@ -3,11 +3,11 @@ import ProjetWeb                        from './Logiques projets/ProjetWeb';
 import ProjetLogiciel                   from './Logiques projets/ProjetLogiciel';
 import ProjetUnrealEngine               from './Logiques projets/ProjetUnrealEngine';
 import { Menu, MenuItem, MenuButton }   from '@szhsin/react-menu';
+import ProjetWebEtudes                  from './Logiques projets/Web-etudes/ProjetWebEtudes';
+import ProjetWebSolo                    from './Logiques projets/Web-solo/ProjetWebSolo';
+import ProjetWebPro                     from './Logiques projets/Web-pro/ProjetWebPro';
 
 import '@szhsin/react-menu/dist/index.css';
-import ProjetWebEtudes from './Logiques projets/Web-etudes/ProjetWebEtudes';
-import ProjetWebSolo from './Logiques projets/Web-solo/ProjetWebSolo';
-import ProjetWebPro from './Logiques projets/Web-pro/ProjetWebPro';
 
 
 
@@ -121,7 +121,7 @@ const MenuSecondaire = () => {
                             >
                                 Projets solo
                             </MenuItem>
-                            
+
                             <MenuItem
                                 onClick={ () => { 
                                                     isActive(); 
