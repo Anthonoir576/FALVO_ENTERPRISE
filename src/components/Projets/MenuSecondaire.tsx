@@ -52,7 +52,14 @@ const MenuSecondaire = () => {
 
                     <li>
                         <Menu menuButton={
-                            <MenuButton className={ web === true || webProjetEtudes === true || webProjetPro === true || webProjetSolo === true ?
+                            <MenuButton className={ ( web === true || 
+                                                      webProjetEtudes === true ||
+                                                      webProjetPro === true ||
+                                                      webProjetSolo === true
+                                                    ) && (
+                                                      ue === false &&
+                                                      logiciel === false
+                                                    ) ?
                                         'active-menuSecondaire szh-menu-button' : 'szh-menu-button'}
                                         aria-label='Mes projets de développement web'
                                         onClick={ () => {
@@ -93,6 +100,7 @@ const MenuSecondaire = () => {
                             >
                                 Projets d'études
                             </MenuItem>
+
                             <MenuItem
                                 onClick={ () => { 
                                                     isActive(); 
@@ -113,6 +121,7 @@ const MenuSecondaire = () => {
                             >
                                 Projets solo
                             </MenuItem>
+                            
                             <MenuItem
                                 onClick={ () => { 
                                                     isActive(); 
