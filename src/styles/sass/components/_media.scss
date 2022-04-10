@@ -794,7 +794,7 @@
       & ul {
         padding: 0;
         & li {
-          & p {
+          & button {
             font-size: 10px;
             padding: 14px 18px 6px;
           }
@@ -809,7 +809,7 @@
       & ul {
         justify-content: space-between;
         & li {
-          & p {
+          & button {
             font-size: 8px;
             padding: 10px 13px 3px;
             &.active-menuSecondaire::after {
@@ -826,7 +826,7 @@
     & nav {
       & ul {
         & li {
-          & p {
+          & button {
             min-width: 0px;
             font-size: 8px;
             padding: 10px 9px 6px;
