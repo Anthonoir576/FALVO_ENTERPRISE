@@ -631,7 +631,7 @@
     }
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   #root .navigation .menuDeNavigation ul li a {
     padding: 10px 10px 10px 0;
     font-size: 18px;
@@ -650,30 +650,74 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root .tutoriel,
+  #root {
     & .navigation {
       display: flex;
       justify-content: center;
       & ul {
         justify-content: space-between;
         width: 100%;
-        
       }
       & li {
-        text-align: right;
+        text-align: left;
       }
-      & .menuIcon, .homePageIcon {
+      & .menuIcon,
+      .homePageIcon {
         transform: translateX(18px);
       }
     }
   }
+
+  #root .myProjets,
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact,
+  #root {
+    & .navigation .menuDeNavigation {
+      & ul {
+        & li {
+          &:hover {
+            & a {
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                height: 100%;
+                width: 5px;
+                background: $bluesky;
+                box-shadow: 0px 3px 2px -2px #000000;
+              }
+              &::before {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                height: 100%;
+                width: 5px;
+                background: $bluesky;
+                box-shadow: 0px 3px 2px -2px #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+    
 }
 @media only screen and (max-width: 600px) {
   #root .myProjets,
   .accueil,
   .competence,
   .aPropos,
-  .contact {
+  .contact,
+  #root {
     & .navigation {
       & ul {
         padding: 10px 1.1rem;
@@ -700,7 +744,8 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       ul {
         display: flex;
@@ -731,12 +776,49 @@
     }
   }
 }
+@media only screen and (max-width: 550px) {
+  #root {
+    & .navigation .menuDeNavigation {
+      & ul {
+        & li {
+          &:hover {
+            & a {
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 5px;
+                height: 100%;
+                width: 3px;
+                background: $bluesky;
+                box-shadow: 0px 3px 2px -2px #000000;
+              }
+              &::before {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                height: 100%;
+                width: 5px;
+                background: $bluesky;
+                box-shadow: 0px 3px 2px -2px #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 450px) {
   #root .myProjets,
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       & .menuDeNavigation {
         ul {
@@ -754,13 +836,14 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       & .menuDeNavigation {
         ul {
           padding: 5px;
           & li a {
-            font-size: .9rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -772,13 +855,14 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       & .menuDeNavigation {
         ul {
           padding: 5px;
           & li a {
-            font-size: .78rem;
+            font-size: 0.78rem;
           }
         }
       }
