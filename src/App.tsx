@@ -4,11 +4,15 @@ import Competence            from "./pages/Competence";
 import Projets               from "./pages/Projets";
 import Contact               from "./pages/Contact";
 import ThemeContextProvider  from "./context/ThemeContext";
+import Blog                  from "./pages/other/Blog";
+import Veille                from "./pages/other/Veille";
+import Tutoriel              from './pages/other/Tutoriel';
 
 import { Routes, 
          Route,
          BrowserRouter,
          Navigate }          from "react-router-dom";
+
 
 
 function App() {
@@ -22,6 +26,9 @@ function App() {
           <Route path='/competence'        element  ={ <Competence /> } />
           <Route path='/projets'           element  ={ <Projets /> } />
           <Route path='/contact'           element  ={ <Contact /> } />
+          <Route path='/tutoriel'          element  ={ <Tutoriel /> } />
+          <Route path='/veille'            element  ={ <Veille /> } />
+          <Route path='/blog'              element  ={ <Blog /> } />
           <Route path='*'                  element  ={ <Navigate replace to='/FALVO_ENTERPRISE/' /> } />
           <Route path='/FALVO_ENTERPRISE/' element  ={ <Accueil /> } />
         </Routes>

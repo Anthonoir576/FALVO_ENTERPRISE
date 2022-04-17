@@ -631,7 +631,7 @@
     }
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   #root .navigation .menuDeNavigation ul li a {
     padding: 10px 10px 10px 0;
     font-size: 18px;
@@ -650,20 +650,60 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root .tutoriel,
+  #root {
     & .navigation {
       display: flex;
       justify-content: center;
       & ul {
         justify-content: space-between;
         width: 100%;
-        
       }
       & li {
-        text-align: right;
+        text-align: left;
       }
-      & .menuIcon, .homePageIcon {
+      & .menuIcon,
+      .homePageIcon {
         transform: translateX(18px);
+      }
+    }
+  }
+
+  #root .myProjets,
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact,
+  #root {
+    & .navigation .menuDeNavigation {
+      & ul {
+        & li {
+          &:hover {
+            & a {
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                height: 100%;
+                width: 5px;
+                background: $bluesky;
+              }
+              &::before {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                height: 100%;
+                width: 5px;
+                background: $bluesky;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -673,7 +713,8 @@
   .accueil,
   .competence,
   .aPropos,
-  .contact {
+  .contact,
+  #root {
     & .navigation {
       & ul {
         padding: 10px 1.1rem;
@@ -700,7 +741,8 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       ul {
         display: flex;
@@ -731,12 +773,47 @@
     }
   }
 }
+@media only screen and (max-width: 550px) {
+  #root {
+    & .navigation .menuDeNavigation {
+      & ul {
+        & li {
+          &:hover {
+            & a {
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 5px;
+                height: 100%;
+                width: 3px;
+                background: $bluesky;
+              }
+              &::before {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                height: 100%;
+                width: 5px;
+                background: $bluesky;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 450px) {
   #root .myProjets,
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       & .menuDeNavigation {
         ul {
@@ -754,13 +831,14 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       & .menuDeNavigation {
         ul {
           padding: 5px;
           & li a {
-            font-size: .9rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -772,13 +850,14 @@
   #root .accueil,
   #root .competence,
   #root .aPropos,
-  #root .contact {
+  #root .contact,
+  #root {
     & .navigation {
       & .menuDeNavigation {
         ul {
           padding: 5px;
           & li a {
-            font-size: .78rem;
+            font-size: 0.78rem;
           }
         }
       }
@@ -794,7 +873,7 @@
       & ul {
         padding: 0;
         & li {
-          & p {
+          & button {
             font-size: 10px;
             padding: 14px 18px 6px;
           }
@@ -809,7 +888,7 @@
       & ul {
         justify-content: space-between;
         & li {
-          & p {
+          & button {
             font-size: 8px;
             padding: 10px 13px 3px;
             &.active-menuSecondaire::after {
@@ -826,7 +905,7 @@
     & nav {
       & ul {
         & li {
-          & p {
+          & button {
             min-width: 0px;
             font-size: 8px;
             padding: 10px 9px 6px;
