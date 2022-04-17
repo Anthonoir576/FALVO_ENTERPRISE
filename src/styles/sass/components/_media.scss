@@ -690,7 +690,6 @@
                 height: 100%;
                 width: 5px;
                 background: $bluesky;
-                box-shadow: 0px 3px 2px -2px #000000;
               }
               &::before {
                 content: "";
@@ -701,7 +700,6 @@
                 height: 100%;
                 width: 5px;
                 background: $bluesky;
-                box-shadow: 0px 3px 2px -2px #000000;
               }
             }
           }
@@ -709,7 +707,6 @@
       }
     }
   }
-    
 }
 @media only screen and (max-width: 600px) {
   #root .myProjets,
@@ -792,7 +789,6 @@
                 height: 100%;
                 width: 3px;
                 background: $bluesky;
-                box-shadow: 0px 3px 2px -2px #000000;
               }
               &::before {
                 content: "";
@@ -803,7 +799,6 @@
                 height: 100%;
                 width: 5px;
                 background: $bluesky;
-                box-shadow: 0px 3px 2px -2px #000000;
               }
             }
           }
