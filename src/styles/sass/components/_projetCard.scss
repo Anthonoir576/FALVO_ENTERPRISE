@@ -35,7 +35,7 @@ main {
                 transform: translateY(0);
               }
               & img {
-                animation: photoeffect 400ms both;
+                animation: photoeffect 400ms forwards;
               }
 
               @keyframes photoeffect {
