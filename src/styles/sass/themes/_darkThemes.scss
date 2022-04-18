@@ -109,6 +109,16 @@ body.darkTheme {
     }
   }
 
+  & .myProjets {
+    & .affichage-option-projets {
+      & .project-cards-container {
+        p {
+          color: black;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 740px) {
     .contact .contact-text {
       background: #72727224;
@@ -126,11 +136,9 @@ body.darkTheme {
     box-shadow: 0 0 0 0;
 
     & ul {
-       
       & .menuDeNavigation {
         background: rgb(122, 122, 219, 0.9);
       }
-      
     }
   }
 
@@ -143,13 +151,29 @@ body.darkTheme {
     }
   }
 
-  
-  #root .myProjets .menuSecondaire ul {
-    background   :  linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
-    border-top   : 1px solid white;
-    border-bottom: 1px solid white;
-  }
+  #root {
+    & .myProjets {
+      & .menuSecondaire {
+        & ul {
+          background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+        }
+        & li {
+          color: white;
+          &:hover {
+            color: black;
+          }
+        }
 
+        & a {
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* #09FBBA  #333 */
