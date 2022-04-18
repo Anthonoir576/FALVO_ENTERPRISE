@@ -85,6 +85,23 @@ main {
               object-fit: cover;
             }
           }
+          .card-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50px;
+            position: absolute;
+            top: 0.3rem;
+            right: 0.3rem;
+
+            & svg {
+              cursor: pointer;
+              color: $white;
+              &:hover {
+                color: $bluesky;
+              }
+            }
+          }
           .date {
             position: absolute;
             top: 0;
