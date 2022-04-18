@@ -165,10 +165,17 @@ body.darkTheme {
             color: black;
           }
         }
+      }
+    }
+  }
 
-        & a {
-          &:hover {
-            background: transparent;
+  & .myProjets {
+    & .affichage-option-projets {
+      & .project-cards-container {
+        & .card {
+          .wrapper {
+            box-shadow: 0 4px 10px rgba($white, 0.3),
+              0 1px 5px rgba($white, 0.2);
           }
         }
       }
