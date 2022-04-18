@@ -1,6 +1,6 @@
 .menuSecondaire {
   margin-top: 2rem;
-  font-size: 12px!important;
+  font-size: 12px !important;
   & nav {
     background: $centerbanner;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
@@ -12,11 +12,10 @@
 
       & li {
         & button {
-
           cursor: pointer;
           margin: 0;
           text-transform: uppercase;
-          padding: .65rem 2rem 0.5rem;
+          padding: 0.65rem 2rem 0.5rem;
           font-weight: 400;
           min-width: 100px;
           background: transparent;
@@ -58,6 +57,16 @@
               width: 30%;
               height: 2px;
               background: white;
+            }
+          }
+        }
+
+        & .szh-menu-container {
+          & ul {
+            & li:hover {
+              border-radius: 2px;
+              background: $bluesky;
+              color: white;
             }
           }
         }

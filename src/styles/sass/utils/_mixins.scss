@@ -22,3 +22,14 @@
     }
   }
 }
+
+@mixin card-projet {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
