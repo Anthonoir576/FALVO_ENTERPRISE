@@ -679,6 +679,14 @@
     & .navigation .menuDeNavigation {
       & ul {
         & li {
+          & a {
+            padding-left: 10px;
+
+            /*TEXT POINT WRAP*/
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
           &:hover {
             & a {
               &::after {
@@ -774,10 +782,18 @@
   }
 }
 @media only screen and (max-width: 550px) {
+  #root .myProjets,
+  #root .accueil,
+  #root .competence,
+  #root .aPropos,
+  #root .contact,
   #root {
     & .navigation .menuDeNavigation {
       & ul {
         & li {
+          & a {
+            padding-left: 5px;
+          }
           &:hover {
             & a {
               &::after {
