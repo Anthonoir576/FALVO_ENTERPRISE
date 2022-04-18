@@ -883,6 +883,34 @@
 // #######################################
 
 // ############   PROJETS   ##############
+@media only screen and (max-width: 1200px) {
+  #root {
+    & .myProjets {
+      & .affichage-option-projets {
+        & .project-cards-container {
+
+          & .row {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  #root {
+    & .myProjets {
+      & .affichage-option-projets {
+        & .project-cards-container {
+
+          & .row {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 690px) {
   .menuSecondaire {
     & nav {
