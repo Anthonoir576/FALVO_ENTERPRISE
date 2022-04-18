@@ -4,55 +4,27 @@ const ProjetWeb = () => {
   return (
     <div className="project-cards-container">
       <div className="row">
-        <div className="myCard card">
+        <div className="myCard2 card">
           <div className="wrapper">
-            <div className="header">
-              <div className="date">
-                <span className="day">12 </span>
-                <span className="month">Aug</span>
-                <span className="year"> 2016</span>
-              </div>
-              <ul className="menu-content">
-                <li>
-                  <a
-                    href="https://www.google.com/"
-                    className="fa fa-bookmark-o"
-                  >
-                    {" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/" className="fa fa-heart-o">
-                    <span></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.google.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="fa fa-comment-o"
-                  >
-                    <span></span>
-                  </a>
-                </li>
-              </ul>
+            <div className="date">
+              <span className="day">18</span>
+              <span className="month">Avr</span>
+              <span className="year">2022</span>
             </div>
             <div className="data">
               <div className="content">
-                <span className="author">Jane Doe</span>
-                <h1 className="title">
-                  <a href="https://www.google.com/">
-                    Stranger Things: The sound of the Upside Down
-                  </a>
-                </h1>
-                <p className="text">
-                  The antsy bingers of Netflix will eagerly anticipate the
-                  digital release of the Survive soundtrack, out today.
+                <span className="author">Auteur</span>
+                <p className="title">
+                  <a href="https://www.google.com/">mon titre</a>
                 </p>
-                <a href="https://www.google.com/" className="button">
-                  Read more
-                </a>
+                <p className="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione perspiciatis sequi quasi veritatis fuga facere,
+                  accusantium odit obcaecati reprehenderit molestiae incidunt
+                  amet asperiores saepe tenetur minus aut aspernatur facilis sit
+                  rem commodi voluptates ipsa illo earum consequatur. Atque, hic
+                  sit.
+                </p>
               </div>
             </div>
           </div>
@@ -60,148 +32,74 @@ const ProjetWeb = () => {
         <div className="myCard2 card">
           <div className="wrapper">
             <div className="date">
-              <span className="day">12</span>
-              <span className="month">Aug</span>
-              <span className="year">2016</span>
+              <span className="day">18</span>
+              <span className="month">Avr</span>
+              <span className="year">2022</span>
             </div>
             <div className="data">
               <div className="content">
-                <span className="author">Jane Doe</span>
-                <h1 className="title">
-                  <a href="https://www.google.com/">
-                    Boxing icon has the will for a couple more fights
-                  </a>
-                </h1>
-                <p className="text">
-                  The highly anticipated world championship fight will take
-                  place at 10am and is the second major boxing blockbuster in
-                  the nation after 43 years.
+                <span className="author">Auteur</span>
+                <p className="title">
+                  <a href="https://www.google.com/">mon titre</a>
                 </p>
-                <label htmlFor="show-menu" className="menu-button">
-                  <span></span>
-                </label>
+                <p className="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione perspiciatis sequi quasi veritatis fuga facere,
+                  accusantium odit obcaecati reprehenderit molestiae incidunt
+                  amet asperiores saepe tenetur minus aut aspernatur facilis sit
+                  rem commodi voluptates ipsa illo earum consequatur. Atque, hic
+                  sit.
+                </p>
               </div>
-              <input type="checkbox" id="show-menu" />
-              <ul className="menu-content">
-                <li>
-                  <a
-                    href="https://www.google.com/"
-                    className="fa fa-bookmark-o"
-                  >
-                    {" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/" className="fa fa-heart-o">
-                    <span>47</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/" className="fa fa-comment-o">
-                    <span>8</span>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
         <div className="myCard2 card">
           <div className="wrapper">
             <div className="date">
-              <span className="day">12</span>
-              <span className="month">Aug</span>
-              <span className="year">2016</span>
+              <span className="day">18</span>
+              <span className="month">Avr</span>
+              <span className="year">2022</span>
             </div>
             <div className="data">
               <div className="content">
-                <span className="author">Jane Doe</span>
-                <h1 className="title">
-                  <a href="https://www.google.com/">
-                    Boxing icon has the will for a couple more fights
-                  </a>
-                </h1>
-                <p className="text">
-                  The highly anticipated world championship fight will take
-                  place at 10am and is the second major boxing blockbuster in
-                  the nation after 43 years.
+                <span className="author">Auteur</span>
+                <p className="title">
+                  <a href="https://www.google.com/">mon titre</a>
                 </p>
-                <label htmlFor="show-menu" className="menu-button">
-                  <span></span>
-                </label>
+                <p className="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione perspiciatis sequi quasi veritatis fuga facere,
+                  accusantium odit obcaecati reprehenderit molestiae incidunt
+                  amet asperiores saepe tenetur minus aut aspernatur facilis sit
+                  rem commodi voluptates ipsa illo earum consequatur. Atque, hic
+                  sit.
+                </p>
               </div>
-              <input type="checkbox" id="show-menu" />
-              <ul className="menu-content">
-                <li>
-                  <a
-                    href="https://www.google.com/"
-                    className="fa fa-bookmark-o"
-                  >
-                    {" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/" className="fa fa-heart-o">
-                    <span>47</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/" className="fa fa-comment-o">
-                    <span>8</span>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-        <div className="myCard card">
+        <div className="myCard2 card">
           <div className="wrapper">
-            <div className="header">
-              <div className="date">
-                <span className="day">12 </span>
-                <span className="month">Aug</span>
-                <span className="year"> 2016</span>
-              </div>
-              <ul className="menu-content">
-                <li>
-                  <a
-                    href="https://www.google.com/"
-                    className="fa fa-bookmark-o"
-                  >
-                    {" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/" className="fa fa-heart-o">
-                    <span></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.google.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="fa fa-comment-o"
-                  >
-                    <span></span>
-                  </a>
-                </li>
-              </ul>
+            <div className="date">
+              <span className="day">18</span>
+              <span className="month">Avr</span>
+              <span className="year">2022</span>
             </div>
             <div className="data">
               <div className="content">
-                <span className="author">Jane Doe</span>
-                <h1 className="title">
-                  <a href="https://www.google.com/">
-                    Stranger Things: The sound of the Upside Down
-                  </a>
-                </h1>
-                <p className="text">
-                  The antsy bingers of Netflix will eagerly anticipate the
-                  digital release of the Survive soundtrack, out today.
+                <span className="author">Auteur</span>
+                <p className="title">
+                  <a href="https://www.google.com/">mon titre</a>
                 </p>
-                <a href="https://www.google.com/" className="button">
-                  Read more
-                </a>
+                <p className="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione perspiciatis sequi quasi veritatis fuga facere,
+                  accusantium odit obcaecati reprehenderit molestiae incidunt
+                  amet asperiores saepe tenetur minus aut aspernatur facilis sit
+                  rem commodi voluptates ipsa illo earum consequatur. Atque, hic
+                  sit.
+                </p>
               </div>
             </div>
           </div>
