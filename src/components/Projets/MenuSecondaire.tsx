@@ -193,19 +193,21 @@ const MenuSecondaire = () => {
             </nav>
             <div className='affichage-option-projets'>
                 {web === true ? (
-                <ProjetWeb />
+                    <ProjetWeb />
                 ) : web === false && webProjetEtudes === true ? (
                     <ProjetWebEtudes />
                 ) : web === false && webProjetEtudes === false && webProjetPro === false && webProjetSolo === true ? (
                     <ProjetWebSolo />
                 ) : web === false && webProjetEtudes === false && webProjetPro === true && webProjetSolo === false ? (
                     <ProjetWebPro />
-                ) : (<></>)}
+                ) : (
+                    <></>
+                )}
 
                 {logiciel === true ? (
-                <ProjetLogiciel />
+                    <ProjetLogiciel />
                 ) : (
-                <></>
+                    <></>
                 )}
 
                 {ue === true ? (
