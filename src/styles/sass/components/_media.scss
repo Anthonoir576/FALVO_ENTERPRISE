@@ -883,12 +883,24 @@
 // #######################################
 
 // ############   PROJETS   ##############
+@media only screen and (min-width: 2000px) {
+  #root {
+    & .myProjets {
+      & .affichage-option-projets {
+        & .project-cards-container {
+          & .row {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1200px) {
   #root {
     & .myProjets {
       & .affichage-option-projets {
         & .project-cards-container {
-
           & .row {
             grid-template-columns: 1fr 1fr;
           }
@@ -902,7 +914,6 @@
     & .myProjets {
       & .affichage-option-projets {
         & .project-cards-container {
-
           & .row {
             grid-template-columns: 1fr;
           }
