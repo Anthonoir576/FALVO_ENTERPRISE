@@ -1,17 +1,24 @@
-import React, { useState } from 'react';
-import { NavLink }         from 'react-router-dom';
-import UiwCloseSquare from '../Icons/UiwCloseSquare';
-import UiwMenu             from '../Icons/UiwMenu';
-import DarkMode            from './DarkMode';
+import React, { useState }   from 'react';
+import { NavLink }           from 'react-router-dom';
+import UiwCloseSquare        from '../Icons/UiwCloseSquare';
+import UiwMenu               from '../Icons/UiwMenu';
+import DarkMode              from './DarkMode';
 
 
 const SideBar = () => {
 
     const [toggleNavigation, setToggleNavigation] = useState(false);
-
+ 
     const menuFonction = () => {
         setToggleNavigation(!toggleNavigation);
-    };
+    };    
+    
+    // document.body.addEventListener('click', (e?: any) => {
+    //     if (toggleNavigation === null) {
+    //         setToggleNavigation(!toggleNavigation);
+    //     };
+    // });
+
 
     return (
         <>
