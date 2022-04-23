@@ -716,6 +716,23 @@
     }
   }
 }
+@media only screen and (max-width: 750px) {
+  #root {
+    & .myProjets {
+      & .menuSecondaire {
+        & nav {
+          & ul li {
+            & .szh-menu-container {
+              & ul {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   #root .myProjets,
   .accueil,

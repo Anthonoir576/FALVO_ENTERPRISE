@@ -97,8 +97,20 @@ main {
             & svg {
               cursor: pointer;
               color: $white;
+
+              @keyframes iconeffect {
+                from {
+                  transform: scale(1);
+                  color: white;
+                }
+                to {
+                  transform: scale(1.15);
+                  color: $bluesky;
+                }
+              }
+
               &:hover {
-                color: $bluesky;
+                animation: iconeffect 480ms forwards;
               }
             }
           }
