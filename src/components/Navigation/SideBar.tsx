@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink }         from 'react-router-dom';
+import UiwMenu             from '../Icons/UiwMenu';
 import DarkMode            from './DarkMode';
 
 
@@ -18,7 +19,7 @@ const SideBar = () => {
                         onClick={() => menuFonction()}
                         arria-label='ouvrir le menu'
                 >
-                    <img src="https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/menuTypeUn.png" alt="Menu latéral" />
+                    <UiwMenu />
                 </button>
             </li>
             <div>

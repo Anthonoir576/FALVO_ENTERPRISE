@@ -1,5 +1,6 @@
 import React       from 'react';
 import { NavLink } from 'react-router-dom';
+import IonHome from '../Icons/IonHome';
 import SideBar     from './SideBar';
 
 const NavBar = () => {
@@ -28,10 +29,7 @@ const NavBar = () => {
                 </li>
                 <li className='homePageIcon'>
                     <NavLink to='/accueil' aria-label="Retour à l'accueil du site web">
-                        <img src="https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/home.png" 
-                            alt="retour à l'accueil"
-                            className='homeIcon'
-                        />
+                        <IonHome />
                     </NavLink>
                 </li>
                 <SideBar />
