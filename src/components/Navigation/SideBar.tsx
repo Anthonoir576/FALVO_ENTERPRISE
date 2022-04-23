@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink }         from 'react-router-dom';
+import UiwCloseSquare from '../Icons/UiwCloseSquare';
 import UiwMenu             from '../Icons/UiwMenu';
 import DarkMode            from './DarkMode';
 
@@ -32,7 +33,7 @@ const SideBar = () => {
                                         onClick={() => menuFonction()}
                                         arria-label='fermer le menu'
                                     >
-                                        <p>X</p>
+                                        <UiwCloseSquare />
                                     </button>
                                 </li>
                                 <li>

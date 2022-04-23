@@ -120,17 +120,34 @@
 }
 
 #root .menuDeNavigation .closeMenu {
-  background: red;
+  cursor: pointer;
+  background: white;
   display: block;
-  border: 1px solid white;
-  box-shadow: 2px 2px 5px -1px #000000ab;
-  border-radius: 5px;
+  border: none;
   margin-bottom: 4rem;
 
-  cursor: pointer;
-  & p {
-    display: block;
-    margin: 0;
+  width: 15px;
+  height: 15px;
+
+  & .closeMenu-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    transform: translate(-9px, -3px);
+
+    @keyframes animesvg2 {
+      from {
+        fill: red;
+      }
+      to {
+        fill: #d30000;
+      }
+    }
+    &:hover {
+      path {
+        animation: animesvg2 220ms forwards ease-in;
+      }
+    }
   }
 }
 
