@@ -11,7 +11,7 @@ const APropos = () => {
           <figure>
             <img
               src={
-                "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil_about.png"
+                "https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images/photo-profil_about2.jpg?raw=true"
               }
               alt="Le développeur web"
             />
