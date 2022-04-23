@@ -1,7 +1,7 @@
-import React       from 'react';
-import { NavLink } from 'react-router-dom';
-import IonHome from '../Icons/IonHome';
-import SideBar     from './SideBar';
+import React         from 'react';
+import { NavLink }   from 'react-router-dom';
+import IonHome       from '../Icons/IonHome';
+import SideBar       from './SideBar';
 
 const NavBar = () => {
     return (

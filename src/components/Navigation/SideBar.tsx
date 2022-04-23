@@ -13,12 +13,8 @@ const SideBar = () => {
         setToggleNavigation(!toggleNavigation);
     };    
     
-    // document.body.addEventListener('click', (e?: any) => {
-    //     if (toggleNavigation === null) {
-    //         setToggleNavigation(!toggleNavigation);
-    //     };
-    // });
-
+    //console.log(document.location.href);
+    
 
     return (
         <>
