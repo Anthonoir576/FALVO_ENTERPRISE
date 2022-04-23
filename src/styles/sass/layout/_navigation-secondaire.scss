@@ -1,8 +1,28 @@
 .menuSecondaire {
+  // background: linear-gradient(
+  //   60deg,
+  //   #ffdc80,
+  //   #fcaf45,
+  //   #f77737,
+  //   #f56040,
+  //   #fd1d1d,
+  //   #e1306c,
+  //   #c13584 60%,
+  //   #833ab4,
+  //   #5851db,
+  //   #405de6 120%
+  // );
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  // min-height: 100vh;
+  // min-width: 100vw;
+
   margin-top: 2rem;
   font-size: 12px !important;
   & nav {
     background: $centerbanner;
+    // backdrop-filter: blur(20px);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
     & ul {
       display: flex;
@@ -13,6 +33,7 @@
       & li {
         & button {
           cursor: pointer;
+          font-family: 'Josefin Sans';
           margin: 0;
           text-transform: uppercase;
           padding: 0.65rem 2rem 0.5rem;
