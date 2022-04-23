@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { NavLink }         from 'react-router-dom';
-import DarkMode            from './DarkMode';
+import React, { useState }   from 'react';
+import { NavLink }           from 'react-router-dom';
+import UiwCloseSquare        from '../Icons/UiwCloseSquare';
+import UiwMenu               from '../Icons/UiwMenu';
+import DarkMode              from './DarkMode';
 
 
 const SideBar = () => {
 
     const [toggleNavigation, setToggleNavigation] = useState(false);
-
+ 
     const menuFonction = () => {
         setToggleNavigation(!toggleNavigation);
-    };
+    };    
+    
+    //console.log(document.location.href);
+    
 
     return (
         <>
@@ -18,7 +23,7 @@ const SideBar = () => {
                         onClick={() => menuFonction()}
                         arria-label='ouvrir le menu'
                 >
-                    <img src="https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/menuTypeUn.png" alt="Menu latéral" />
+                    <UiwMenu />
                 </button>
             </li>
             <div>
@@ -31,7 +36,7 @@ const SideBar = () => {
                                         onClick={() => menuFonction()}
                                         arria-label='fermer le menu'
                                     >
-                                        <p>X</p>
+                                        <UiwCloseSquare />
                                     </button>
                                 </li>
                                 <li>

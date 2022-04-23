@@ -607,7 +607,7 @@
     }
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1030px) {
   #root .navigation .menuDeNavigation ul li a {
     padding: 10px 10px 10px 0;
     font-size: 18px;
@@ -763,7 +763,7 @@
       }
       & .menuDeNavigation {
         ul {
-          padding: 20px;
+          padding: 10px;
           & li {
             &:hover {
               animation: none !important;
@@ -826,7 +826,7 @@
     & .navigation {
       & .menuDeNavigation {
         ul {
-          padding: 5px;
+          padding: 7px;
           & li a {
             font-size: 1rem;
           }
