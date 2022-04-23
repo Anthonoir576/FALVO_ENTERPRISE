@@ -132,7 +132,8 @@
   & .closeMenu-btn {
     width: 20px;
     height: 20px;
-    border-radius: 1px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.678);
     transform: translate(-9px, -3px);
 
     @keyframes animesvg2 {
@@ -145,7 +146,7 @@
     }
     &:hover {
       path {
-        animation: animesvg2 220ms forwards ease-in;
+        animation: animesvg2 240ms forwards ease-in;
       }
     }
   }
