@@ -99,20 +99,17 @@
       }
       & li.homePageIcon {
         margin: 0;
-        & img {
-          width: 18px;
-          height: 18px;
-          transform: translateY(-1.5px);
-        }
       }
       & li.menuIcon {
         margin: 0 0 0 10px;
 
-        & img {
+        & .myhomeicon {
           cursor: pointer;
-          width: 20px;
-          height: 13px;
-          transform: translateY(0.5px);
+          color: black;
+          stroke: black;
+          &:hover {
+            fill: black;
+          }
         }
         & .closeMenu {
           cursor: pointer;
