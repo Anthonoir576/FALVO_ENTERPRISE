@@ -99,18 +99,34 @@
       }
       & li.homePageIcon {
         margin: 0;
+        & .myhomeicon {
+          cursor: pointer;
+          &:hover {
+            & path {
+              animation: animesvg 300ms forwards ease-in-out;
+              @keyframes animesvg {
+                from {
+                  fill: white;
+                }
+                to {
+                  fill: $bluesky;
+                }
+              }
+            }
+          }
+        }
       }
       & li.menuIcon {
         margin: 0 0 0 10px;
-
-        & .myhomeicon {
+        .mymenuicon {
           cursor: pointer;
-          color: black;
-          stroke: black;
           &:hover {
-            fill: black;
+            & path {
+              animation: animesvg 300ms forwards ease-in-out;
+            }
           }
         }
+
         & .closeMenu {
           cursor: pointer;
           width: 20px;
