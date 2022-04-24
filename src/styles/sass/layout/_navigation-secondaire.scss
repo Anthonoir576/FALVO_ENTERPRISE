@@ -17,16 +17,18 @@
 
   // min-height: 100vh;
   // min-width: 100vw;
-
-  margin-top: 2rem;
+  width: 99vw;
+  margin: 2rem auto;
+  border-radius: 10px 10px 0px 0px;
   font-size: 12px !important;
   & nav {
-    background: $centerbanner;
+    background: transparent;
+    border-radius: 10px 10px 0px 0px;
     // backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
+    // box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
     & ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: left;
       list-style: none;
       margin: 0;
 
