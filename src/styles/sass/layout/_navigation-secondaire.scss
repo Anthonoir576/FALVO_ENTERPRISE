@@ -1,20 +1,4 @@
 .menuSecondaire {
-  // background: linear-gradient(
-  //   60deg,
-  //   #ffdc80,
-  //   #fcaf45,
-  //   #f77737,
-  //   #f56040,
-  //   #fd1d1d,
-  //   #e1306c,
-  //   #c13584 60%,
-  //   #833ab4,
-  //   #5851db,
-  //   #405de6 120%
-  // );
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
   width: 99vw;
   margin: 2rem auto;
   border-radius: 10px 10px 0px 0px;
@@ -22,13 +6,13 @@
   & nav {
     background: $bluesky;
     border-radius: 10px 10px 0px 0px;
+    // border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
     & ul {
       display: flex;
       justify-content: left;
       list-style: none;
       margin: 0;
-
       & li {
         & button {
           cursor: pointer;
@@ -58,11 +42,11 @@
             @keyframes strok {
               from {
                 transform: scale(1) translateY(0px);
-                border-radius: 0px 0px;
+                border-radius: 0px;
               }
               to {
                 transform: scale(1.2) translateY(-4px);
-                border-radius: 100px 100px;
+                border-radius: 50px;
                 stroke-dashoffset: 400;
               }
             }
