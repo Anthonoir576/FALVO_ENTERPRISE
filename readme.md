@@ -2,7 +2,7 @@
 
 ## MY WEB SITE : 
 
-![screen Site](./document/readme.png)
+![screen Site](./document/readmepicture.png)
 
 ## Présentation :
 

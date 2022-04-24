@@ -919,11 +919,28 @@
   .menuSecondaire {
     & nav {
       & ul {
+        justify-content: space-around;
         padding: 0;
         & li {
           & button {
             font-size: 10px;
             padding: 14px 18px 6px;
+
+            &.active-menuSecondaire {
+              animation: strok 500ms forwards;
+
+              @keyframes strok {
+                from {
+                  transform: scale(1) translateY(0px);
+                  border-radius: 0px 0px;
+                }
+                to {
+                  transform: scale(1.1) translateY(-4px);
+                  border-radius: 100px 100px;
+                  stroke-dashoffset: 400;
+                }
+              }
+            }
           }
         }
       }
@@ -948,6 +965,24 @@
     }
   }
 }
+@media only screen and (max-width: 360px) {
+  .menuSecondaire {
+    & nav {
+      & ul {
+        justify-content: space-between;
+        & li {
+          & button {
+            font-size: 7px;
+            padding: 5px 10px 0px;
+            &.active-menuSecondaire::after {
+              margin-top: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 330px) {
   .menuSecondaire {
     & nav {
@@ -955,8 +990,8 @@
         & li {
           & button {
             min-width: 0px;
-            font-size: 8px;
-            padding: 10px 9px 6px;
+            font-size: 6px;
+            padding: 5px 10px 0px;
           }
         }
       }

@@ -1,54 +1,79 @@
 .menuSecondaire {
-  margin-top: 2rem;
+  // background: linear-gradient(
+  //   60deg,
+  //   #ffdc80,
+  //   #fcaf45,
+  //   #f77737,
+  //   #f56040,
+  //   #fd1d1d,
+  //   #e1306c,
+  //   #c13584 60%,
+  //   #833ab4,
+  //   #5851db,
+  //   #405de6 120%
+  // );
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  width: 99vw;
+  margin: 2rem auto;
+  border-radius: 10px 10px 0px 0px;
   font-size: 12px !important;
   & nav {
-    background: $centerbanner;
+    background: $bluesky;
+    border-radius: 10px 10px 0px 0px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
     & ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: left;
       list-style: none;
       margin: 0;
 
       & li {
         & button {
           cursor: pointer;
+          font-family: "Josefin Sans";
           margin: 0;
           text-transform: uppercase;
-          padding: 0.65rem 2rem 0.5rem;
+          padding: 0.9rem 2rem 0.5rem;
           font-weight: 400;
           min-width: 100px;
           background: transparent;
           border: none;
+          color: white;
+
+          & .web-icons {
+            transform: translate(4px, 1px);
+          }
+          & .software-icons {
+            transform: translate(3px, 2px);
+          }
+          & .controllers-icons {
+            transform: translate(5px, 1.5px);
+          }
 
           &.active-menuSecondaire {
-            background: $bluesky;
-            border-radius: 4px;
-            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.18);
-            background-size: 100% 100%;
-            color: white;
-            animation: animeMenuSecondaire 300ms ease-out;
-            text-shadow: 0 -1px 0 $bluesky;
-            font-weight: bold;
+            animation: strok 500ms forwards;
 
-            @keyframes animeMenuSecondaire {
-              15% {
-                transform-origin: center center;
-                transform: scale(1.2, 1.1);
+            @keyframes strok {
+              from {
+                transform: scale(1) translateY(0px);
+                border-radius: 0px 0px;
               }
-              40% {
-                transform-origin: center center;
-                transform: scale(0.95, 0.95);
-              }
-              75% {
-                transform-origin: center center;
-                transform: scale(1.05, 1);
-              }
-              100% {
-                transform-origin: center center;
-                transform: scale(1, 1);
+              to {
+                transform: scale(1.2) translateY(-4px);
+                border-radius: 100px 100px;
+                stroke-dashoffset: 400;
               }
             }
+
+            & svg {
+              border-radius: 50%;
+            }
+            background: $bluesky;
+            background-size: 100% 100%;
+            color: white;
+            font-weight: bold;
 
             &::after {
               content: "";
