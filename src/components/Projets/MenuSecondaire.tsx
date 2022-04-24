@@ -16,7 +16,7 @@ import "@szhsin/react-menu/dist/index.css";
 
 const MenuSecondaire = () => {
 
-    
+
   const [logiciel, setLogiciel] = useState(false);
   const [web, setWeb] = useState(true);
   const [ue, setUe] = useState(false);
