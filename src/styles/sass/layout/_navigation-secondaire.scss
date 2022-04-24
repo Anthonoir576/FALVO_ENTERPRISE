@@ -33,10 +33,10 @@
       & li {
         & button {
           cursor: pointer;
-          font-family: 'Josefin Sans';
+          font-family: "Josefin Sans";
           margin: 0;
           text-transform: uppercase;
-          padding: .9rem 2rem 0.5rem;
+          padding: 0.9rem 2rem 0.5rem;
           font-weight: 400;
           min-width: 100px;
           background: transparent;
@@ -62,13 +62,15 @@
                 border-radius: 0px 0px;
               }
               to {
-                transform: scale(1.20) translateY(-5px);
+                transform: scale(1.2) translateY(-4px);
                 border-radius: 100px 100px;
                 stroke-dashoffset: 400;
-              }  
+              }
             }
 
-
+            & svg {
+              border-radius: 50%;
+            }
             background: $bluesky;
             // box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.18);
             background-size: 100% 100%;
