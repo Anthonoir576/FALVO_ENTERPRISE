@@ -2,7 +2,7 @@ import React, { SVGProps } from "react";
 
 export function IonGameControllerOutline(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 512 512" className="controllers-icons" {...props}>
+    <svg width="1.1em" height="1.1em" viewBox="0 0 512 512" className="controllers-icons" {...props}>
       <path
         fill="none"
         stroke="currentColor"

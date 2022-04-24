@@ -44,21 +44,30 @@
           color: white;
 
           & .web-icons {
-            transform: translate(3px, 1px);
+            transform: translate(4px, 1px);
           }
           & .software-icons {
-            
+            transform: translate(3px, 2px);
+          }
+          & .controllers-icons {
+            transform: translate(5px, 2.5px);
           }
 
           &.active-menuSecondaire {
-            animation: strok 1.5s forwards;
-            transform: scale(1.20);
-            border-radius: 100px;
+            animation: strok 500ms forwards;
+
             @keyframes strok {
-              100% {
+              from {
+                transform: scale(1) translateY(0px);
+                border-radius: 0px 0px;
+              }
+              to {
+                transform: scale(1.20) translateY(-5px);
+                border-radius: 100px 100px;
                 stroke-dashoffset: 400;
               }  
             }
+
 
             background: $bluesky;
             // box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.18);
