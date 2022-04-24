@@ -15,17 +15,15 @@
   // background-repeat: no-repeat;
   // background-size: cover;
 
-  // min-height: 100vh;
-  // min-width: 100vw;
   width: 99vw;
   margin: 2rem auto;
   border-radius: 10px 10px 0px 0px;
   font-size: 12px !important;
   & nav {
-    background: transparent;
+    background: $bluesky;
     border-radius: 10px 10px 0px 0px;
-    // backdrop-filter: blur(20px);
-    // box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
     & ul {
       display: flex;
       justify-content: left;
@@ -38,40 +36,36 @@
           font-family: 'Josefin Sans';
           margin: 0;
           text-transform: uppercase;
-          padding: 0.65rem 2rem 0.5rem;
+          padding: .9rem 2rem 0.5rem;
           font-weight: 400;
           min-width: 100px;
           background: transparent;
           border: none;
+          color: white;
+
+          & .web-icons {
+            transform: translate(3px, 1px);
+          }
+          & .software-icons {
+            
+          }
 
           &.active-menuSecondaire {
+            animation: strok 1.5s forwards;
+            transform: scale(1.20);
+            border-radius: 100px;
+            @keyframes strok {
+              100% {
+                stroke-dashoffset: 400;
+              }  
+            }
+
             background: $bluesky;
-            border-radius: 4px;
-            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.18);
+            // box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.18);
             background-size: 100% 100%;
             color: white;
-            animation: animeMenuSecondaire 300ms ease-out;
             text-shadow: 0 -1px 0 $bluesky;
             font-weight: bold;
-
-            @keyframes animeMenuSecondaire {
-              15% {
-                transform-origin: center center;
-                transform: scale(1.2, 1.1);
-              }
-              40% {
-                transform-origin: center center;
-                transform: scale(0.95, 0.95);
-              }
-              75% {
-                transform-origin: center center;
-                transform: scale(1.05, 1);
-              }
-              100% {
-                transform-origin: center center;
-                transform: scale(1, 1);
-              }
-            }
 
             &::after {
               content: "";
