@@ -13,7 +13,7 @@ export const baseDeDonneeproject :any = {
             linkweb   : 'https://github.com/Anthonoir576/AnthonyFalvo_1_28072021',
             resume    : 'Premier projet de chez Openclassrooms, il faut réaliser des livrables, un total de 3, concernant la formation à suivre. Réalisation de PDF, via powerpoint. Avec un planning de formation sur les 6-8 mois de formation (théoriquement). Ensuite nos sources de veille informationnelle.',
             content   : 'Premier projet de chez Openclassrooms, il faut réaliser des livrables, un total de 3, concernant la formation à suivre. Réalisation de PDF, via powerpoint. Avec un planning de formation sur les 6-8 mois de formation (théoriquement). Ensuite nos sources de veille informationnelle.',
-            image     : 'https://via.placeholder.com/150'
+            image     : 'https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images-db/oc-p1.jpg?raw=true'
         }, {
             id        : 2, 
             date      : '29 Juillet 2021',
@@ -37,7 +37,7 @@ export const baseDeDonneeproject :any = {
             Notes sur la réalisation du projet
             L'integration est faite sur l'éditeur Visual Studio Code
             Sass est utilisé pour organiser le css. Sass n'est plus présent. Uniquement un CSS refait sur mesure pour respecter les consignes. Une partie JS est présente pour le système d'onglet, et certaine animation CSS en plus, dans une but pédagogique uniquement. Ils serront désactivé pour le rendu du projet afin de respecter les consignes. Le JS a été retirer.`,
-            image     : 'https://via.placeholder.com/150'
+            image     : 'https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images-db/oc-p2.png?raw=true'
         }, {
             id        : 3, 
             date      : '02 Août 2021',
@@ -91,11 +91,11 @@ export const baseDeDonneeproject :any = {
             Validation W3C HTML : à passer, warning autorisés
             Validation W3C CSS : à passer, warning autorisés
             Compatibilité : Dernières versions de Chrome, Firefox & Safari`,
-            image     : 'https://via.placeholder.com/150'
+            image     : 'https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images-db/oc-p3.png?raw=true'
         }, {
             id        : 4, 
             date      : '09 Août 2021',
-            title     : 'projet 04 openclassrooms',
+            title     : 'Projet 04 openclassrooms',
             auteur    : [{nom : 'FALVO', prenom : 'Anthony'}],
             github    : 'https://github.com/Anthonoir576/AnthonyFalvo_4_09082021',
             linkweb   : 'https://anthonoir576.github.io/AnthonyFalvo_4_09082021/',
@@ -115,11 +115,11 @@ export const baseDeDonneeproject :any = {
             SEO réferencement naturel
             SEO performances techniques
             Accessibilité`,
-            image     : 'https://via.placeholder.com/150'
+            image     : 'https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images-db/oc-p4.png?raw=true'
         }, {
             id        : 5, 
             date      : '28 Août 2021',
-            title     : 'projet 05 openclassrooms',
+            title     : 'Projet 05 openclassrooms',
             auteur    : [{nom : 'FALVO', prenom : 'Anthony'}],
             github    : 'https://github.com/Anthonoir576/AnthonyFalvo_5_28082021',
             linkweb   : 'https://anthonoir576.github.io/AnthonyFalvo_5_28082021/',
@@ -153,11 +153,11 @@ export const baseDeDonneeproject :any = {
 
             Javascript Front-End
             Plan de test`,
-            image     : 'https://via.placeholder.com/150'
+            image     : 'https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images-db/oc-p5.png?raw=true'
         }, {
             id        : 6, 
             date      : '30 Sept 2021',
-            title     : 'projet 06 openclassrooms',
+            title     : 'Projet 06 openclassrooms',
             auteur    : [{nom : 'FALVO', prenom : 'Anthony'}],
             github    : 'https://github.com/Anthonoir576/AnthonyFalvo_6_30092021',
             linkweb   : 'https://github.com/Anthonoir576/AnthonyFalvo_6_30092021/tree/master/backend',
@@ -179,15 +179,15 @@ export const baseDeDonneeproject :any = {
             npm install (Pour les modules nodes)
             lancer : "npm start" ;
             Adresse de l'API : http://127.0.0.1:8081`,
-            image     : 'https://via.placeholder.com/150'
+            image     : 'https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images-db/oc-p6.png?raw=true'
         }, {
             id        : 7, 
             date      : '11 Oct 2021',
-            title     : 'projet 07 openclassrooms',
+            title     : 'Projet 07 openclassrooms',
             auteur    : [{nom : 'FALVO', prenom : 'Anthony'}],
             github    : 'https://github.com/Anthonoir576/AnthonyFalvo_7_11102021',
             linkweb   : 'https://github.com/Anthonoir576/AnthonyFalvo_7_11102021/tree/master/frontend',
-            resume    : "Sixième projet de chez Openclassrooms : Créez un réseau social d’entreprise.",
+            resume    : "Septième projet de chez Openclassrooms : Créez un réseau social d’entreprise.",
             content   : `Technologie :
             Mysql - Sequelize - NodeJS - Express - ReactJS - Sass/Css
 
@@ -223,7 +223,7 @@ export const baseDeDonneeproject :any = {
             Problème possible lié a l'installation :
             Aucun pour le moment
             Testé sous Windows / Linux. Sous deux appareils différents`,
-            image     : 'https://via.placeholder.com/150'
+            image     : 'https://github.com/Anthonoir576/FALVO_ENTERPRISE/blob/gh-pages/assets/images-db/oc-p7.png?raw=true'
         }
     ]  
     }, {
