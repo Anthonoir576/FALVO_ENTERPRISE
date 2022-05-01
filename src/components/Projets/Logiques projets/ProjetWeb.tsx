@@ -34,7 +34,7 @@ const ProjetWeb = () => {
                       ></path>
                     </svg>
                   </a>
-                  <a href={projet.lienweb}>
+                  <a href={projet.linkweb}>
                     <svg width="1.7em" height="1.7em" viewBox="0 0 24 24">
                       <g fill="none" stroke="currentColor" strokeWidth="1.5">
                         <path
@@ -58,7 +58,7 @@ const ProjetWeb = () => {
                   <div className="data">
                     <div className="content">
                       <p className="title">
-                        <a href="https://www.google.com/"> { projet.title } </a>
+                        <a href={projet.linkweb}> { projet.title } </a>
                       </p>
                       <p className="text">
                         { projet.resume }
