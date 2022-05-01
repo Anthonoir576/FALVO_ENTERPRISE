@@ -1,6 +1,16 @@
-import React from "react";
+import React                   from "react";
+import { baseDeDonneeproject } from '../../DB/DbProject';
 
 const ProjetWeb = () => {
+
+  const projetdetude = baseDeDonneeproject.web[0].studentProjects;
+
+                        console.log(projetdetude[0]);
+                        console.log(projetdetude[1]); 
+                        console.log(projetdetude[2]);
+  
+  
+
   return (
     <div className="project-cards-container">
       <div className="row">
