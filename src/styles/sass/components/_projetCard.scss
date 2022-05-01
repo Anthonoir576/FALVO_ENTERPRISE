@@ -32,7 +32,7 @@ main {
               0 15px 12px rgba($black, 0.2);
             &:hover {
               .data {
-                transform: translateY(0);
+                transform: translateY(0px);
               }
               & img {
                 animation: photoeffect 400ms forwards;
@@ -54,7 +54,7 @@ main {
             position: absolute;
             bottom: 0;
             width: 100%;
-            transform: translateY(calc(70px + 1em));
+            transform: translateY(calc(115px + 1em));
             transition: transform 0.3s;
             .content {
               padding: 1em;
@@ -69,9 +69,23 @@ main {
             margin-top: 10px;
           }
           .text {
-            height: 70px;
+            height: 80px;
             margin: 0;
             text-align: justify;
+          }
+          .btn-alert-card {
+            cursor: pointer;
+            width: 100%;
+            padding: 5px 0;
+            background: $bluesky;
+            color: white;
+
+            font-family: $Font2;
+            font-weight: 900;
+            letter-spacing: 1px;
+
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.192);
           }
         }
 
@@ -150,5 +164,12 @@ main {
         }
       }
     }
+  }
+}
+
+// MODAL
+body {
+  & .swal-overlay {
+    background: rgba($color: $bluesky, $alpha: 0.45);
   }
 }
