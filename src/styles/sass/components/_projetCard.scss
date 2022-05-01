@@ -15,7 +15,7 @@ main {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           max-width: 100%;
-          margin: 50px auto 0;
+          margin: 25px auto 0;
         }
 
         & .card {
@@ -24,8 +24,9 @@ main {
           width: 100%;
           max-width: 660px;
           .wrapper {
-            background-color: white;
+            background: $colorGradient;
             max-height: 500px;
+            height: 500px;
             position: relative;
             overflow: hidden;
             box-shadow: 0 19px 38px rgba($black, 0.3),
@@ -164,9 +165,23 @@ main {
           .title {
             a {
               color: lighten($black, 50%);
+
+              &::first-letter {
+                color: $bluesky;
+                font-weight: 600;
+              }
             }
           }
         }
+      }
+      & .title-categorie-projet {
+        margin: 3rem 27.2px 0 27.2px;
+        background: $bluesky;
+        padding: 12px 5px 10px 5px;
+        color: white;
+
+        border-radius: 5px;
+        letter-spacing: 1px;
       }
     }
   }
