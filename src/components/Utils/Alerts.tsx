@@ -17,8 +17,10 @@ export const alertPhoneNumber = () => {
 
 
 // ALERT CONTENU DES CARTES PROJETS
-export const alertContenuProjet = (contenu? :any) => {
+export const alertContenuProjet = (contenu? :any, titre? :any) => {
     return swal({
-                text: contenu,
+            text: `${contenu}`,
+            title: `${titre}`,
+            buttons : ['close']
            });
-};
+};  

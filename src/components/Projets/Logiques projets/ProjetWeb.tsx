@@ -57,17 +57,17 @@ const ProjetWeb = () => {
                   </div>
                   <div className="data">
                     <div className="content">
-                      <span className="author">{ projet.auteur[0].nom } { projet.auteur[0].prenom }</span>
                       <p className="title">
                         <a href="https://www.google.com/"> { projet.title } </a>
                       </p>
                       <p className="text">
                         { projet.resume }
                       </p>
+                      <span className="author">{ projet.auteur[0].nom } { projet.auteur[0].prenom }</span>
                       <button className="btn-alert-card"
                               onClick={
                                 () => {
-                                  alertContenuProjet(projet.content)
+                                  alertContenuProjet(projet.content, projet.title)
                                 }
                               }
                       > 
