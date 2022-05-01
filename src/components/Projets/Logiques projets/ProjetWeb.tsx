@@ -34,7 +34,7 @@ const ProjetWeb = () => {
                       ></path>
                     </svg>
                   </a>
-                  <a href={projet.lienweb}>
+                  <a href={projet.linkweb}>
                     <svg width="1.7em" height="1.7em" viewBox="0 0 24 24">
                       <g fill="none" stroke="currentColor" strokeWidth="1.5">
                         <path
@@ -57,17 +57,17 @@ const ProjetWeb = () => {
                   </div>
                   <div className="data">
                     <div className="content">
-                      <span className="author">{ projet.auteur[0].nom } { projet.auteur[0].prenom }</span>
                       <p className="title">
-                        <a href="https://www.google.com/"> { projet.title } </a>
+                        <a href={projet.linkweb}> { projet.title } </a>
                       </p>
                       <p className="text">
                         { projet.resume }
                       </p>
+                      <span className="author">{ projet.auteur[0].nom } { projet.auteur[0].prenom }</span>
                       <button className="btn-alert-card"
                               onClick={
                                 () => {
-                                  alertContenuProjet(projet.content)
+                                  alertContenuProjet(projet.content, projet.title)
                                 }
                               }
                       > 
