@@ -1,6 +1,6 @@
 import React                   from "react";
 import { baseDeDonneeproject } from "../../DB/DbProject";
-import { alertContenuProjet } from '../../Utils/Alerts';
+import { alertContenuProjet }  from '../../Utils/Alerts';
  
 const ProjetWeb = () => {
 
@@ -64,11 +64,12 @@ const ProjetWeb = () => {
                       <p className="text">
                         { projet.resume }
                       </p>
-                      <button onClick={
-                        () => {
-                          alertContenuProjet(projet.content)
-                        }
-                      }
+                      <button className="btn-alert-card"
+                              onClick={
+                                () => {
+                                  alertContenuProjet(projet.content)
+                                }
+                              }
                       > 
                         Résumé du projet
                       </button>
