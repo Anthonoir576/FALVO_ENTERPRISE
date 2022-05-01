@@ -1,9 +1,10 @@
-import React from 'react';
+import React   from 'react';
+import NoFound from '../../../Maintenance/NoFound';
 
 const ProjetWebPro = () => {
     return (
         <div>
-           WEB PRO 
+           <NoFound />
         </div>
     );
 };
