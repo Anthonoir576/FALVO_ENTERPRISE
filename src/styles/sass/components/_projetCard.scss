@@ -15,7 +15,7 @@ main {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           max-width: 100%;
-          margin: 50px auto 0;
+          margin: 25px auto 0;
         }
 
         & .card {
@@ -173,6 +173,15 @@ main {
             }
           }
         }
+      }
+      & .title-categorie-projet {
+        margin: 3rem 27.2px 0 27.2px;
+        background: $bluesky;
+        padding: 12px 5px 10px 5px;
+        color: white;
+
+        border-radius: 5px;
+        letter-spacing: 1px;
       }
     }
   }
