@@ -1,6 +1,7 @@
 import React                   from "react";
 import { baseDeDonneeproject } from "../../DB/DbProject";
-
+import { alertContenuProjet } from '../../Utils/Alerts';
+ 
 const ProjetWeb = () => {
 
 
@@ -18,19 +19,22 @@ const ProjetWeb = () => {
             return (
               <div className="myCard2 card" key={projet.id}>
                 <div className="wrapper">
-                  <img src="https://via.placeholder.com/150" alt="test" />
+                  <img src={projet.image} alt="test" />
                   <div className="date">
                     <span className="day">{ projet.date.split(' ')[0] }</span>
                     <span className="month">{ projet.date.split(' ')[1] }</span>
                     <span className="year">{ projet.date.split(' ')[2] }</span>
                   </div>
                   <div className="card-icon">
+                  <a href={projet.github}>
                     <svg width="1.7em" height="1.7em" viewBox="0 0 24 24">
                       <path
                         fill="currentColor"
                         d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
                       ></path>
                     </svg>
+                  </a>
+                  <a href={projet.lienweb}>
                     <svg width="1.7em" height="1.7em" viewBox="0 0 24 24">
                       <g fill="none" stroke="currentColor" strokeWidth="1.5">
                         <path
@@ -49,21 +53,25 @@ const ProjetWeb = () => {
                         ></path>
                       </g>
                     </svg>
+                  </a>
                   </div>
                   <div className="data">
                     <div className="content">
-                      <span className="author">Auteur</span>
+                      <span className="author">{ projet.auteur[0].nom } { projet.auteur[0].prenom }</span>
                       <p className="title">
-                        <a href="https://www.google.com/">mon titre</a>
+                        <a href="https://www.google.com/"> { projet.title } </a>
                       </p>
                       <p className="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ratione perspiciatis sequi quasi veritatis fuga facere,
-                        accusantium odit obcaecati reprehenderit molestiae
-                        incidunt amet asperiores saepe tenetur minus aut
-                        aspernatur facilis sit rem commodi voluptates ipsa illo
-                        earum consequatur. Atque, hic sit.
+                        { projet.resume }
                       </p>
+                      <button onClick={
+                        () => {
+                          alertContenuProjet(projet.content)
+                        }
+                      }
+                      > 
+                        Résumé du projet
+                      </button>
                     </div>
                   </div>
                 </div>
