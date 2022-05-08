@@ -20,7 +20,7 @@ const ProjetWebEtudes = () => {
                   <span className="year">{projet.date.split(" ")[2]}</span>
                 </div>
                 <div className="card-icon">
-                  <a href={projet.github}>
+                  <a href={projet.github} target='_blank' rel='noopener noreferrer'>
                     <svg width="1.7em" height="1.7em" viewBox="0 0 24 24">
                       <path
                         fill="currentColor"
@@ -28,7 +28,7 @@ const ProjetWebEtudes = () => {
                       ></path>
                     </svg>
                   </a>
-                  <a href={projet.linkweb}>
+                  <a href={projet.linkweb} target='_blank' rel='noopener noreferrer'>
                     <svg width="1.7em" height="1.7em" viewBox="0 0 24 24">
                       <g fill="none" stroke="currentColor" strokeWidth="1.5">
                         <path
