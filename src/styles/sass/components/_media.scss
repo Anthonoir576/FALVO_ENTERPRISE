@@ -924,23 +924,7 @@
         & li {
           & button {
             font-size: 10px;
-            padding: 14px 18px 6px;
-
-            &.active-menuSecondaire {
-              animation: strok 500ms forwards;
-
-              @keyframes strok {
-                from {
-                  transform: scale(1) translateY(0px);
-                  border-radius: 0px 0px;
-                }
-                to {
-                  transform: scale(1.1) translateY(-4px);
-                  border-radius: 100px 100px;
-                  stroke-dashoffset: 400;
-                }
-              }
-            }
+            padding: 16px 20px 8px;
           }
         }
       }
@@ -951,11 +935,11 @@
   .menuSecondaire {
     & nav {
       & ul {
-        justify-content: space-between;
+        justify-content: space-around;
         & li {
           & button {
-            font-size: 8px;
-            padding: 10px 13px 3px;
+            font-size: 7px;
+            padding: 14px 12px 5px;
             &.active-menuSecondaire::after {
               margin-top: 0.3rem;
             }
@@ -969,10 +953,9 @@
   .menuSecondaire {
     & nav {
       & ul {
-        justify-content: space-between;
         & li {
           & button {
-            font-size: 7px;
+            font-size: 5px;
             padding: 5px 10px 0px;
             &.active-menuSecondaire::after {
               margin-top: 0.3rem;

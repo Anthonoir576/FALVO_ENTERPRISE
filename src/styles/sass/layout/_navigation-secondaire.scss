@@ -1,10 +1,22 @@
 .menuSecondaire {
-  width: 99vw;
+  width:100vw;
   margin: 2rem auto;
   border-radius: 10px 10px 0px 0px;
   font-size: 12px !important;
   & nav {
-    background: $bluesky;
+    background: linear-gradient(
+      60deg,
+      #ffdc80,
+      #fcaf45,
+      #f77737,
+      #f56040,
+      #fd1d1d,
+      #e1306c,
+      #c13584 60%,
+      #833ab4,
+      #5851db,
+      #405de6 120%
+    );
     border-radius: 10px 10px 0px 0px;
     // border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
@@ -46,7 +58,7 @@
               }
               to {
                 transform: scale(1.2) translateY(-4px);
-                border-radius: 50px;
+                border-radius: 05px;
                 stroke-dashoffset: 400;
               }
             }
@@ -54,7 +66,19 @@
             & svg {
               border-radius: 50%;
             }
-            background: $bluesky;
+            background:  linear-gradient(
+              60deg,
+              #ffdc80,
+              #fcaf45,
+              #f77737,
+              #f56040,
+              #fd1d1d,
+              #e1306c,
+              #c13584 60%,
+              #833ab4,
+              #5851db,
+              #405de6 120%
+            );
             background-size: 100% 100%;
             color: white;
             font-weight: bold;
