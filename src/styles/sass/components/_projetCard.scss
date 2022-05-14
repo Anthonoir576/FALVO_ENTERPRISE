@@ -176,7 +176,20 @@ main {
       }
       & .title-categorie-projet {
         margin: 3rem 27.2px 0 27.2px;
-        background: $bluesky;
+        text-align: end;
+        background:  linear-gradient(
+          60deg,
+          #ffdc80,
+          #fcaf45,
+          #f77737,
+          #f56040,
+          #fd1d1d,
+          #e1306c,
+          #c13584 60%,
+          #833ab4,
+          #5851db,
+          #405de6 120%
+        );
         padding: 12px 5px 10px 5px;
         color: white;
 

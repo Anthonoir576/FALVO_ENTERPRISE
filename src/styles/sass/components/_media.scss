@@ -924,23 +924,7 @@
         & li {
           & button {
             font-size: 10px;
-            padding: 14px 18px 6px;
-
-            &.active-menuSecondaire {
-              animation: strok 500ms forwards;
-
-              @keyframes strok {
-                from {
-                  transform: scale(1) translateY(0px);
-                  border-radius: 0px 0px;
-                }
-                to {
-                  transform: scale(1.1) translateY(-4px);
-                  border-radius: 100px 100px;
-                  stroke-dashoffset: 400;
-                }
-              }
-            }
+            padding: 16px 20px 8px;
           }
         }
       }
