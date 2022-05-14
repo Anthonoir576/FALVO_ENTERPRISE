@@ -202,7 +202,7 @@ main {
 
 // MODAL PROJET au clique
 body {
-  & .swal-overlay {
+  & .myProjets .swal-overlay {
     background: rgba($color: $bluesky, $alpha: 0.45);
     & .swal-modal {
       & .swal-title {
