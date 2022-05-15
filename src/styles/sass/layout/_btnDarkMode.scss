@@ -74,6 +74,17 @@
 
 .darkTheme .myProjets .menuSecondaire {
   & nav {
+    &::after {
+      content : '';
+      display: block;
+      transform: translateY(6px);
+      margin: 0 auto;
+      border-radius: 5000px;
+      width: 90%;
+      height: 2px;
+      background: $colorGradientDark;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.438);
+    }
     & ul {
       & li {
         & button {

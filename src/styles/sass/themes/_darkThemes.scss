@@ -1,5 +1,5 @@
 body.darkTheme {
-  background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+  background: $colorGradientDark;
 
   & .aPropos,
   .accueil {
@@ -154,17 +154,12 @@ body.darkTheme {
   #root {
     & .myProjets {
       & .menuSecondaire {
-        & ul {
+        & nav {
           background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
           border-top: 1px solid rgba(255, 255, 255, 0.425);
           border-bottom: 1px solid rgba(255, 255, 255, 0.438);
         }
-        & li {
-          color: white;
-          &:hover {
-            color: black;
-          }
-        }
+
       }
     }
   }
@@ -182,7 +177,7 @@ body.darkTheme {
     }
   }
   & main .myProjets .affichage-option-projets .title-categorie-projet {
-    background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);;
+    background: $colorGradientDark;
   }
 }
 
