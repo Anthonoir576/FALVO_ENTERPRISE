@@ -1,23 +1,23 @@
-import React                from "react";
-import { useState }         from "react";
-import { CopyToClipboard }  from 'react-copy-to-clipboard';
-import NavBar               from "../components/Navigation/NavBar";
-import { init }             from "emailjs-com";
+import React                 from "react";
+import { useState }          from "react";
+import { CopyToClipboard }   from 'react-copy-to-clipboard';
+import NavBar                from "../components/Navigation/NavBar";
+import { init }              from "emailjs-com";
 import { alertAdress, 
          alertEmail,
-         alertPhoneNumber } from "../components/Utils/Alerts";
+         alertPhoneNumber }  from "../components/Utils/Alerts";
 import { regexNom,
          regexEmail,
          regexMessage,
-         regexObjet }       from '../components/Utils/Regex';
-
-
-
+         regexObjet }        from '../components/Utils/Regex';
+import { alertMailEnvoyer }  from '../components/Utils/Alerts';
 
 declare const window :any;
 
 
-init("user_kFyT3rLA41sQVqH9BcaF5");
+
+init(`${process.env.REACT_APP_EMAILJS_USER}`);
+
 
 
 const Contact = () => {
@@ -29,8 +29,7 @@ const Contact = () => {
   const [msgErr, setMsgErr]        = useState('');
   const [succes, setSucces]        = useState(false);
   const [msgSucces, setMsgSucces]  = useState('');
-    
-
+  
   const sendToMail = (e?: any) => {
     e.preventDefault();
 
@@ -43,7 +42,7 @@ const Contact = () => {
          
       const sendEmailJs = (templateId?: any, variables?: any) => {
         window.emailjs
-          .send('service_s8v4a09', templateId, variables)
+          .send(`${process.env.REACT_APP_EMAILJS_SERVICE}`, templateId, variables)
           .then((resultat: any) => {
 
             console.log('succès !');
@@ -58,6 +57,8 @@ const Contact = () => {
             
             setMsgSucces('Message envoyé !');
             setSucces(true);
+            alertMailEnvoyer('Message envoyé !');
+
 
             setTimeout(() => {
               setSucces(false);
@@ -78,7 +79,7 @@ const Contact = () => {
           );
       };
   
-      sendEmailJs("template_ljp5ax8", {
+      sendEmailJs(`${process.env.REACT_APP_EMAILJS_TEMPLATE}`, {
         name : name.trim(),
         email : email.trim(),
         object : object.trim(),
@@ -125,6 +126,7 @@ const Contact = () => {
 
   };
 
+  
   
   return (
     <div className="contact">

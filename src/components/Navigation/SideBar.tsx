@@ -2,6 +2,7 @@ import React, { useState }   from 'react';
 import { NavLink }           from 'react-router-dom';
 import UiwCloseSquare        from '../Icons/UiwCloseSquare';
 import UiwMenu               from '../Icons/UiwMenu';
+import WpfMaintenance        from '../Icons/WpfMaintenance';
 import DarkMode              from './DarkMode';
 
 
@@ -66,7 +67,7 @@ const SideBar = () => {
                                 </li>
                                 <li>
                                     <NavLink to='/tutoriel' aria-label='tutoriel developpement'>
-                                        Tutoriel
+                                        Tutoriel 
                                     </NavLink>
                                 </li>
                                 <li>

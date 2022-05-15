@@ -17,7 +17,7 @@
       #5851db,
       #405de6 120%
     );
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 450px 10px 300px 15px;
     // border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.185);
     & ul {
@@ -54,11 +54,13 @@
             @keyframes strok {
               from {
                 transform: scale(1) translateY(0px);
+                opacity: 1;
                 border-radius: 0px;
               }
               to {
-                transform: scale(1.2) translateY(-4px);
-                border-radius: 05px;
+                transform: scale(1.13) translateY(-0.5px);
+                border-radius: 3px;
+                opacity: 0.95;
                 stroke-dashoffset: 400;
               }
             }
