@@ -1,16 +1,16 @@
-import React                from "react";
-import { useState }         from "react";
-import { CopyToClipboard }  from 'react-copy-to-clipboard';
-import NavBar               from "../components/Navigation/NavBar";
-import { init }             from "emailjs-com";
+import React                 from "react";
+import { useState }          from "react";
+import { CopyToClipboard }   from 'react-copy-to-clipboard';
+import NavBar                from "../components/Navigation/NavBar";
+import { init }              from "emailjs-com";
 import { alertAdress, 
          alertEmail,
-         alertPhoneNumber } from "../components/Utils/Alerts";
+         alertPhoneNumber }  from "../components/Utils/Alerts";
 import { regexNom,
          regexEmail,
          regexMessage,
-         regexObjet }       from '../components/Utils/Regex';
-
+         regexObjet }        from '../components/Utils/Regex';
+import { alertMailEnvoyer }  from '../components/Utils/Alerts';
 
 declare const window :any;
 
@@ -57,6 +57,8 @@ const Contact = () => {
             
             setMsgSucces('Message envoyé !');
             setSucces(true);
+            alertMailEnvoyer('Message envoyé !');
+
 
             setTimeout(() => {
               setSucces(false);
