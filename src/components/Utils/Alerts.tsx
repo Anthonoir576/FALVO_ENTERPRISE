@@ -21,6 +21,5 @@ export const alertContenuProjet = (contenu? :any, titre? :any) => {
     return swal({
             text: `${contenu}`,
             title: `${titre}`,
-            buttons : ['close']
            });
 };  
