@@ -12,8 +12,6 @@ import { regexNom,
          regexObjet }       from '../components/Utils/Regex';
 
 
-
-
 declare const window :any;
 
 
@@ -125,6 +123,7 @@ const Contact = () => {
 
   };
 
+  
   
   return (
     <div className="contact">

@@ -17,7 +17,6 @@ import { Routes,
 
 
 function App() {
-
   return (
     <BrowserRouter>
       <ThemeContextProvider>
