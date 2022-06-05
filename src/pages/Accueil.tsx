@@ -40,7 +40,11 @@ const Accueil = () => {
       <motion.div
         className="accueil"
       >
-        <NavBar />
+        <motion.div animate={{y: 0}} 
+                    initial={{y : -250}}
+        >
+            <NavBar />
+        </motion.div>
         <div className="accueil-information">
           <motion.div
             className="information-image"
