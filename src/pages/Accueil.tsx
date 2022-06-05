@@ -4,13 +4,13 @@
 //- ######################################################## 
 import React, { useEffect }               from 'react';
 import { NavLink }                        from 'react-router-dom';
-import { txtEffect }                      from '../components/Utils/EffectTxt';
 import NavBar                             from '../components/Navigation/NavBar';
 
-// ############### ANIMATION ###################
+//      <--------------- ANIMATION -------------------->
+import { txtEffect }                      from '../components/Utils/EffectTxt';
 import { motion }                         from 'framer-motion';
-import { accueilAnimationPictureProfile } from '../components/Utils/AnimationMotion';
-// #############################################
+import { accueilAnimePictureProfile }     from '../components/Utils/AnimationMotion';
+//      <---------------------------------------------->
 
 //- --------------------------------------------------------
 //- ########################################################
@@ -33,8 +33,8 @@ const Accueil = () => {
         <div className='accueil'>
             <NavBar />
             <div className='accueil-information'>
-                <motion.div animate={accueilAnimationPictureProfile[0]}
-                            initial={accueilAnimationPictureProfile[1]}
+                <motion.div animate={accueilAnimePictureProfile[0]}
+                            initial={accueilAnimePictureProfile[1]}
                             className='information-image'>
                     <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil.png"} alt="le developpeur web" />
                 </motion.div>
