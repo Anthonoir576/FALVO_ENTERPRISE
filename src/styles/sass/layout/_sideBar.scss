@@ -1,10 +1,6 @@
 #root .navigation {
   position: relative;
-  z-index: 10;
 
-  &:hover {
-    filter: saturate(100%);
-  }
   & a {
     display: block;
     font-size: 20px;
@@ -16,7 +12,7 @@
   }
 
   & .menuDeNavigation {
-    position: absolute;
+    position: fixed;
     transform: translate(0px, 0px);
     width: 25%;
     height: 100%;
@@ -92,7 +88,7 @@
             &::before {
               content: "";
               display: block;
-              position: absolute;
+              position: fixed;
               top: 0;
               left: 10px;
               height: 100%;
