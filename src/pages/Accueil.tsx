@@ -35,8 +35,8 @@ const Accueil = () => {
             <div className='accueil-information'>
                 <motion.div animate={accueilAnimePictureProfile[0]}
                             initial={accueilAnimePictureProfile[1]}
-                            transition={accueilAnimePictureProfile[2]}
-                            
+                            // transition={accueilAnimePictureProfile[2]}
+
                             className='information-image'
                 >
                     <img src={"https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil.png"} alt="le developpeur web" />
