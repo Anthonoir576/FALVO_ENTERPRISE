@@ -54,6 +54,11 @@
           display: block;
           text-decoration: none;
           color: white;
+
+          &:focus {
+            outline: none;
+            border: none;
+          }
         }
 
         & .active {
@@ -95,6 +100,12 @@
       }
       & li.homePageIcon {
         margin: 0;
+        & a {
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
         & .myhomeicon {
           cursor: pointer;
           &:hover {
@@ -155,6 +166,10 @@
   background: transparent;
   border: none;
   padding: 0;
+  &:focus {
+    outline: none;
+    border: none;
+  }
 }
 
 .accueil .navigation {
