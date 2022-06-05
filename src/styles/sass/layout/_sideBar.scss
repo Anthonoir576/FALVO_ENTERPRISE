@@ -26,44 +26,12 @@
     border-left: 2px solid rgba(255, 255, 255, 0.747);
     box-shadow: 0 0 10px 0 black;
 
-    animation: apparitionMenu 1s both;
-    @keyframes apparitionMenu {
-      0% {
-        right: -900px;
-      }
-      100% {
-        right: 0px;
-      }
-    }
-
     & ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 100%;
       text-shadow: 0 0 0;
-      opacity: 0;
-
-      animation: apparitionMenu2 0.65s forwards;
-      @keyframes apparitionMenu2 {
-        0% {
-          opacity: 0;
-          transform: translateX(100px);
-        }
-        50% {
-          opacity: 0;
-        }
-        75% {
-          opacity: 0.25;
-        }
-        85% {
-          opacity: 0.5;
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0px);
-        }
-      }
 
       & li {
         display: block;
