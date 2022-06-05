@@ -7,9 +7,11 @@ import { NavLink }                        from 'react-router-dom';
 import { txtEffect }                      from '../components/Utils/EffectTxt';
 import NavBar                             from '../components/Navigation/NavBar';
 
-// ANIMATION
+// ############### ANIMATION ###################
 import { motion }                         from 'framer-motion';
 import { accueilAnimationPictureProfile } from '../components/Utils/AnimationMotion';
+// #############################################
+
 //- --------------------------------------------------------
 //- ########################################################
 
