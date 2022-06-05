@@ -1,3 +1,7 @@
+
+//- ########################################################
+//- --------------------- IMPORT ---------------------------
+//- ######################################################## 
 import Accueil               from "./pages/Accueil";
 import APropos               from "./pages/APropos";
 import Competence            from "./pages/Competence";
@@ -13,6 +17,9 @@ import { Routes,
          Route,
          BrowserRouter,
          Navigate }          from "react-router-dom";
+//- -------------------------------------------------------
+//- ########################################################
+
 
 
 
