@@ -1,4 +1,4 @@
-/** DOCUMENTATION ET CORRECTION A APPLIQUER *
+/** *****  DOCUMENTATION ET CORRECTION A APPLIQUER  *******
  * 
  * *****************  MAJEUR  ***********************
  * > ATTENTION ! => les url des images dependent du chemin master, et url github directement. A corriger lors du déployement.
@@ -12,6 +12,7 @@
  * *****************  MINEUR  ***********************
  * ~ Librairie d'animation a exploité, afin d'améliorer l'expérience utilisateur.
  * **************************************************
+ * *********************************************************
  */
 
 
