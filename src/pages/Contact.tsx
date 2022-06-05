@@ -16,7 +16,6 @@ import { regexNom,
          regexObjet }        from '../components/Utils/Regex';
 import { alertMailEnvoyer }  from '../components/Utils/Alerts';
 
-
 //- ########################################################
 //- --------------- DECLARATION GLOBALE --------------------
 //- ########################################################
