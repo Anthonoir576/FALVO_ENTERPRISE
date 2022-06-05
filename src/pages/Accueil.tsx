@@ -17,7 +17,7 @@ import NavBar               from '../components/Navigation/NavBar';
 //* ########################################################
 const Accueil = () => {
 
-    // -- Effet animation texte --
+    // Effet animation texte 
     useEffect(() => {
         txtEffect();
     }, []);
