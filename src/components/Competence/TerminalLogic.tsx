@@ -1,6 +1,9 @@
 
 // Logique du terminal
 
+//~ ########################################################
+//~ --------------------- EXPORT ---------------------------
+//~ ########################################################
 export const commands = {
     nom       : "FALVO",
     prénom    :'Anthony',
@@ -41,3 +44,5 @@ export const commands = {
     2021      : "ANNEE 2021 => En mars, je me suis donc fait licencié car l'activité n'était plus ce qu'elle était avant. J'ai donc continué de me former dans le domaine du web en autodidacte. En septembre, j'ai choisi la formation OpenClassRooms pour valorisé mes acquis dans le domaine du web. J'ai réussi cette formation de 8 mois en théorie, en 2 mois environ. J'ai appris le html Css/sass et react coté front-end, NodeJS, express coté back-end, et MongoDB/Mongoose et MySql/sequelize pour la partie base de données.",
     2022      : "ANNEE 2022 => J'ai continué a faire des projets, puis j'ai trouvé un emploi chez : 'LV-MONTAGE', entreprise du BTP dans le coffrage de plancher. Un travail en attendant de prendre du niveau dans le développement. Aujourd'hui je sais qu'elle serra mon domaine. Le développement. Que ça soit web / logiciel / Jeu vidéo, peu importe, j'aime réellement développer !"`,
 };
+//~ --------------------------------------------------------
+//~ ########################################################

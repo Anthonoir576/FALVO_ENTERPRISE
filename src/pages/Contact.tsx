@@ -1,3 +1,7 @@
+//- ########################################################
+//- --------------------- IMPORT ---------------------------
+//- ########################################################
+
 import React                 from "react";
 import { useState }          from "react";
 import { CopyToClipboard }   from 'react-copy-to-clipboard';
@@ -12,14 +16,23 @@ import { regexNom,
          regexObjet }        from '../components/Utils/Regex';
 import { alertMailEnvoyer }  from '../components/Utils/Alerts';
 
+
+//- ########################################################
+//- --------------- DECLARATION GLOBALE --------------------
+//- ########################################################
+
 declare const window :any;
-
-
-
 init(`${process.env.REACT_APP_EMAILJS_USER}`);
 
+//- --------------------------------------------------------
+//- ########################################################
 
 
+
+
+//* ########################################################
+//* --------------------- Contact --------------------------
+//* ########################################################
 const Contact = () => {
   const [name, setName]            = useState("");
   const [email, setEmail]          = useState("");
@@ -33,13 +46,15 @@ const Contact = () => {
   const sendToMail = (e?: any) => {
     e.preventDefault();
 
+
     if (regexEmail(email) &&
         regexObjet(object) &&
         regexMessage(message) && 
         regexNom(name)) {
       
       setError(false);    
-         
+      
+      // --- Envoi e-mail sur mon adresse via emailJS ---
       const sendEmailJs = (templateId?: any, variables?: any) => {
         window.emailjs
           .send(`${process.env.REACT_APP_EMAILJS_SERVICE}`, templateId, variables)
@@ -126,8 +141,6 @@ const Contact = () => {
 
   };
 
-  
-  
   return (
     <div className="contact">
       <NavBar />
@@ -276,8 +289,17 @@ const Contact = () => {
       </div>
     </div>
   );
-
-
 };
+//* --------------------------------------------------------
+//* ########################################################
 
+
+
+
+
+//~ ########################################################
+//~ --------------------- EXPORT ---------------------------
+//~ ########################################################
 export default Contact;
+//~ --------------------------------------------------------
+//~ ########################################################
