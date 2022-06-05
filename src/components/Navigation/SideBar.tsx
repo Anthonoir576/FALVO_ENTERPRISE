@@ -2,14 +2,20 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ########################################################
-import React, { useState }   from 'react';
-import { NavLink }           from 'react-router-dom';
-import UiwCloseSquare        from '../Icons/UiwCloseSquare';
-import UiwMenu               from '../Icons/UiwMenu';
-import WpfMaintenance        from '../Icons/WpfMaintenance';
-import DarkMode              from './DarkMode';
+import React, { useState }        from "react";
+import { NavLink }                from "react-router-dom";
+import UiwCloseSquare             from "../Icons/UiwCloseSquare";
+import UiwMenu                    from "../Icons/UiwMenu";
+import WpfMaintenance             from "../Icons/WpfMaintenance";
+import DarkMode                   from "./DarkMode";
+
+//      <--------------- ANIMATION -------------------->
+import { motion }                 from "framer-motion";
+import { sideBarAnime }           from "../Utils/AnimationMotion";
+//      <---------------------------------------------->
 //- --------------------------------------------------------
 //- ########################################################
+
 
 
 
@@ -18,92 +24,112 @@ import DarkMode              from './DarkMode';
 //* --------------------- Sidebar --------------------------
 //* ########################################################
 const SideBar = () => {
+  const [toggleNavigation, setToggleNavigation] = useState(false);
 
-    const [toggleNavigation, setToggleNavigation] = useState(false);
- 
-    const menuFonction = () => {
-        setToggleNavigation(!toggleNavigation);
-    };    
-    
+  const menuFonction = () => {
+    setToggleNavigation(!toggleNavigation);
+  };
 
-    return (
+
+
+  return (
+    <>
+      <li className="menuIcon">
+        <button
+          className={toggleNavigation ? "openMenuOff openMenu" : "openMenu"}
+          onClick={() => menuFonction()}
+          arria-label="ouvrir le menu"
+        >
+          <UiwMenu />
+        </button>
+      </li>
+      <div>
         <>
-            <li className='menuIcon'>
-                <button className={toggleNavigation ? 'openMenuOff openMenu' : 'openMenu'}
-                        onClick={() => menuFonction()}
-                        arria-label='ouvrir le menu'
+          <motion.nav
+            className="menuDeNavigation"
+            animate={toggleNavigation ? "open" : "closed"}
+            transition={sideBarAnime.duration}
+            variants={sideBarAnime}
+          >
+            <ul>
+              <li className="closeMenu-container">
+                <button
+                  className={"closeMenu"}
+                  onClick={() => menuFonction()}
+                  arria-label="fermer le menu"
                 >
-                    <UiwMenu />
+                  <UiwCloseSquare />
                 </button>
-            </li>
-            <div>
-                {toggleNavigation ? (
-                    <>
-                        <nav className='menuDeNavigation'>
-                            <ul>
-                                <li className='closeMenu-container'>
-                                    <button className={toggleNavigation ? 'closeMenu' : 'closeMenuOff'}
-                                        onClick={() => menuFonction()}
-                                        arria-label='fermer le menu'
-                                    >
-                                        <UiwCloseSquare />
-                                    </button>
-                                </li>
-                                <li>
-                                    <NavLink to='/accueil' aria-label="Retour à l'accueil du site web">
-                                        Accueil
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/veille' aria-label='veille technologique'>
-                                        Veille technologique
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/a_propos' aria-label='En savoir plus sur le développeur web'>
-                                        En savoir plus...
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/competence' aria-label='Compétence du développeur web'>
-                                        Compétence
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/projets' aria-label='Les projets du développeur web'>
-                                        Projets web
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/tutoriel' aria-label='tutoriel developpement'>
-                                        Tutoriel 
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/blog' aria-label='blog sur le site falvo enterprise'>
-                                        Blog
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/contact' aria-label='Contact avec le développeur web'>
-                                        Contact
-                                    </NavLink>
-                                </li>
-                                <DarkMode />
-                            </ul>
-                        </nav>
-                    </>
-
-                ) : (
-                    <>
-                    </>
-                )}
-            </div>
+              </li>
+              <li>
+                <NavLink
+                  to="/accueil"
+                  aria-label="Retour à l'accueil du site web"
+                >
+                  Accueil
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/veille" aria-label="veille technologique">
+                  Veille technologique
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/a_propos"
+                  aria-label="En savoir plus sur le développeur web"
+                >
+                  En savoir plus...
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/competence"
+                  aria-label="Compétence du développeur web"
+                >
+                  Compétence
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/projets"
+                  aria-label="Les projets du développeur web"
+                >
+                  Projets web
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/tutoriel" aria-label="tutoriel developpement">
+                  Tutoriel
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/blog"
+                  aria-label="blog sur le site falvo enterprise"
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  aria-label="Contact avec le développeur web"
+                >
+                  Contact
+                </NavLink>
+              </li>
+              <DarkMode />
+            </ul>
+          </motion.nav>
         </>
-    );
+      </div>
+    </>
+  );
 };
 //* --------------------------------------------------------
 //* ########################################################
+
 
 
 
