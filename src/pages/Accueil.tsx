@@ -9,6 +9,7 @@ import NavBar                             from '../components/Navigation/NavBar'
 //      <--------------- ANIMATION -------------------->
 import { txtEffect }                      from '../components/Utils/EffectTxt';
 import { motion }                         from 'framer-motion';
+import { AnimatePresence }                from 'framer-motion';  
 
 // photo profile
 import { accueilAnimePictureProfile}      from '../components/Utils/AnimationMotion';
@@ -20,8 +21,10 @@ import { accueilAnimeTxt03 }              from '../components/Utils/AnimationMot
 
 // navigation accueil
 import { accueilAnimeNavigation }         from "../components/Utils/AnimationMotion";
-//      <---------------------------------------------->
 
+// transition pages
+import { animeTransitionPages }           from '../components/Utils/AnimationMotion';
+//      <---------------------------------------------->
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -40,61 +43,35 @@ const Accueil = () => {
 
 
     return (
-      <motion.div
-        className="accueil"
-      >
-        <motion.div animate={accueilAnimeNavigation.animate} 
-                    initial={accueilAnimeNavigation.initial}
-        >
-            <NavBar />
-        </motion.div>
+      <div className="accueil">
+        <NavBar />
         <div className="accueil-information">
-          <motion.div
-            className="information-image"
-            animate={accueilAnimePictureProfile[0]}
-            initial={accueilAnimePictureProfile[1]} 
-          >
+          <div className="information-image">
             <img
               src={
                 "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil.png"
               }
               alt="le developpeur web"
             />
-          </motion.div>
+          </div>
           <div className="text-container">
             <div className="information-dev">
-              <motion.h1
-                className="text-effect"
-                animate={accueilAnimeTxt01[0]}
-                initial={accueilAnimeTxt01[1]}
-                transition={accueilAnimeTxt01[2]}
-              >
-                FALVO Anthony
-              </motion.h1>
-              <motion.h2
-                animate={accueilAnimeTxt02[0]}
-                initial={accueilAnimeTxt02[1]}
-                transition={accueilAnimeTxt02[2]}
-              >
+              <h1 className="text-effect">FALVO Anthony</h1>
+              <h2>
                 Développeur React <span>&amp;</span> Node
-              </motion.h2>
+              </h2>
             </div>
-            <motion.div
-              className="information-contact"
-              animate={accueilAnimeTxt03[0]}
-              initial={accueilAnimeTxt03[1]}
-              transition={accueilAnimeTxt03[2]}
-            >
+            <div className="information-contact">
               <NavLink to="/contact" aria-label="Contact developpeur web">
                 Contactez-moi
               </NavLink>
-            </motion.div>
+            </div>
           </div>
         </div>
         <div className="accueil-switch">
           <p>^</p>
         </div>
-      </motion.div>
+      </div>
     );
 };
 //* --------------------------------------------------------
