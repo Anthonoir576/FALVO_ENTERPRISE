@@ -17,6 +17,9 @@ import { accueilAnimePictureProfile}      from '../components/Utils/AnimationMot
 import { accueilAnimeTxt01 }              from '../components/Utils/AnimationMotion';
 import { accueilAnimeTxt02 }              from '../components/Utils/AnimationMotion';
 import { accueilAnimeTxt03 }              from '../components/Utils/AnimationMotion';
+
+// navigation accueil
+import { accueilAnimeNavigation }         from "../components/Utils/AnimationMotion";
 //      <---------------------------------------------->
 
 //- --------------------------------------------------------
@@ -40,8 +43,8 @@ const Accueil = () => {
       <motion.div
         className="accueil"
       >
-        <motion.div animate={{y: 0}} 
-                    initial={{y : -250}}
+        <motion.div animate={accueilAnimeNavigation.animate} 
+                    initial={accueilAnimeNavigation.initial}
         >
             <NavBar />
         </motion.div>
