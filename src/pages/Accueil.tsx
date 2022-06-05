@@ -37,7 +37,11 @@ const Accueil = () => {
 
 
     return (
-        <div className='accueil'>
+        <motion.div className='accueil'
+            // animate={{y : 0}}
+            // initial={{y: -2500}}
+            // transition={{duration :1.5}}
+        >
             <NavBar />
             <div className='accueil-information'>
                 <motion.div className='information-image' 
@@ -78,7 +82,7 @@ const Accueil = () => {
             <div className="accueil-switch">
                 <p>^</p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 //* --------------------------------------------------------
