@@ -12,6 +12,8 @@ import React, { createContext, useState } from "react";
 //* ########################################################
 //* --------------------- CONTEXT --------------------------
 //* ########################################################
+//                      DARK THEME
+
 export const ThemeContext :any = createContext(true);
 
 const ThemeContextProvider = (props?: any) => {
