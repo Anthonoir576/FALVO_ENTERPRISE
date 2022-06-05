@@ -33,7 +33,8 @@
     "typescript"                          : "^4.6.2",
     "web-vitals"                          : "^2.1.2",
     "react-accessible-dropdown-menu-hook" : "^3.2.0",
-    "react-spring"                        : "^9.4.4"
+    "react-spring"                        : "^9.4.4",
+    "framer-motion"                       : "^6.3.10"
   },
 
   "scripts"                               : {
