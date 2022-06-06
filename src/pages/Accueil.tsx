@@ -24,6 +24,7 @@ import { txtEffect }                      from '../components/Utils/EffectTxt';
 
 // // transition pages
 // import { animeTransitionPages }           from '../components/Utils/AnimationMotion';
+import ParticuleBackground               from '../components/Utils/ParticuleBackground';
 //      <---------------------------------------------->
 //- --------------------------------------------------------
 //- ########################################################
@@ -42,35 +43,38 @@ const Accueil = () => {
 
 
     return (
-      <div className="accueil">
-        <NavBar />
-        <div className="accueil-information">
-          <div className="information-image">
-            <img
-              src={
-                "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil.png"
-              }
-              alt="le developpeur web"
-            />
+      <>
+        <ParticuleBackground />
+        <div className="accueil">
+          <NavBar />
+          <div className="accueil-information">
+            <div className="information-image">
+              <img
+                src={
+                  "https://raw.githubusercontent.com/Anthonoir576/FALVO_ENTERPRISE/gh-pages/assets/images/photo-profil.png"
+                }
+                alt="le developpeur web"
+              />
+            </div>
+            <div className="text-container">
+              <div className="information-dev">
+                <h1 className="text-effect">FALVO Anthony</h1>
+                <h2>
+                  Développeur React <span>&amp;</span> Node
+                </h2>
+              </div>
+              <div className="information-contact">
+                <NavLink to="/contact" aria-label="Contact developpeur web">
+                  Contactez-moi
+                </NavLink>
+              </div>
+            </div>
           </div>
-          <div className="text-container">
-            <div className="information-dev">
-              <h1 className="text-effect">FALVO Anthony</h1>
-              <h2>
-                Développeur React <span>&amp;</span> Node
-              </h2>
-            </div>
-            <div className="information-contact">
-              <NavLink to="/contact" aria-label="Contact developpeur web">
-                Contactez-moi
-              </NavLink>
-            </div>
+          <div className="accueil-switch">
+            <p>^</p>
           </div>
         </div>
-        <div className="accueil-switch">
-          <p>^</p>
-        </div>
-      </div>
+      </>
     );
 };
 //* --------------------------------------------------------
