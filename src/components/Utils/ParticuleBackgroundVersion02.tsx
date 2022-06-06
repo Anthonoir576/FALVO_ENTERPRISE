@@ -23,7 +23,7 @@ const ParticuleBackgroundVersion02 = () => {
 
   return (
     <Particles
-      id="tsparticles"
+      id="tsparticles-v2"
       init={particlesInit}
       options={{
         background: {
@@ -49,20 +49,20 @@ const ParticuleBackgroundVersion02 = () => {
               quantity: 0,
             },
             repulse: {
-              distance: 100,
+              distance: 75,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#6cb0f6",
           },
           links: {
-            color: "#ffffff",
+            color: "#6cb0f6",
             distance: 150,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.15,
             width: 1,
           },
           collisions: {
@@ -75,7 +75,7 @@ const ParticuleBackgroundVersion02 = () => {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 0.5,
             straight: false,
           },
           number: {
@@ -86,7 +86,7 @@ const ParticuleBackgroundVersion02 = () => {
             value: 80,
           },
           opacity: {
-            value: 0.3,
+            value: 0.2,
           },
           shape: {
             type: "circle",

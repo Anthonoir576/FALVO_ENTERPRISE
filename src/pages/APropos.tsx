@@ -5,6 +5,7 @@
 import React        from "react";
 import NavBar       from "../components/Navigation/NavBar";
 import { NavLink }  from "react-router-dom";
+import ParticuleBackgroundVersion02 from "../components/Utils/ParticuleBackgroundVersion02";
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -18,6 +19,7 @@ const APropos = () => {
   return (
     <div className="aPropos">
       <NavBar />
+      <ParticuleBackgroundVersion02 />
       <div className="about">
         <aside>
           <figure>
