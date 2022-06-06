@@ -50,7 +50,7 @@ const ParticuleBackground = () => {
               quantity: 0,
             },
             repulse: {
-              distance: 100,
+              distance: 80,
               duration: 0.4,
             },
           },
