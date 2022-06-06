@@ -35,8 +35,7 @@ import { txtEffect }                      from '../components/Utils/EffectTxt';
 //* --------------- Accueil + effet txt --------------------
 //* ########################################################
 const Accueil = () => {
-
-    // Effet animation texte 
+ 
     useEffect(() => {
         txtEffect();
     }, []);
