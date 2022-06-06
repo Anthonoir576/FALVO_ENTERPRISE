@@ -44,9 +44,10 @@ const Accueil = () => {
 
     return (
       <>
-        <ParticuleBackground />
+       
         <div className="accueil">
           <NavBar />
+          <ParticuleBackground />
           <div className="accueil-information">
             <div className="information-image">
               <img
