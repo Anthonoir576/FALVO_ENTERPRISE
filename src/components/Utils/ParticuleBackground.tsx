@@ -2,9 +2,9 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ######################################################## 
-import React        from 'react';
-import Particles    from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React         from 'react';
+import Particles     from "react-tsparticles";
+import { loadFull }  from "tsparticles";
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -16,9 +16,9 @@ import { loadFull } from "tsparticles";
 //* --------------- Accueil + effet txt --------------------
 //* ########################################################
 const ParticuleBackground = () => {
+
   const particlesInit = async (main?: any) => {
     console.log(main);
-
     await loadFull(main);
   };
 
