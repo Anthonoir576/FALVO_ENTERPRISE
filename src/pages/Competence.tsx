@@ -5,6 +5,7 @@
 import React               from "react";
 import CompetencePartie2   from "../components/Competence/CompetencePartie2";
 import NavBar              from "../components/Navigation/NavBar";
+import ParticuleBackgroundVersion02 from '../components/Utils/ParticuleBackgroundVersion02';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -19,6 +20,7 @@ const Competence = () => {
   return (
     <div className="competence">
       <NavBar />
+      <ParticuleBackgroundVersion02 />
       <div className="EXP">
         <div className="EXP-legend">
           <h2>
