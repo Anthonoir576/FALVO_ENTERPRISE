@@ -8,23 +8,24 @@ import NavBar                             from '../components/Navigation/NavBar'
 
 //      <--------------- ANIMATION -------------------->
 import { txtEffect }                      from '../components/Utils/EffectTxt';
-// import { motion }                         from 'framer-motion';
-// import { AnimatePresence }                from 'framer-motion';  
+import { motion }                         from 'framer-motion';
+import { AnimatePresence }                from 'framer-motion';
+import ParticuleBackground                from '../components/Utils/ParticuleBackground';  
 
-// // photo profile
-// import { accueilAnimePictureProfile}      from '../components/Utils/AnimationMotion';
 
-// // text
-// import { accueilAnimeTxt01 }              from '../components/Utils/AnimationMotion';
-// import { accueilAnimeTxt02 }              from '../components/Utils/AnimationMotion';
-// import { accueilAnimeTxt03 }              from '../components/Utils/AnimationMotion';
+// photo profile
+import { accueilAnimePictureProfile}      from '../components/Utils/AnimationMotion';
 
-// // navigation accueil
-// import { accueilAnimeNavigation }         from "../components/Utils/AnimationMotion";
+// text
+import { accueilAnimeTxt01 }              from '../components/Utils/AnimationMotion';
+import { accueilAnimeTxt02 }              from '../components/Utils/AnimationMotion';
+import { accueilAnimeTxt03 }              from '../components/Utils/AnimationMotion';
 
-// // transition pages
-// import { animeTransitionPages }           from '../components/Utils/AnimationMotion';
-import ParticuleBackground               from '../components/Utils/ParticuleBackground';
+// navigation accueil
+import { accueilAnimeNavigation }         from "../components/Utils/AnimationMotion";
+
+// transition pages
+import { animeTransitionPages }           from '../components/Utils/AnimationMotion';
 //      <---------------------------------------------->
 //- --------------------------------------------------------
 //- ########################################################
