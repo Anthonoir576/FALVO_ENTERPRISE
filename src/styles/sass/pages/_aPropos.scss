@@ -3,6 +3,10 @@
   justify-content: space-around;
   margin: 0em 10em;
 
+  position: relative;
+  z-index: 4;
+
+
   font-family: "Josefin Sans", "Lato", sans-serif;
 
   aside {
@@ -11,7 +15,6 @@
 
     & figure {
       margin: 0;
-      position: relative;
       text-align: center;
 
       & img {
@@ -25,9 +28,9 @@
     }
 
     & .about-text_networks {
+      background: white;
       margin-top: -5px;
       width: 470px;
-
       border: 1px solid white;
       border-radius: 0 0 10px 10px;
       box-shadow: 2px 5px 20px 0px rgb(11, 50, 94, 0.2);

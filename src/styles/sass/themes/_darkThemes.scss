@@ -26,6 +26,7 @@ body.darkTheme {
       aside .about-text_networks {
         border-top: 1px solid transparent;
         box-shadow: 2px 5px 20px 0px rgba(255, 255, 255, 0.2);
+        background: transparent;
 
         & .about-networks img {
           filter: grayscale(0%);
