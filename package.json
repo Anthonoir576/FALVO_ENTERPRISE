@@ -38,7 +38,8 @@
         "react-tsparticles"                   : "^2.0.6",
         "tsparticles-slim"                    :"^2.0.6",
         "tsparticles-engine"                  : "^2.0.6",
-        "tsparticles"                         : "^2.0.6"
+        "tsparticles"                         : "^2.0.6",
+        "react-toastify"                      : "^9.0.3"
     },
     
     "scripts"                               : {
