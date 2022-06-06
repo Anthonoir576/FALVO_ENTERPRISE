@@ -23,13 +23,13 @@ const ParticuleBackground = () => {
   };
 
   return (
-    <Particles
+<Particles
       id="tsparticles"
       init={particlesInit}
       options={{
         background: {
           color: {
-            value: "transparent",
+            value: "transparents",
           },
         },
         fpsLimit: 120,
@@ -47,10 +47,10 @@ const ParticuleBackground = () => {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 0,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
@@ -63,7 +63,7 @@ const ParticuleBackground = () => {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.3,
             width: 1,
           },
           collisions: {
@@ -76,7 +76,7 @@ const ParticuleBackground = () => {
               default: "bounce",
             },
             random: false,
-            speed: 1,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -87,7 +87,7 @@ const ParticuleBackground = () => {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
           },
           shape: {
             type: "circle",
