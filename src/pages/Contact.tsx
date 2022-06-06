@@ -15,6 +15,7 @@ import { regexNom,
          regexMessage,
          regexObjet }        from '../components/Utils/Regex';
 import { alertMailEnvoyer }  from '../components/Utils/Alerts';
+import ParticuleBackgroundVersion02 from "../components/Utils/ParticuleBackgroundVersion02";
 
 //- ########################################################
 //- --------------- DECLARATION GLOBALE --------------------
@@ -143,6 +144,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <NavBar />
+      <ParticuleBackgroundVersion02 />
       <div className="contact-container">
         <div className="contact-legend">
           <h2>

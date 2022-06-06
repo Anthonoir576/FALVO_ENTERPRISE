@@ -50,7 +50,7 @@ const ParticuleBackground = () => {
               quantity: 0,
             },
             repulse: {
-              distance: 75,
+              distance: 90,
               duration: 0.4,
             },
           },
@@ -63,7 +63,7 @@ const ParticuleBackground = () => {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.17,
             width: 1,
           },
           collisions: {
@@ -87,7 +87,7 @@ const ParticuleBackground = () => {
             value: 80,
           },
           opacity: {
-            value: 0.3,
+            value: 0.23,
           },
           shape: {
             type: "circle",

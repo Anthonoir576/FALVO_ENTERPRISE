@@ -179,6 +179,8 @@ main {
         }
       }
       & .title-categorie-projet {
+        position: relative;
+        z-index: 2;
         margin: 3rem 27.2px 0 27.2px;
         text-align: end;
         background:  linear-gradient(

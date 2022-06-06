@@ -5,6 +5,7 @@
 import React            from 'react';
 import NavBar           from '../components/Navigation/NavBar';
 import MenuSecondaire   from '../components/Projets/MenuSecondaire';
+import ParticuleBackgroundVersion02 from '../components/Utils/ParticuleBackgroundVersion02';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -17,6 +18,7 @@ import MenuSecondaire   from '../components/Projets/MenuSecondaire';
 const Projets = () => {
     return (
         <div className='myProjets'>
+            <ParticuleBackgroundVersion02 />
             <NavBar />
             <MenuSecondaire />
         </div>

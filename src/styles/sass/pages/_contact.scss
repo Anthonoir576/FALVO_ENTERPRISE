@@ -25,7 +25,7 @@
     position: absolute;
     top: 150px;
     right: -460px;
-    z-index: -10;
+    z-index: 2;
     animation: contactAnim 4.73s alternate infinite;
 
     @keyframes contactAnim {
@@ -178,6 +178,7 @@
 
 .contact-text {
   position: absolute;
+  z-index: 3;
   top: 320px;
   right: 0px;
   display: flex;

@@ -1,5 +1,7 @@
 .About-terminal {
   display: block;
+  position: relative;
+  z-index: 2;
   margin-top: 2rem;
   height: 500px;
 }
