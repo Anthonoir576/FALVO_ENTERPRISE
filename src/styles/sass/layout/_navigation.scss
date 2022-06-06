@@ -9,6 +9,8 @@
 .veille,
 .tutoriel {
   & .navigation {
+    position: relative;
+    z-index: 10;
     background: linear-gradient(
       60deg,
       #ffdc80,
