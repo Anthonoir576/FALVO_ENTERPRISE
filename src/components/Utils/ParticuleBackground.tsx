@@ -16,14 +16,13 @@ import { loadFull }  from "tsparticles";
 //* --------------- Accueil + effet txt --------------------
 //* ########################################################
 const ParticuleBackground = () => {
-
   const particlesInit = async (main?: any) => {
     console.log(main);
     await loadFull(main);
   };
 
   return (
-<Particles
+    <Particles
       id="tsparticles"
       init={particlesInit}
       options={{
