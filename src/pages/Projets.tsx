@@ -2,9 +2,9 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ########################################################
-import React            from 'react';
-import NavBar           from '../components/Navigation/NavBar';
-import MenuSecondaire   from '../components/Projets/MenuSecondaire';
+import React                        from 'react';
+import NavBar                       from '../components/Navigation/NavBar';
+import MenuSecondaire               from '../components/Projets/MenuSecondaire';
 import ParticuleBackgroundVersion02 from '../components/Utils/ParticuleBackgroundVersion02';
 //- --------------------------------------------------------
 //- ########################################################
@@ -18,7 +18,7 @@ import ParticuleBackgroundVersion02 from '../components/Utils/ParticuleBackgroun
 const Projets = () => {
     return (
         <div className='myProjets'>
-            <ParticuleBackgroundVersion02 />
+            {/* <ParticuleBackgroundVersion02 /> */}
             <NavBar />
             <MenuSecondaire />
         </div>
