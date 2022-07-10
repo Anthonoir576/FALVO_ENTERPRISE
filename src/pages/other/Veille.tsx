@@ -40,7 +40,9 @@ const Veille = () => {
                           </div>
                           <div className="footer-card">
                             <a href={article.link}>En savoir plus</a>
-                            <p className="autor-card">{article.auteur[0].nom} {article.auteur[0].prenom}</p>
+                            <p className="autor-card">
+                              {article.auteur[0].nom} {article.auteur[0].prenom}
+                            </p>
                           </div>
                         </div>
                       );  
