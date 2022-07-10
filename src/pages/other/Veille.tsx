@@ -25,9 +25,18 @@ const Veille = () => {
     return (
         <div className='veille'>
             <NavBar />
-            ma veille techno
-            {/* <Maintenance />  */}
-            <Test />
+            <div className="article-cards-container">
+                <div className="row">
+                    {dbVeille.map((article? :any) => {
+                      return (
+                        <div className="article-card" key={article.id}>
+                            <p className='title-card'>{article.title}</p>
+                            <p className='date-card'>{article.date}</p>
+                        </div>
+                      )  
+                    })}
+                </div>
+            </div>
         </div>
     );
 };
