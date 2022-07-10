@@ -10,7 +10,7 @@ export const baseDeDonneeVeille :any = {
     article : [{
         id      : 1,
         date    : '03 Juillet 2022',
-        auteur    : [{nom : 'FALVO', prenom : 'Anthony'}],
+        auteur  : [{nom : 'FALVO', prenom : 'Anthony'}],
         title   : 'blabla',
         resume  : 'plein de blabla',
         link    : 'http://icietla.fr/',
@@ -20,7 +20,7 @@ export const baseDeDonneeVeille :any = {
     {
         id      : 2,
         date    : '15 mars 2022',
-        auteur    : [{nom : 'FALVO', prenom : 'Anthony'}],
+        auteur  : [{nom : 'FALVO', prenom : 'Anthony'}],
         title   : 'blabla22',
         resume  : 'plein de blabla22',
         link    : 'http://icietla.fr/',

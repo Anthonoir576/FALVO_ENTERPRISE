@@ -19,7 +19,7 @@ import Test                    from '../../components/Maintenance/Test';
 const Veille = () => {
 
     const dbVeille = baseDeDonneeVeille.article;
-    console.log(dbVeille);
+    // console.log(dbVeille);
     
 
     return (
@@ -36,6 +36,7 @@ const Veille = () => {
                           </div>
                           <div className="main-card">
                             <img src={article.img} alt={article.title} />
+                            <p className="resume-card">{article.resume}</p>
                           </div>
                         </div>
                       );  
