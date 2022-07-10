@@ -38,6 +38,10 @@ const Veille = () => {
                             <img src={article.img} alt={article.title} />
                             <p className="resume-card">{article.resume}</p>
                           </div>
+                          <div className="footer-card">
+                            <a href={article.link}>En savoir plus</a>
+                            <p className="autor-card">{article.auteur[0].nom} {article.auteur[0].prenom}</p>
+                          </div>
                         </div>
                       );  
                     })}
