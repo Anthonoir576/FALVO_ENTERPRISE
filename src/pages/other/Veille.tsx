@@ -2,9 +2,10 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ########################################################
-import React       from 'react';
-import NavBar      from '../../components/Navigation/NavBar';
-import Maintenance from '../../components/Maintenance/Maintenance';
+import React                   from 'react';
+import NavBar                  from '../../components/Navigation/NavBar';
+import Maintenance             from '../../components/Maintenance/Maintenance';
+import { baseDeDonneeVeille }  from '../../components/DB/DbVeille';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -19,7 +20,7 @@ const Veille = () => {
         <div className='veille'>
             <NavBar />
             ma veille techno
-            <Maintenance /> 
+            {/* <Maintenance />  */}
         </div>
     );
 };
