@@ -30,10 +30,15 @@ const Veille = () => {
                     {dbVeille.map((article? :any) => {
                       return (
                         <div className="article-card" key={article.id}>
-                            <p className='title-card'>{article.title}</p>
-                            <p className='date-card'>{article.date}</p>
+                          <div className="header-card">
+                            <p className="title-card">{article.title}</p>
+                            <p className="date-card">{article.date}</p>
+                          </div>
+                          <div className="main-card">
+                            <img src={article.img} alt={article.title} />
+                          </div>
                         </div>
-                      )  
+                      );  
                     })}
                 </div>
             </div>
