@@ -17,6 +17,11 @@ import Test                    from '../../components/Maintenance/Test';
 //* --------------------- Veille --------------------------
 //* ########################################################
 const Veille = () => {
+
+    const dbVeille = baseDeDonneeVeille.article;
+    console.log(dbVeille);
+    
+
     return (
         <div className='veille'>
             <NavBar />
