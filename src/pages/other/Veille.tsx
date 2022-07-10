@@ -6,6 +6,7 @@ import React                   from 'react';
 import NavBar                  from '../../components/Navigation/NavBar';
 import Maintenance             from '../../components/Maintenance/Maintenance';
 import { baseDeDonneeVeille }  from '../../components/DB/DbVeille';
+import Test                    from '../../components/Maintenance/Test';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -21,6 +22,7 @@ const Veille = () => {
             <NavBar />
             ma veille techno
             {/* <Maintenance />  */}
+            <Test />
         </div>
     );
 };
