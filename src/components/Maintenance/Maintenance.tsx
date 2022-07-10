@@ -18,7 +18,7 @@ const Maintenance = () => {
     return (
        
         <div className='standBy'>
-            <p className='standByP1'>En cours de développement <br /> Back-end... </p>
+            <p className='standByP1'> - Maintenance - <br />En cours de développement Back-end... </p>
             <p className='standByP2'> <i className="fas fa-spinner"></i> </p>
         </div>
        

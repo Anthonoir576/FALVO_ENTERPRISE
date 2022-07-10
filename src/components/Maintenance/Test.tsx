@@ -18,7 +18,7 @@ const Test = () => {
   return (
     <div className="standBy">
       <p className="standByP1">
-        En cours de test <br /> Développement en cours ...{" "}
+        - Maintenance - <br /> En cours de test ...{" "}
       </p>
       <p className="standByP2">
         {" "}

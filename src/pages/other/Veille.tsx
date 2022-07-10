@@ -25,6 +25,7 @@ const Veille = () => {
     return (
         <div className='veille'>
             <NavBar />
+            <Test />
             <div className="article-cards-container">
                 <div className="row">
                     {dbVeille.map((article? :any) => {
