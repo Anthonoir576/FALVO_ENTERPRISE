@@ -180,6 +180,20 @@ body.darkTheme {
   & main .myProjets .affichage-option-projets .title-categorie-projet {
     background: $colorGradientDark;
   }
+
+  #root {
+    & .veille {
+      & .article-cards-container {
+        & .row {
+          & .article-card {
+            color: white;
+
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /* #09FBBA  #333 */
