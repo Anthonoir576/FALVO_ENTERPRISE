@@ -18,6 +18,14 @@
                     border-radius   : 5px 5px 0 0;
                     border-top      : 2px solid rgba(0, 0, 0, 0.3);
                     border-bottom   : 2px solid rgba(0, 0, 0, 0.3);
+
+                    & .title-card {
+                        &::first-letter {
+                            color          : $bluesky;
+                            text-transform : uppercase;
+                            font-weight    : 900;
+                        }
+                    }
                 }
 
                 & .main-card {
@@ -46,7 +54,16 @@
                     }
 
                     & a {
-                        
+                        display         : block;
+                        text-decoration : none;
+                        color           : white;
+                        border-radius   : 7px;
+                        background      : $bluesky;
+                        padding         : 10px;
+                    }
+
+                    & p {
+                        margin: auto 0;
                     }
 
 
