@@ -1,10 +1,11 @@
 .veille {
     & .article-cards-container {
         & .row {
-            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
 
             & .article-card {
-                max-width     : 900px;
+                width     : 800px;
                 margin        : 1rem auto 2rem auto;
 
                 box-shadow: 0 19px 38px rgba($black, 0.3),
@@ -25,8 +26,8 @@
                     width           : 100%;
 
                     & img {
-                        width: 100%;
-                        object-fit: contain;
+                        width           : 100%;
+                        object-fit      : contain;
                         border-bottom   : 2px solid rgba(0, 0, 0, 0.3);
                     }
                 }
