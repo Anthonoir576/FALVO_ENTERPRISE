@@ -1,0 +1,49 @@
+// ############   VEILLE    ##############
+@media only screen and (max-width: 1700px) {
+  body .veille {
+    & .article-cards-container {
+      & .row {
+        & .article-card {
+          width: 700px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1520px) {
+  body .veille {
+    & .article-cards-container {
+      & .row {
+        & .article-card {
+          width: 600px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  body .veille {
+    & .article-cards-container {
+      & .row {
+        & .article-card {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+    body .veille {
+      & .article-cards-container {
+        & .row {
+            display               : grid;
+            grid-template-columns : 1fr;
+          & .article-card {
+            width: 95%;
+          }
+        }
+      }
+    }
+  
+}
+// #######################################
