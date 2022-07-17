@@ -1,0 +1,32 @@
+.veille {
+    & .article-cards-container {
+        & .row {
+            
+
+            & .article-card {
+                max-width     : 900px;
+                margin        : 0 auto;
+
+                border        : 2px solid black;
+                border-radius : 5px;
+
+                & .header-card {
+                    display         : flex;
+                    justify-content : space-between;
+                    padding         : 0px 10px;
+                    border-bottom   : 2px solid black;
+                }
+
+                & .main-card {
+                    display         : block;
+                    width           : 100%;
+
+                    & img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}
