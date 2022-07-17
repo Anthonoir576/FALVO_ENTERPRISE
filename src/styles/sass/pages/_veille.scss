@@ -5,16 +5,19 @@
 
             & .article-card {
                 max-width     : 900px;
-                margin        : 0 auto;
+                margin        : 1rem auto 2rem auto;
 
-                border        : 2px solid black;
+                box-shadow: 0 19px 38px rgba($black, 0.3),
+                0 15px 12px rgba($black, 0.2);
                 border-radius : 5px;
 
                 & .header-card {
                     display         : flex;
                     justify-content : space-between;
                     padding         : 0px 10px;
-                    border-bottom   : 2px solid black;
+                    border-radius   : 5px 5px 0 0;
+                    border-top      : 2px solid rgba(0, 0, 0, 0.3);
+                    border-bottom   : 2px solid rgba(0, 0, 0, 0.3);
                 }
 
                 & .main-card {
@@ -24,6 +27,7 @@
                     & img {
                         width: 100%;
                         object-fit: contain;
+                        border-bottom   : 2px solid rgba(0, 0, 0, 0.3);
                     }
                 }
             }
