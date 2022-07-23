@@ -20,11 +20,15 @@
                     border-bottom   : 1px solid rgba(0, 0, 0, 0.3);
 
                     & .title-card {
+                        letter-spacing     : 2px;
                         &::first-letter {
                             color          : $bluesky;
                             text-transform : uppercase;
                             font-weight    : 900;
                         }
+                    }
+                    & .date-card {
+                        font-style         : italic;
                     }
                 }
 
