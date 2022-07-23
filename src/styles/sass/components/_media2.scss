@@ -46,4 +46,18 @@
     }
   
 }
+@media only screen and (max-width: 500px) {
+  body .veille {
+    & .article-cards-container {
+      & .row {
+        & .article-card {
+          & .header-card {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+}
 // #######################################

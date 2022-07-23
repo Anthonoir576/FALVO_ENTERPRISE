@@ -11,7 +11,7 @@ export const baseDeDonneeVeille :any = {
     
         id      : 3,
         date    : `≃ ${" "} 22 Juin 2022`,
-        auteur  : [{nom : 'Visual', prenom : 'Studio CODE'}],
+        auteur  : [{nom : 'VS', prenom : 'CODE'}],
         title   : 'Visual studio code (version 1.69)',
         resume  : "Bienvenue dans la version de juin 2022 de Visual Studio Code. Il y a de nombreuses mises à jour dans cette version qui, nous l'espérons, vous plairont, dont certaines des principales mises à jour :Éditeur de fusion à 3 voies - Résout les conflits de fusion dans VS Code. Centre de commande - Nouvelle interface utilisateur pour rechercher des fichiers, exécuter des commandes et parcourir l'historique du curseur. Mode Ne pas déranger - Désactiver les fenêtres contextuelles de notification non critiques. Basculer les thèmes clairs/sombres - Basculez rapidement entre les thèmes clairs et sombres préférés. Intégration du terminal shell - Affichez l'état de la commande, exécutez les commandes récentes, etc. Décorations de sortie de tâche - Met en évidence les codes de sortie de réussite ou d'échec de la tâche. Bouton d'action Git Commit - Configurez votre action Git Commit par défaut. Prise en charge de l'étape de débogage dans la cible - Vous permet d'accéder directement aux fonctions lorsque vous êtes en pause. Basculement du sourcemap JavaScript - Passez au débogage compilé plutôt qu'au code source. Testeur de thème de couleur - Utilisez vscode.dev pour prévisualiser les thèmes de couleur. Aperçu de VS Code Server - Exécutez le même serveur que celui utilisé pour le développement à distance.",
         link    : 'https://code.visualstudio.com/updates/v1_69',
