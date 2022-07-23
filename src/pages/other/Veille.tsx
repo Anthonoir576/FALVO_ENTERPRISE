@@ -40,7 +40,7 @@ const Veille = () => {
                             <p className="resume-card">{article.resume}</p>
                           </div>
                           <div className="footer-card">
-                            <a href={article.link}>Lien vers la source</a>
+                            <a href={article.link} target="_blank" rel="noopener noreferrer">Lien vers la source</a>
                             <p className="autor-card">
                               {article.auteur[0].nom} {article.auteur[0].prenom}
                             </p>
