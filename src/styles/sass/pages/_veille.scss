@@ -1,5 +1,7 @@
 .veille {
     & .article-cards-container {
+        margin-top                : 2rem;
+
         & .row {
             display               : grid;
             grid-template-columns : 1fr 1fr;
@@ -20,20 +22,28 @@
                     border-bottom   : 1px solid rgba(0, 0, 0, 0.3);
 
                     & .title-card {
+                        letter-spacing     : 2px;
                         &::first-letter {
                             color          : $bluesky;
                             text-transform : uppercase;
                             font-weight    : 900;
                         }
                     }
+                    & .date-card {
+                        font-style         : italic;
+                    }
                 }
 
                 & .main-card {
                     display         : block;
                     width           : 100%;
-
+                    text-align      : center;
                     & img {
-                        width           : 100%;
+                        min-width       : 600px;
+                        min-height      : 600px;
+                        max-width       : 100%;
+                        max-height      : 600px;
+
                         object-fit      : contain;
                         border-bottom   : 1px solid rgba(0, 0, 0, 0.3);
                     }

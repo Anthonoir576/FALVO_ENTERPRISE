@@ -30,3 +30,4 @@ En cours de réalisation. Il s'agit de la mise à jour d'un site crée il y a 1 
 - Version 0.0.8   : 13 Mars     2022 [ Conversion TS ok                  ]
 - Version 0.0.85  : 09 Avril    2022 [ MAJ Menu                          ]
 - Version 0.1.0   : 06 Juin     2022 [ Première version sans back encore ]     
+- Version 0.1.1   : 23 Juillet  2022 [ Première version - partie veille  ]     

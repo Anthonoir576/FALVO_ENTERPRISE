@@ -180,6 +180,42 @@ body.darkTheme {
   & main .myProjets .affichage-option-projets .title-categorie-projet {
     background: $colorGradientDark;
   }
+
+  #root {
+    & .veille {
+      & .article-cards-container {
+        & .row {
+          & .article-card {
+            color: white;
+            box-shadow    : 0 0px 38px rgba($white, 0.15), 0 5px 12px rgba($white, 0.05);
+
+            & .header-card {
+              border-top      : 1px solid rgba(255, 255, 255, .9);
+              border-bottom   : 1px solid rgba(255, 255, 255, .9);
+            }
+
+            & .main-card {
+              & img {
+                  border-bottom   : 1px solid rgba(255, 255, 255, .9);
+              }
+
+              & ::after {
+                content    : '';
+                display    : block;
+                margin     : 2rem auto 0 auto;
+                width      : 90%;
+                height     : 1px;
+
+                background : rgba(255, 255, 255, .9);
+            }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /* #09FBBA  #333 */
