@@ -63,6 +63,10 @@
         justify-content: space-around;
         margin: 7px 0 7px 0;
 
+        & a {
+          border: none;
+        }
+
         & a img:hover {
           transform: scale(1.1);
         }
