@@ -49,7 +49,7 @@ const ParticuleBackgroundVersion02 = () => {
               quantity: 0,
             },
             repulse: {
-              distance: 75,
+              distance: 45,
               duration: 0.4,
             },
           },
