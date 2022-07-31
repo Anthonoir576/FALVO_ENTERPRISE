@@ -10,6 +10,7 @@ import IconJs      from "../../components/Icons/IconJs";
 import IconNode    from "../../components/Icons/IconNode";
 import IconReact   from '../../components/Icons/IconReact';
 import Start       from "../../components/Icons/Start";
+import ProProjet from "../../components/Icons/ProProjet";
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -45,6 +46,7 @@ const Tutoriel = () => {
         </div>
         <div className="tuto-pro-container">
             <p className="tuto-pro"> PROJET PRO</p>
+            <ProProjet />
         </div>
       </div>
     </div>

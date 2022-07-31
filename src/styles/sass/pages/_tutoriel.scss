@@ -12,6 +12,11 @@
             color            : $white;
             background       : rgb(255, 136, 0); 
         }
+        & .tuto-pro {
+            padding          : 1rem ;
+            color            : $white;
+            background       : rgb(255, 8, 0); 
+        }
         & .tuto-avancer-container {
             display          : flex;
             flex-direction   : row-reverse;
