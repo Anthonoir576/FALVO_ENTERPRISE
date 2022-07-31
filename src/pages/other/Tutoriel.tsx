@@ -9,6 +9,7 @@ import IconCss     from "../../components/Icons/IconCss";
 import IconJs      from "../../components/Icons/IconJs";
 import IconNode    from "../../components/Icons/IconNode";
 import IconReact   from '../../components/Icons/IconReact';
+import Start       from "../../components/Icons/Start";
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -20,7 +21,8 @@ const Tutoriel = () => {
     <div className="tutoriel">
       <NavBar />
       <div className="tutoriel-icons">
-        <div className="tuto-base">
+        <div className="tuto-base-container">
+          <Start />  
           <IconHtml />
           <IconCss />
           <IconJs />
