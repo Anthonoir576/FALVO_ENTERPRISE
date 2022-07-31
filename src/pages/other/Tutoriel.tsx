@@ -5,6 +5,7 @@
 import React       from 'react';
 import Maintenance from '../../components/Maintenance/Maintenance';
 import NavBar      from '../../components/Navigation/NavBar';
+import IconHtml    from '../../components/Icons/IconHtml';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -18,8 +19,7 @@ const Tutoriel = () => {
     return (
         <div className='tutoriel'>
             <NavBar />
-            tutoriel
-            <Maintenance />
+            <IconHtml />
         </div>
     );
 };
