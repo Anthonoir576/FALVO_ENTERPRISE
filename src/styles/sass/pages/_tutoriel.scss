@@ -87,10 +87,14 @@
             border-top       : 2px solid $bluesky;
             border-right     : 2px solid $bluesky;
             border-left      : 2px solid $bluesky;
-
-
             border-color     : $bluesky;
             border-radius    : 5px;
+
+            &:hover {
+                transition: 350ms all ease-in-out;
+                background-color: rgba($color: $bluesky, $alpha: .2);
+            }
+
         }
         & .icon-tutoriel-end {
             border-bottom    : 2px solid $bluesky;
