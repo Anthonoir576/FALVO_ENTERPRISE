@@ -33,6 +33,7 @@
             background       : rgb(255, 8, 0); 
         }
         & .icon-tutoriel {
+            cursor           : pointer;
             display          : block;
             text-align       : center;
             border-top       : 2px solid $bluesky;
