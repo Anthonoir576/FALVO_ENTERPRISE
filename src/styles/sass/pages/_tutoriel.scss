@@ -1,6 +1,6 @@
 .tutoriel {
     & .tutoriel-icons {
-        margin-top           : 2rem;
+        margin               : 2rem 0;
         text-align           : center;
         & .tuto-base {
             padding          : 1rem ;
@@ -18,13 +18,27 @@
             background       : rgb(255, 8, 0); 
         }
         & .icon-tutoriel {
-            max-width        : 500px; 
-            max-height       : 500px; 
-            border           : 2px solid black;
+            display          : block;
+            text-align       : center;
+            border-top       : 2px solid $bluesky;
+            border-right     : 2px solid $bluesky;
+            border-left      : 2px solid $bluesky;
+
+
             border-color     : $bluesky;
             border-radius    : 5px;
         }
+        & .icon-tutoriel-end {
+            border-bottom    : 2px solid $bluesky;
+        }
+        & .tuto-base-container {
+            margin           : 0 auto;
+            display          : flex;
+            flex-direction   : column;
+            justify-content  : space-around;
+        }
         & .tuto-avancer-container {
+            margin           :  0 auto;
             display          : flex;
             flex-direction   : row-reverse;
             justify-content  : space-around;

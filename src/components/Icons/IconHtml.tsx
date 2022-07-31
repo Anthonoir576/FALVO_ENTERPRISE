@@ -13,7 +13,7 @@ import React, { SVGProps } from "react";
 //* ########################################################
 export function iconHtml(props: SVGProps<SVGSVGElement>) {
   return (
-    <div className="tuto-html">
+    <div className="tuto-html icon-tutoriel">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

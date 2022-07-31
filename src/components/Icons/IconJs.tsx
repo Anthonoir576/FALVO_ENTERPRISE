@@ -10,7 +10,7 @@ import React, { SVGProps } from "react";
 //* ########################################################
 export function iconJs(props: SVGProps<SVGSVGElement>) {
   return (
-    <div className="tuto-js">
+    <div className="tuto-js icon-tutoriel  icon-tutoriel-end">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

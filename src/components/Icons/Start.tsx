@@ -13,7 +13,7 @@ import React, { SVGProps } from "react";
 //* ########################################################
 export function Start(props: SVGProps<SVGSVGElement>) {
   return (
-    <div className="tuto-start">
+    <div className="tuto-start icon-tutoriel">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
