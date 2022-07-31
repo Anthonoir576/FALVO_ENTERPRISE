@@ -82,5 +82,31 @@
     }
   }
 }
+@media only screen and (max-width: 800px) {
+  body .tutoriel {
+    & .tutoriel-icons {
+      & .lvl1, .lvl2, .lvl3 {
+       & em {
+        top           : 40px;
+        right         : 0;
+        margin        : 0 auto;
+       }
+      }
+      & .lvl1 em {
+        background    : $white;
+        border        : 2px solid rgb(0, 132, 255);
+      }
 
+      & .lvl2 em {
+        background    : $white;
+        border        : 2px solid rgb(255, 136, 0);
+      }
+
+      & .lvl3 em {
+        background    : $white;
+        border        : 2px solid rgb(255, 8, 0);
+      }
+    }
+  }
+}
 // #######################################
