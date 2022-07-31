@@ -1,0 +1,11 @@
+.tutoriel {
+    & .tutoriel-icons {
+        text-align           : center;
+
+        & .tuto-avancer-container {
+            display          : flex;
+            flex-direction   : row-reverse;
+            justify-content  : space-around;
+        }
+    }
+}
