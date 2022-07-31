@@ -8,6 +8,7 @@ import IconHtml    from "../../components/Icons/IconHtml";
 import IconCss     from "../../components/Icons/IconCss";
 import IconJs      from "../../components/Icons/IconJs";
 import IconNode    from "../../components/Icons/IconNode";
+import IconReact   from '../../components/Icons/IconReact';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -26,6 +27,7 @@ const Tutoriel = () => {
         </div>
         <div className="tuto-avancer-container">
           <IconNode />
+          <IconReact />
         </div>
       </div>
     </div>
