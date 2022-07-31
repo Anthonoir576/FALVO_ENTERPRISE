@@ -1,7 +1,17 @@
 .tutoriel {
     & .tutoriel-icons {
+        margin-top           : 2rem;
         text-align           : center;
-
+        & .tuto-base {
+            padding          : 1rem ;
+            color            : $white;
+            background       : rgb(0, 132, 255);
+        }
+        & .tuto-avancer {
+            padding          : 1rem ;
+            color            : $white;
+            background       : rgb(255, 136, 0); 
+        }
         & .tuto-avancer-container {
             display          : flex;
             flex-direction   : row-reverse;
