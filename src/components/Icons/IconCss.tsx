@@ -48,7 +48,7 @@ export function iconCss(props: SVGProps<SVGSVGElement>) {
           d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743zM16 13.191v3.091h-3.399l-.062-.695l-.14-1.567l-.074-.829H16z"
         ></path>
       </svg>
-      <p>CSS</p>
+      <p className="intituler">CSS</p>
     </div>
   );
 }

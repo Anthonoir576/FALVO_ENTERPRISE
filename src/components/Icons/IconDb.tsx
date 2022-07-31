@@ -14,7 +14,7 @@ import React, { SVGProps } from "react";
 //* ########################################################
 export function IconDb(props: SVGProps<SVGSVGElement>) {
   return (
-    <div className="icon-tutoriel  icon-tutoriel-end">
+    <div className="icon-tutoriel  icon-tutoriel-end ">
       <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -43,7 +43,7 @@ export function IconDb(props: SVGProps<SVGSVGElement>) {
         ry="2.921"
       ></ellipse>
     </svg>
-    <p> BASE DE DONNÉE </p>
+    <p className="intituler"> BASE DE DONNÉE </p>
     </div>
   );
 };

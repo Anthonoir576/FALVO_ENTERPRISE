@@ -61,3 +61,26 @@
 
 }
 // #######################################
+
+
+// ############  TUTORIEL   ##############
+@media only screen and (max-width: 800px) {
+  body .tutoriel {
+    & .tutoriel-icons {
+      & .intituler2 {
+        padding: 10px 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  body .tutoriel {
+    & .tutoriel-icons {
+      & .intituler2 {
+        padding: 10px 25px;
+      }
+    }
+  }
+}
+
+// #######################################

@@ -1,22 +1,19 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ########################################################
-import React       from "react";
+import React from "react";
 import Maintenance from "../../components/Maintenance/Maintenance";
-import NavBar      from "../../components/Navigation/NavBar";
-import IconHtml    from "../../components/Icons/IconHtml";
-import IconCss     from "../../components/Icons/IconCss";
-import IconJs      from "../../components/Icons/IconJs";
-import IconNode    from "../../components/Icons/IconNode";
-import IconReact   from '../../components/Icons/IconReact';
-import Start       from "../../components/Icons/Start";
+import NavBar from "../../components/Navigation/NavBar";
+import IconHtml from "../../components/Icons/IconHtml";
+import IconCss from "../../components/Icons/IconCss";
+import IconJs from "../../components/Icons/IconJs";
+import IconNode from "../../components/Icons/IconNode";
+import IconReact from "../../components/Icons/IconReact";
+import Start from "../../components/Icons/Start";
 import ProProjet from "../../components/Icons/ProProjet";
-import IconDb from '../../components/Icons/IconDb';
+import IconDb from "../../components/Icons/IconDb";
 //- --------------------------------------------------------
 //- ########################################################
-
-
-
 
 //* ########################################################
 //* --------------------- Tutoriel -------------------------
@@ -26,32 +23,32 @@ const Tutoriel = () => {
     <div className="tutoriel">
       <NavBar />
       <div className="tutoriel-icons">
-        <p className="tuto-base">LES BASES</p>
+        <p className="tuto-base lvl1">LES BASES <em> Niveau Facile</em></p>
         <div className="tuto-base-container">
-          <Start />  
+          <Start />
           <IconHtml />
           <IconCss />
           <IconJs />
         </div>
-        <p className="tuto-avancer">LA SPÉCIALISATION </p>
-        <div className="tuto-avancer-container icon-tutoriel">
-          <div className="">
-            <p>BACK-END</p>
-            <IconNode />
-          </div>  
+        <p className="tuto-avancer lvl2">LA SPÉCIALISATION <em> Niveau Intermediaire</em></p>
+        <div className="tuto-avancer-container icon-tutoriel lvl2">
           <div>
-            <p>FRONT-END</p>
+            <p className="intituler2">BACK-END</p>
+            <IconNode />
+          </div>
+          <div>
+            <p className="intituler2">FRONT-END</p>
             <IconReact />
           </div>
         </div>
-        <div>
-        <div>
-            <IconDb />    
-        </div>    
+        <div className="tuto-avancer-container2">
+          <div>
+            <IconDb />
+          </div>
         </div>
-        <div className="tuto-pro-container">
-            <p className="tuto-pro"> PROJET PRO</p>
-            <ProProjet />
+        <div className="tuto-pro-container lvl3">
+          <p className="tuto-pro lvl3"> PROJET PRO <em> Niveau Professionnel</em></p>
+          <ProProjet />
         </div>
       </div>
     </div>
@@ -59,9 +56,6 @@ const Tutoriel = () => {
 };
 //* --------------------------------------------------------
 //* ########################################################
-
-
-
 
 //~ ########################################################
 //~ --------------------- EXPORT ---------------------------
