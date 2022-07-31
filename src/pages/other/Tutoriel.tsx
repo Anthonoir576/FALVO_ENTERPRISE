@@ -28,30 +28,30 @@ const Tutoriel = () => {
       <div className="tutoriel-icons">
         <p className="tuto-base">LES BASES</p>
         <div className="tuto-base-container">
-          <Start />  
-          <IconHtml />
-          <IconCss />
-          <IconJs />
+          <Start className="icon-tutoriel" />  
+          <IconHtml className="icon-tutoriel" />
+          <IconCss className="icon-tutoriel" />
+          <IconJs  className="icon-tutoriel" />
         </div>
         <p className="tuto-avancer">LA SPÉCIALISATION </p>
         <div className="tuto-avancer-container">
           <div>
             <p>BACK-END</p>
-            <IconNode />
+            <IconNode className="icon-tutoriel" />
           </div>  
           <div>
             <p>FRONT-END</p>
-            <IconReact />
+            <IconReact className="icon-tutoriel" />
           </div>
         </div>
         <div>
         <div>
-            <IconDb />    
+            <IconDb className="icon-tutoriel" />    
         </div>    
         </div>
         <div className="tuto-pro-container">
             <p className="tuto-pro"> PROJET PRO</p>
-            <ProProjet />
+            <ProProjet className="icon-tutoriel" />
         </div>
       </div>
     </div>

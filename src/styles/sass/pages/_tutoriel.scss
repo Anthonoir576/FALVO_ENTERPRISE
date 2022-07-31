@@ -17,6 +17,13 @@
             color            : $white;
             background       : rgb(255, 8, 0); 
         }
+        & .icon-tutoriel {
+            max-width        : 500px; 
+            max-height       : 500px; 
+            border           : 2px solid black;
+            border-color     : $bluesky;
+            border-radius    : 5px;
+        }
         & .tuto-avancer-container {
             display          : flex;
             flex-direction   : row-reverse;
