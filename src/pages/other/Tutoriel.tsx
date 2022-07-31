@@ -33,11 +33,11 @@ const Tutoriel = () => {
         <p className="tuto-avancer">LA SPÉCIALISATION </p>
         <div className="tuto-avancer-container icon-tutoriel">
           <div>
-            <p>BACK-END</p>
+            <p className="intituler2">BACK-END</p>
             <IconNode />
           </div>
           <div>
-            <p>FRONT-END</p>
+            <p className="intituler2">FRONT-END</p>
             <IconReact />
           </div>
         </div>
