@@ -21,15 +21,24 @@ const Tutoriel = () => {
     <div className="tutoriel">
       <NavBar />
       <div className="tutoriel-icons">
+        <p>BASE :</p>
         <div className="tuto-base-container">
           <Start />  
           <IconHtml />
           <IconCss />
           <IconJs />
         </div>
+        <p>SPÉCIALISATION :</p>
         <div className="tuto-avancer-container">
-          <IconNode />
-          <IconReact />
+          <div>
+            <p>BACK-END</p>
+            <IconNode />
+          </div>  
+          <div>
+            <p>FRONT-END</p>
+            <IconReact />
+          </div>
+          
         </div>
       </div>
     </div>
