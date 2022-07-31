@@ -85,6 +85,7 @@
             display          : block;
             text-align       : center;
             border-top       : 2px solid $bluesky;
+
             border-color     : $bluesky;
             border-radius    : 5px;
 
@@ -94,6 +95,7 @@
             }
 
         }
+
         & .icon-tutoriel-end {
             border-bottom    : 2px solid $bluesky;
         }
@@ -108,6 +110,7 @@
             display          : flex;
             flex-direction   : row-reverse;
             justify-content  : space-around;
+
         }
         & .tuto-avancer-container2 {
             margin           : 0 auto 5rem auto;
