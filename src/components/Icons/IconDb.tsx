@@ -14,11 +14,12 @@ import React, { SVGProps } from "react";
 //* ########################################################
 export function IconDb(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
+    <div>
+      <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="1em"
-      height="1em"
+      width="10em"
+      height="10em"
       viewBox="0 0 32 32"
       {...props}
     >
@@ -42,6 +43,8 @@ export function IconDb(props: SVGProps<SVGSVGElement>) {
         ry="2.921"
       ></ellipse>
     </svg>
+    <p> BASE DE DONNÉE </p>
+    </div>
   );
 };
 //* --------------------------------------------------------
