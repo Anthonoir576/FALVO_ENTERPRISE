@@ -1,33 +1,30 @@
-
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ########################################################
-import React       from 'react';
-import Maintenance from '../../components/Maintenance/Maintenance';
-import NavBar      from '../../components/Navigation/NavBar';
-import IconHtml    from '../../components/Icons/IconHtml';
+import React from "react";
+import Maintenance from "../../components/Maintenance/Maintenance";
+import NavBar from "../../components/Navigation/NavBar";
+import IconHtml from "../../components/Icons/IconHtml";
+import IconCss from "../../components/Icons/IconCss";
 //- --------------------------------------------------------
 //- ########################################################
-
-
-
 
 //* ########################################################
 //* --------------------- Tutoriel -------------------------
 //* ########################################################
 const Tutoriel = () => {
-    return (
-        <div className='tutoriel'>
-            <NavBar />
-            <IconHtml />
-        </div>
-    );
+  return (
+    <div className="tutoriel">
+      <NavBar />
+      <div className="tutoriel-icons">
+        <IconHtml />
+        <IconCss />
+      </div>
+    </div>
+  );
 };
 //* --------------------------------------------------------
 //* ########################################################
-
-
-
 
 //~ ########################################################
 //~ --------------------- EXPORT ---------------------------
