@@ -2,6 +2,54 @@
     & .tutoriel-icons {
         margin               : 2rem 0;
         text-align           : center;
+        & .lvl1{
+            position: relative;
+            & em {
+                padding       : 5px;
+                display       : block;
+                position      : absolute;
+                top           : 20%;
+                right         : 0;
+                width         : 200px;
+                height        : 30px;
+                border        : 2px solid rgb(255, 255, 255);
+                border-radius : 10px;
+                background    : $white;
+                color         : $bluesky;
+            }
+        }
+        & .lvl2{
+            position: relative;
+            & em {
+                padding       : 5px;
+                display       : block;
+                position      : absolute;
+                top           : 20%;
+                right         : 0;
+                width         : 200px;
+                height        : 30px;
+                border        : 2px solid rgb(255, 255, 255);
+                border-radius : 10px;
+                background    : $white;
+                color         : $bluesky;
+            }
+        }
+        & .lvl3{
+            position: relative;
+            & em {
+                padding       : 5px;
+                display       : block;
+                position      : absolute;
+                top           : 20%;
+                right         : 0;
+                width         : 200px;
+                height        : 30px;
+                border        : 2px solid rgb(255, 255, 255);
+                border-radius : 10px;
+                background    : $white;
+                color         : $bluesky;
+            }
+        }
         & .intituler {
             border-radius    : 10px;
             font-weight      : 900;

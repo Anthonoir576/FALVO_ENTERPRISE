@@ -23,15 +23,15 @@ const Tutoriel = () => {
     <div className="tutoriel">
       <NavBar />
       <div className="tutoriel-icons">
-        <p className="tuto-base">LES BASES</p>
+        <p className="tuto-base lvl1">LES BASES <em> Niveau Facile</em></p>
         <div className="tuto-base-container">
           <Start />
           <IconHtml />
           <IconCss />
           <IconJs />
         </div>
-        <p className="tuto-avancer">LA SPÉCIALISATION </p>
-        <div className="tuto-avancer-container icon-tutoriel">
+        <p className="tuto-avancer lvl2">LA SPÉCIALISATION <em> Niveau Intermediaire</em></p>
+        <div className="tuto-avancer-container icon-tutoriel lvl2">
           <div>
             <p className="intituler2">BACK-END</p>
             <IconNode />
@@ -46,8 +46,8 @@ const Tutoriel = () => {
             <IconDb />
           </div>
         </div>
-        <div className="tuto-pro-container">
-          <p className="tuto-pro"> PROJET PRO</p>
+        <div className="tuto-pro-container lvl3">
+          <p className="tuto-pro lvl3"> PROJET PRO <em> Niveau Professionnel</em></p>
           <ProProjet />
         </div>
       </div>
