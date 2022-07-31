@@ -2,6 +2,14 @@
     & .tutoriel-icons {
         margin               : 2rem 0;
         text-align           : center;
+        & .intituler {
+            border-radius    : 10px;
+            font-weight      : 900;
+            background       : #f8f9fb;
+            margin           : 0;
+            padding          : 10px;
+            color            : $bluesky;
+        }
         & .tuto-base {
             padding          : 1rem ;
             color            : $white;
@@ -32,7 +40,7 @@
             border-bottom    : 2px solid $bluesky;
         }
         & .tuto-base-container {
-            margin           : 0 auto;
+            margin           : 0 auto 5rem auto;
             display          : flex;
             flex-direction   : column;
             justify-content  : space-around;
@@ -42,6 +50,9 @@
             display          : flex;
             flex-direction   : row-reverse;
             justify-content  : space-around;
+        }
+        & .tuto-avancer-container2 {
+            margin           : 0 auto 5rem auto;
         }
     }
 }

@@ -39,7 +39,7 @@ export function iconHtml(props: SVGProps<SVGSVGElement>) {
           d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83h-7.185zm0-6.256v3.091h7.466l.062-.694l.141-1.567l.074-.83h-7.743z"
         ></path>
       </svg>
-      <p>HTML</p>
+      <p className="intituler">HTML</p>
     </div>
   );
 }
