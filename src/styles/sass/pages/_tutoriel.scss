@@ -92,6 +92,27 @@
             &:hover {
                 transition: 430ms all ease-in-out;
                 background-color: rgba($color: $bluesky, $alpha: .2);
+                
+                & svg {
+                        animation-name: animeFilter;
+                        animation-duration: 530ms;
+                        animation-fill-mode: both;
+                        transform-origin: top center;
+                
+                        @keyframes animeFilter {
+                            0% {
+                                filter      :saturate(0%);
+                            }            
+                            100% {
+                                filter      :saturate(100%);
+                            }
+                        }
+                    
+                }
+            }
+
+            & svg {
+                filter      :saturate(0%);
             }
 
         }
