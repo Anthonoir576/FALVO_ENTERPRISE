@@ -109,4 +109,15 @@
     }
   }
 }
+@media only screen and (max-width: 500px) {
+  body .tutoriel {
+    & .tutoriel-icons {
+      & .icon-tutoriel {
+        & svg {
+          filter      :saturate(100%);
+        }
+      }
+    }
+  }
+}
 // #######################################
