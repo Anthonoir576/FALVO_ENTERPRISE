@@ -1,19 +1,23 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ########################################################
-import React from "react";
-import Maintenance from "../../components/Maintenance/Maintenance";
-import NavBar from "../../components/Navigation/NavBar";
-import IconHtml from "../../components/Icons/IconHtml";
-import IconCss from "../../components/Icons/IconCss";
-import IconJs from "../../components/Icons/IconJs";
-import IconNode from "../../components/Icons/IconNode";
-import IconReact from "../../components/Icons/IconReact";
-import Start from "../../components/Icons/Start";
-import ProProjet from "../../components/Icons/ProProjet";
-import IconDb from "../../components/Icons/IconDb";
+import React          from "react";
+import { NavLink }    from 'react-router-dom';
+import Maintenance    from "../../components/Maintenance/Maintenance";
+import NavBar         from "../../components/Navigation/NavBar";
+import IconHtml       from "../../components/Icons/IconHtml";
+import IconCss        from "../../components/Icons/IconCss";
+import IconJs         from "../../components/Icons/IconJs";
+import IconNode       from "../../components/Icons/IconNode";
+import IconReact      from "../../components/Icons/IconReact";
+import Start          from "../../components/Icons/Start";
+import ProProjet      from "../../components/Icons/ProProjet";
+import IconDb         from "../../components/Icons/IconDb";
 //- --------------------------------------------------------
 //- ########################################################
+
+
+
 
 //* ########################################################
 //* --------------------- Tutoriel -------------------------
@@ -25,8 +29,13 @@ const Tutoriel = () => {
       <div className="tutoriel-icons">
         <p className="tuto-base lvl1">LES BASES <em>Niveau Facile</em></p>
         <div className="tuto-base-container">
+          
           <Start />
-          <IconHtml />
+
+          <NavLink to='/tutoriel/html' aria-label='En savoir plus sur le HTML'>
+            <IconHtml />
+          </NavLink>
+          
           <IconCss />
           <IconJs />
         </div>
@@ -56,6 +65,9 @@ const Tutoriel = () => {
 };
 //* --------------------------------------------------------
 //* ########################################################
+
+
+
 
 //~ ########################################################
 //~ --------------------- EXPORT ---------------------------

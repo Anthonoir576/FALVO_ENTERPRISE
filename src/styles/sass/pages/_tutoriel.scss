@@ -1,4 +1,22 @@
 .tutoriel {
+    
+    & .back {
+        display       : inline-block;
+        position      : absolute;
+        bottom        : 10px;
+        right         : 10px;
+        margin-top    : 3rem;
+        background    : $colorGradient;
+        color         : white;
+        border-radius : 50%;
+        padding       : 12px 10px 9px 17px;
+
+        &:hover {
+            transition  : 250ms all ease-in-out;
+            transform   : scale(1.1);
+        }
+    }
+
     & .tutoriel-icons {
         margin               : 2rem 0;
         text-align           : center;
