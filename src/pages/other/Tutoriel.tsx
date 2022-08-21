@@ -29,8 +29,9 @@ const Tutoriel = () => {
       <div className="tutoriel-icons">
         <p className="tuto-base lvl1">LES BASES <em>Niveau Facile</em></p>
         <div className="tuto-base-container">
-          <Start />
           
+          <Start />
+
           <NavLink to='/tutoriel/html' aria-label='En savoir plus sur le HTML'>
             <IconHtml />
           </NavLink>

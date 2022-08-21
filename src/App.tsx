@@ -38,8 +38,14 @@ function App() {
           <Route path='/competence'          element  ={ <Competence /> }                               />
           <Route path='/projets'             element  ={ <Projets /> }                                  />
           <Route path='/contact'             element  ={ <Contact /> }                                  />
+
+          {'<######################################################>'}
+          {'<--------------------- TUTORIEL ----------------------->'}
+          {'<######################################################>'}
           <Route path='/tutoriel'            element  ={ <Tutoriel /> }                                 />
-          <Route path='/tutoriel/html'       element  ={ <TutorielHtml /> }                            />
+          <Route path='/tutoriel/html'       element  ={ <TutorielHtml /> }                             />
+          {'<------------------------------------------------------>'}
+
           <Route path='/veille'              element  ={ <Veille /> }                                   />
           <Route path='/blog'                element  ={ <Blog /> }                                     />
           <Route path='*'                    element  ={ <Navigate replace to='/FALVO_ENTERPRISE/' /> } />
