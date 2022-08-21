@@ -13,13 +13,17 @@ import NavBar           from '../../components/Navigation/NavBar';
 //* ########################################################
 //* --------------------- Tutoriel -------------------------
 //* ########################################################
-const Tutoriel_html = () => {
+const TutorielHtml = () => {
     return (
-
-        <div className="tutoriel">
-            <NavBar />
-            HTML
+      <div className="tutoriel">
+        <NavBar />
+        <div className='tutoriel-html'>
+            <p> EN COURS DE TEST :</p>
+            <p>
+            l'attribut <span>{"<p></p>"}</span> est une balise
+            </p>
         </div>
+      </div>
     );
 };
 //* --------------------------------------------------------
@@ -31,6 +35,6 @@ const Tutoriel_html = () => {
 //~ ########################################################
 //~ --------------------- EXPORT ---------------------------
 //~ ########################################################
-export default Tutoriel_html;
+export default TutorielHtml;
 //~ --------------------------------------------------------
 //~ ########################################################
