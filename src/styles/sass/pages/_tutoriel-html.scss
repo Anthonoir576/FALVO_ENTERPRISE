@@ -1,0 +1,10 @@
+.tutoriel-html {
+    text-align : center;
+    margin-top : 2rem;
+    & em {
+        background    : black;
+        color         : white;
+        padding       : 10px 15px 7px 15px;
+        border-radius : 4px;
+    }
+}

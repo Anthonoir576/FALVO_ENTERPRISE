@@ -18,7 +18,7 @@ const TutorielHtml = () => {
       <div className="tutoriel">
         <NavBar />
         <div className='tutoriel-html'>
-            <p> EN COURS DE TEST :</p>
+            <em> EN COURS DE TEST :</em>
             <p>
             l'attribut <span>{"<p></p>"}</span> est une balise
             </p>
