@@ -2,8 +2,9 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ######################################################## 
-import React            from 'react';
-import NavBar           from '../../components/Navigation/NavBar';
+import React                        from 'react';
+import NavBar                       from '../../components/Navigation/NavBar';
+import Back                         from '../../components/Utils/Back';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -17,6 +18,7 @@ const TutorielHtml = () => {
     return (
       <div className="tutoriel">
         <NavBar />
+        <Back />
         <div className='tutoriel-html'>
             <em> EN COURS DE TEST :</em>
             <p>

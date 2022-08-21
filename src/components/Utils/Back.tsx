@@ -4,6 +4,7 @@
 //- ######################################################## 
 import React         from 'react';
 import { NavLink }   from 'react-router-dom';
+import MaterialSymbolsArrowBackIos from '../Icons/MaterialSymbolsArrowBackIos';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -16,8 +17,8 @@ import { NavLink }   from 'react-router-dom';
 const Back = () => {
     return (
         <div>
-            <NavLink to='/tutoriel' aria-label='Retour sur la page tutoriel'>
-                ...
+            <NavLink to='/tutoriel' aria-label='Retour sur la page tutoriel' className='back'>
+                <MaterialSymbolsArrowBackIos />
             </NavLink>
         </div>
     );
