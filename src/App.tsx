@@ -12,6 +12,7 @@ import Blog                  from "./pages/other/Blog";
 import Veille                from "./pages/other/Veille";
 import Tutoriel              from './pages/other/Tutoriel';
 import CurriculumVitae       from './pages/other/CurriculumVitae';
+import Tutoriel_html from './pages/other/Tutoriel_html';
 
 import { Routes, 
          Route,
@@ -38,6 +39,7 @@ function App() {
           <Route path='/projets'             element  ={ <Projets /> }                                  />
           <Route path='/contact'             element  ={ <Contact /> }                                  />
           <Route path='/tutoriel'            element  ={ <Tutoriel /> }                                 />
+          <Route path='/tutoriel/html'       element  ={ <Tutoriel_html /> }                            />
           <Route path='/veille'              element  ={ <Veille /> }                                   />
           <Route path='/blog'                element  ={ <Blog /> }                                     />
           <Route path='*'                    element  ={ <Navigate replace to='/FALVO_ENTERPRISE/' /> } />
