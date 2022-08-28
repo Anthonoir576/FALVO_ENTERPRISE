@@ -2,7 +2,9 @@
 //- ########################################################
 //- --------------------- IMPORT ---------------------------
 //- ########################################################
-import React from 'react';
+import React                        from 'react';
+import NavBar                       from '../../components/Navigation/NavBar';
+import Back                         from '../../components/Utils/Back';
 //- --------------------------------------------------------
 //- ########################################################
 
@@ -13,11 +15,15 @@ import React from 'react';
 //* ---------------- Tutoriel Start ------------------------
 //* ########################################################
 const TutorielStart = () => {
-    return (
-        <div>
-            heys
-        </div>
-    );
+  return (
+    <div className="tutoriel">
+      <NavBar />
+      <Back />
+      <div className="tutoriel-start">
+        <em> EN COURS DE TEST :</em>
+      </div>
+    </div>
+  );
 };
 //* --------------------------------------------------------
 //* ########################################################
