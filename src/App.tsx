@@ -13,6 +13,7 @@ import Veille                from "./pages/other/Veille";
 import Tutoriel              from './pages/other/Tutoriel';
 import CurriculumVitae       from './pages/other/CurriculumVitae';
 import TutorielHtml          from './pages/other/TutorielHtml';
+import TutorielStart         from './pages/other/TutorielStart';
 
 import { Routes, 
          Route,
@@ -44,6 +45,7 @@ function App() {
           {'<######################################################>'}
           <Route path='/tutoriel'            element  ={ <Tutoriel /> }                                 />
           <Route path='/tutoriel/html'       element  ={ <TutorielHtml /> }                             />
+          <Route path='/tutoriel/start'      element  ={ <TutorielStart /> }                            />
           {'<------------------------------------------------------>'}
 
           <Route path='/veille'              element  ={ <Veille /> }                                   />
