@@ -1,5 +1,5 @@
 .tutoriel {
-    
+
     & .back {
         display       : inline-block;
         position      : absolute;
@@ -154,5 +154,8 @@
         & .tuto-avancer-container2 {
             margin           : 0 auto 5rem auto;
         }
+    }
+    & a {
+        text-decoration: none;
     }
 }
