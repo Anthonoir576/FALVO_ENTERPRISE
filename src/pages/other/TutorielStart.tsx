@@ -65,7 +65,7 @@ const TutorielStart = () => {
               provident fugiat perspiciatis, animi consequuntur porro? Ipsam,
               doloremque dignissimos.
             </p>
-
+            <img src="https://via.placeholder.com/500" alt="test" />
             <p>
               {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -255,6 +255,7 @@ const TutorielStart = () => {
               ducimus cupiditate enim soluta provident fugiat perspiciatis,
               animi consequuntur porro? Ipsam, doloremque dignissimos.
             </p>
+            <img src="https://via.placeholder.com/500" alt="test" />
           </div>
           <div className="chapitre">
             <h3>CHAPITRE :</h3>
