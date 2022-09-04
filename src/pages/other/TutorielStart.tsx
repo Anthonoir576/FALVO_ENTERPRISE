@@ -20,6 +20,9 @@ const TutorielStart = () => {
       <NavBar />
       <Back />
       <div className="tutoriel-start">
+        <div className="title-start">
+          <h2>DEMARRAGE</h2>
+        </div>
         <div className="progress-bar">
           <span className="test0"></span>
           <span className="test1"></span>
