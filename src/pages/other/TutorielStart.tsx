@@ -24,8 +24,12 @@ const TutorielStart = () => {
           <span className='test'></span>
         </div>
         <div className='container-main'>
-          <div>COURS</div>
-          <div>CHAPITRE</div>
+          <div className='cours'>
+            COURS
+          </div>
+          <div className='chapitre'>
+            CHAPITRE
+          </div>
         </div>
       </div>
     </div>
