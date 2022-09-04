@@ -18,6 +18,12 @@
     }
 
     & .tutoriel-icons {
+        & a:focus {
+            border : none;    
+        }
+    }
+
+    & .tutoriel-icons {
         margin               : 2rem 0;
         text-align           : center;
         & .lvl1{
