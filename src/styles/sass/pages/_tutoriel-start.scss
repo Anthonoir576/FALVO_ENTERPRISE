@@ -4,6 +4,20 @@
         & .container-main {
             display         : flex;
             justify-content : space-between;
+            margin          : 1rem;
+
+            & .cours,
+              .chapitre {
+                border : 2px solid black;
+            }
+
+            & .cours {
+                width : 1000px;
+            }
+
+            & .chapitre {
+                width: 300px;
+            }
         }
     }
 }
