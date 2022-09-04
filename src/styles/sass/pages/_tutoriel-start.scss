@@ -1,23 +1,30 @@
 .tutoriel {
     & .tutoriel-start {
         margin : 0 1rem;
-        & .container-main {
-            display         : flex;
-            justify-content : space-between;
-            margin          : 1rem;
+    }
+    & .container-main {
+        display         : flex;
+        justify-content : space-between;
+        margin          : 1rem;
 
-            & .cours,
-              .chapitre {
-                border : 2px solid black;
-            }
-
-            & .cours {
-                width : 1000px;
-            }
-
-            & .chapitre {
-                width: 300px;
-            }
+        & .cours,
+          .chapitre {
+            padding : 10px;
+            border  : 2px solid black;
         }
+
+        & .cours {
+            width      : 1000px;
+            text-align : justify;
+            padding    : 10px 20px;
+        }
+
+        & .chapitre {
+            width: 130px;
+        }
+    }
+
+    & .progress-bar {
+        
     }
 }
