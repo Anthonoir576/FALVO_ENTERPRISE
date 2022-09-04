@@ -20,7 +20,13 @@ const TutorielStart = () => {
       <NavBar />
       <Back />
       <div className="tutoriel-start">
-        <em> EN COURS DE TEST :</em>
+        <div className='progress-bar'>
+        <span className='test'></span>
+        </div>
+        <div className='container-main'>
+          <div>COURS</div>
+          <div>CHAPITRE</div>
+        </div>
       </div>
     </div>
   );
