@@ -21,7 +21,7 @@ const TutorielStart = () => {
       <Back />
       <div className="tutoriel-start">
         <div className='progress-bar'>
-        <span className='test'></span>
+          <span className='test'></span>
         </div>
         <div className='container-main'>
           <div>COURS</div>

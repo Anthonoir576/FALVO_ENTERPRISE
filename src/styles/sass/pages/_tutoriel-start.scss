@@ -1,0 +1,9 @@
+.tutoriel {
+    & .tutoriel-start {
+        margin : 0 1rem;
+        & .container-main {
+            display         : flex;
+            justify-content : space-between;
+        }
+    }
+}
